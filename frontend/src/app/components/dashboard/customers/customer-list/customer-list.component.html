@@ -1,0 +1,47 @@
+<div class="container">
+<div class="row mt-5">
+  <div class="col-12">
+    <div class="card shadow-lg">
+      <div class="card-body mt-5 mb-5 mx-auto p-3">
+        <table class="table table-borderless table-hover table-striped t">
+          <thead>
+          <tr>
+            <th class="text-gradient text-primary">Name</th>
+            <th class="text-gradient text-primary">Email</th>
+            <th class="text-gradient text-primary">Phone</th>
+            <th class="text-gradient text-primary">Fax</th>
+            <th class="text-gradient text-primary">Status</th>
+            <th class="text-gradient text-primary">Location</th>
+            <th class="text-gradient text-primary">Industry</th>
+            <th class="text-gradient text-primary">Actions</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let customer of customers">
+            <td class="text-white ubuntu-bold">{{ customer.name }}</td>
+            <td class="text-white ubuntu-bold">{{ customer.email }}</td>
+            <td class="text-white ubuntu-bold">{{ customer.phone }}</td>
+            <td class="text-white ubuntu-bold">{{ customer.fax }}</td>
+            <td class="text-white ubuntu-bold">{{ customer.status }}</td>
+            <td class="text-white ubuntu-bold">
+              {{ customer.address }}, {{ customer.city }} {{ customer.state }}, {{ customer.zipCode }}
+            </td>
+            <td class="text-white ubuntu-bold">{{ customer.industry }}</td>
+            <td colspan="5">
+              <a href="#"><i class="fa-solid fa-list text-gradient text-info"></i></a>
+              <a href="#"><i class="fa-regular fa-pen-to-square text-gradient text-primary"></i></a>
+              <a href="#"><i class="fa-regular fa-trash-can text-gradient text-danger"></i></a>
+            </td>
+          </tr>
+          </tbody>
+        </table>
+
+        <!-- Show message if there are no customers -->
+        <div *ngIf="customers.length === 0" class="alert alert-info">
+          No customers found.
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>

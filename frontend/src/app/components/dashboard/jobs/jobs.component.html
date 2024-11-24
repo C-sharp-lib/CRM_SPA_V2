@@ -1,0 +1,12 @@
+<div class="container" *ngIf="showJobCalendar()">
+  <app-job-calendar></app-job-calendar>
+</div>
+<div class="container" *ngIf="showJobList()">
+  <app-job-list></app-job-list>
+</div>
+<div class="container" *ngIf="showJobCreate()">
+  <app-job-create></app-job-create>
+</div>
+<div class="container" *ngIf="showJobSearch()">
+  <app-job-search></app-job-search>
+</div>

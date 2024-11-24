@@ -1,0 +1,18 @@
+.fa-regular.fa-trash-can,
+.fa-regular.fa-pen-to-square,
+.fa-solid.fa-list{
+  font-size: 20px !important;
+  color: white !important;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+th {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+}
+td {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}

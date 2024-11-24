@@ -1,0 +1,6 @@
+backend/bin
+backend/obj
+frontend/node_modules
+backend/.vs/backend/FileContentIndex/31a1489c-81ac-470b-be2a-2e0d2ea31b3b.vsidx
+*.mdf
+*.ldf

@@ -1,0 +1,44 @@
+<div class="row mt-5">
+
+</div>
+<div class="container">
+<div class="row mt-5">
+  <div class="col-12">
+    <form class="form inline" (ngSubmit)="onSearch()">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-8">
+          <div class="form-group">
+            <input type="search" [(ngModel)]="keyword" class="form-control form-control-lg color-background bg-gradient-dark" id="search-customers"/>
+          </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-4">
+          <div class="form-group">
+            <button type="submit" class="custom-btn btn-4 button"><span>Submit</span></button>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+  <div *ngIf="errorMessage" class="row error-message">
+    <div class="col-12">
+      <div class="alert alert-danger" role="alert">
+        {{ errorMessage }}
+      </div>
+    </div>
+  </div>
+  <div class="search-container">
+  <div class="row">
+    <div class="col-12 text-center">
+      <div *ngIf="results.length > 0">
+        <h4 class="text-gradient text-primary">Search Results</h4>
+        <ul>
+          <li *ngFor="let customer of results">
+            {{customer.name}} {{customer.address}} {{customer.status}} {{customer.customerType}}
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>

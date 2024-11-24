@@ -1,0 +1,9 @@
+div.card-body > form > div:nth-child(1) > input:before,
+div.card-body > form > div:nth-child(1) > input:after,
+div.card-body > form > div:nth-child(1) > input:focus,
+div.card-body > form > div:nth-child(1) > input {
+  background-color: #232326 !important;
+  color: white !important;
+  font-weight: bold !important;
+  font-family: "Ubuntu", sans-serif;
+}
