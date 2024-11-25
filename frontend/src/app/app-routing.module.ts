@@ -19,6 +19,7 @@ import {JobListComponent} from './components/dashboard/jobs/job-list/job-list.co
 import {CustomerListComponent} from './components/dashboard/customers/customer-list/customer-list.component';
 import {CustomerCreateComponent} from './components/dashboard/customers/customer-create/customer-create.component';
 import {CustomerSearchComponent} from './components/dashboard/customers/customer-search/customer-search.component';
+import {DashboardMainComponent} from './components/dashboard/dashboard-main/dashboard-main.component';
 
 const routes: Routes = [
   {path: '', component: fromPages.HomeComponent, pathMatch: 'full'},
@@ -41,6 +42,7 @@ const routes: Routes = [
           {path: 'customer-search', component: CustomerSearchComponent},
           {path: '', pathMatch: 'full', redirectTo: '/dashboard/customers/customer-list'}
         ]},
+      {path: 'dashboard-main', component: DashboardMainComponent},
       {path: 'contacts', component: ContactsComponent},
       {path: 'leads', component: LeadsComponent},
       {path: 'notes', component: NotesComponent},

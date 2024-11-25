@@ -3,25 +3,47 @@
     <div class="container">
       <div class="row">
         <div class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column mx-lg-0 mx-auto">
-          <div class="card card-background-mask-dark bg-gradient-dark">
+          <div class="card bg-gradient-dark">
             <div class="card-header bg-gradient-dark pb-0 text-left">
               <h4 class="font-weight-bolder text-gradient text-primary">Sign In</h4>
               <p class="mb-0">Enter your email and password to sign in</p>
+              <div *ngIf="errorMessage" class="row error-message">
+                <div class="col-12">
+                  <div class="alert alert-danger" role="alert">
+                    <p class="ubuntu-bold text-white">
+                      {{ errorMessage }}
+                      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="card-body">
               <form>
-                <div class="mb-3">
-                  <input type="text" class="form-control form-control-lg bg-dark" autocomplete="false" [(ngModel)]="email" name="email" placeholder="Email" aria-label="Email" style="background-color: #232326 !important">
+                <div class="form-group">
+                  <label for="email" class="text-gradient text-primary ubuntu-bold">Email</label>
+                  <div class="mb-3">
+                    <input type="text" id="email" formControlName="email" class="form-control form-control-lg color-background bg-gradient-dark" autocomplete="false" placeholder="Email" aria-label="Email" style="background-color: #232326 !important">
+                  </div>
                 </div>
-                <div class="mb-3">
-                  <input type="password" class="form-control form-control-lg bg-dark" autocomplete="false" [(ngModel)]="password" name="password" placeholder="Password" aria-label="Password" style="background-color: #232326 !important">
+                <div class="form-group">
+                  <label for="passwordHash">Password</label>
+                  <div class="mb-3">
+                    <input type="password" id="passwordHash" formControlName="passwordHash" class="form-control form-control-lg color-background bg-gradient-dark" autocomplete="false" placeholder="Password" aria-label="Password">
+                    <button
+                      type="button"
+                      (click)="togglePasswordVisibility()"
+                      class="toggle-password-button">
+                      <i [ngClass]="isPasswordVisible ? 'fa-solid fa-eye-slash' : 'fa-solid fa-eye'" ></i>
+                    </button>
+                  </div>
                 </div>
                 <div class="form-check form-switch">
                   <input class="form-check-input" type="checkbox" id="rememberMe" [(ngModel)]="rememberMe" name="rememberMe">
-                  <label class="form-check-label" for="rememberMe" class="text-gradient text-primary">Remember me</label>
+                  <label for="rememberMe" class="form-check-label text-gradient text-primary">Remember me</label>
                 </div>
                 <div class="text-center">
-                  <button type="button" class="btn btn-lg bg-gradient-primary btn-lg w-100 mt-4 mb-0">Sign in</button>
+                  <button type="submit" class="custom-btn btn-4 button"><span>Sign in</span></button>
                 </div>
               </form>
             </div>

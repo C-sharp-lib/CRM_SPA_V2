@@ -161,3 +161,91 @@ body {
 .btn-4 > span {
   text-shadow: 3px 3px 4px #000;
 }
+/*btn-5*/
+.btn-5 {
+  background: rgb(50,50,250);
+  background: linear-gradient(0deg, rgb(10,10,250) 0%, rgb(100,10,250) 100%);
+  width: 50% !important;
+  margin: 0 auto;
+  height: 40px;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+}
+
+.btn-5 span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: whitesmoke;
+}
+
+.btn-5:before,
+.btn-5:after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 0;
+  background: rgb(50,50,200);
+  transition: all 0.3s ease;
+}
+
+.btn-5:before {
+  height: 0%;
+  width: 2px;
+}
+
+.btn-5:after {
+  width: 0%;
+  height: 2px;
+}
+
+.btn-5:hover {
+  background: transparent;
+  box-shadow: none;
+}
+
+.btn-5:hover:before {
+  height: 100%;
+}
+
+.btn-5:hover:after {
+  width: 100%;
+}
+
+.btn-5 span:hover {
+  color: rgb(50,50,200);
+}
+
+.btn-5 span:before,
+.btn-5 span:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  bottom: 0;
+  background: rgb(50,50,200);
+  transition: all 0.3s ease;
+}
+
+.btn-5 span:before {
+  width: 2px;
+  height: 0%;
+}
+
+.btn-5 span:after {
+  width: 0%;
+  height: 2px;
+}
+
+.btn-5 span:hover:before {
+  height: 100%;
+}
+
+.btn-5 span:hover:after {
+  width: 100%;
+}
+
+.btn-5 > span {
+  text-shadow: 3px 3px 4px #000;
+}

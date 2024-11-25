@@ -1,5 +1,6 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, HostListener, Injectable, OnInit, PLATFORM_ID} from '@angular/core';
 import {ActivatedRoute, Router, NavigationEnd} from '@angular/router';
+import {WindowService} from '../../../services/window.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,6 +9,7 @@ import {ActivatedRoute, Router, NavigationEnd} from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
   showMenu: boolean = false;
+
   constructor(private router: Router, private route: ActivatedRoute) {
   }
   ngOnInit(): void {
@@ -22,7 +24,20 @@ export class NavbarComponent implements OnInit {
       }
     });
   }
-
+  //
+  // toggleMobileMenu(): void {
+  //   this.checkMobileWidth();
+  // }
+  // checkMobileWidth(): void {
+  //   if(this.windowService) {
+  //     this.isMobileMenuOpen = !this.isMobileMenuOpen;
+  //   } else {
+  //     this.isMobileMenuOpen = false;
+  //   }
+  // }
+  // closeMobileMenu(): void {
+  //   this.isMobileMenuOpen = false;
+  // }
   showJobsMenu(): boolean {
     if(this.router.url === '/dashboard/jobs' ||
       this.router.url === '/dashboard/jobs/job-calendar' ||
@@ -66,3 +81,4 @@ export class NavbarComponent implements OnInit {
     }
   }
 }
+

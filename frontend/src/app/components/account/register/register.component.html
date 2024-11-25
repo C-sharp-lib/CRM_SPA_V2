@@ -1,1 +1,129 @@
-<p>register works!</p>
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-8 col-lg-8 col-md-8 col-12 col-sm-12 mx-auto">
+        <div class="card shadow-lg color-background bg-gradient-dark z-index-0 mt-sm-10 mt-7 mb-4">
+          <div class="card-header text-center pt-4 pb-1 color-background bg-gradient-dark">
+            <h4 class="font-weight-bolder mb-1 text-gradient text-primary ubuntu-bold">Sign Up</h4>
+            <p class="mb-0 ubuntu-bold text-white">Join our network of professionals</p>
+          </div>
+          <div class="card-body">
+            <form [formGroup]="registerForm" (ngSubmit)="onRegister()">
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-6">
+                  <label for="userName" class="text-gradient text-primary">Username</label>
+                  <div class="mb-3">
+                    <input type="text" id="userName" formControlName="userName" autocomplete="false" class="form-control form-control-lg color-background bg-gradient-dark ubuntu-bold text-white"  placeholder="Username" aria-label="Username">
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6">
+                  <div class="form-group">
+                    <label for="email" class="text-gradient text-primary">Email</label>
+                    <div class="mb-3">
+                      <input type="email" formControlName="email" id="email" autocomplete="false" class="form-control form-control-lg color-background bg-gradient-dark ubuntu-bold text-white" placeholder="Email" aria-label="Email">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-4">
+                  <label for="phoneNumber" class="text-gradient text-primary">Phone Number</label>
+                  <div class="mb-3">
+                    <input type="text" id="phoneNumber" formControlName="phoneNumber" autocomplete="false" class="form-control form-control-lg color-background bg-gradient-dark ubuntu-bold text-white"  placeholder="Phone Number" aria-label="PhoneNumber">
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4">
+                  <div class="form-group">
+                    <label for="firstName" class="text-gradient text-primary">First Name</label>
+                    <div class="mb-3">
+                      <input type="text" formControlName="firstName" id="firstName" autocomplete="false" class="form-control form-control-lg color-background bg-gradient-dark ubuntu-bold text-white" placeholder="First Name" aria-label="FirstName">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4">
+                  <div class="form-group">
+                    <label for="lastName" class="text-gradient text-primary">Last Name</label>
+                    <div class="mb-3">
+                      <input type="text" formControlName="lastName" id="lastName" autocomplete="false" class="form-control form-control-lg color-background bg-gradient-dark ubuntu-bold text-white" placeholder="Last Name" aria-label="LastName">
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-4">
+                  <label for="dob" class="text-gradient text-primary">Date of Birth</label>
+                  <div class="mb-3">
+                    <input type="datetime-local" id="dob" formControlName="dob" autocomplete="false" class="form-control form-control-lg color-background bg-gradient-dark ubuntu-bold text-white"  placeholder="Date of Birth" aria-label="Date of Birth">
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4">
+                  <div class="form-group">
+                    <label for="hireDate" class="text-gradient text-primary">Hire Date</label>
+                    <div class="mb-3">
+                      <input type="datetime-local" formControlName="hireDate" id="hireDate" autocomplete="false" class="form-control form-control-lg color-background bg-gradient-dark ubuntu-bold text-white" placeholder="Hire Date" aria-label="Hire Date">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4">
+                  <div class="form-group">
+                    <div class="mb-3 form-check form-switch">
+                      <input type="checkbox" formControlName="isActive" id="isActive" class="form-check-input" aria-label="Is Active">
+                      <label for="isActive" class="form-check-label text-gradient text-primary">Is Active</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12 col-sm-12 col-md-4">
+                  <label for="passwordHash" class="text-gradient text-primary">Password</label>
+                  <div class="mb-3 clearfix">
+                    <input type="{{isPasswordVisiblePassword ? 'text' : 'password'}}" id="passwordHash" formControlName="passwordHash" autocomplete="false" class="form-control form-control-lg color-background bg-gradient-dark ubuntu-bold text-white"  placeholder="Password Hash" aria-label="Password Hash">
+                    <a
+                      (click)="togglePasswordVisibilityPassword()"
+                      class="check-password"
+                      [ngClass]="isPasswordVisiblePassword ? 'text-gradient text-success' : 'text-gradient text-danger'">
+                      <i [ngClass]="isPasswordVisiblePassword ? 'fa-solid fa-eye' : 'fa-solid fa-eye-slash' " ></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4">
+                  <div class="form-group">
+                    <label for="hireDate" class="text-gradient text-primary">Confirm Password</label>
+                    <div class="mb-3 ">
+                      <input type="{{isPasswordVisibleConfirmPassword ? 'text' : 'password'}}" formControlName="confirmPassword" id="confirmPassword" autocomplete="false" class="form-control form-control-lg color-background bg-gradient-dark ubuntu-bold text-white inline" placeholder="Confirm Password" aria-label="Confirm Password">
+                      <a
+                        (click)="togglePasswordVisibilityConfirmPassword()"
+                        class="check-password"
+                        [ngClass]="isPasswordVisibleConfirmPassword ? 'text-gradient text-success' : 'text-gradient text-danger'">
+                        <i [ngClass]="isPasswordVisibleConfirmPassword ? 'fa-solid fa-eye' : 'fa-solid fa-eye-slash' " ></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-4">
+                  <div *ngIf="errorMessage" class="row error-message">
+                    <div class="col-12">
+                      <div class="alert alert-danger" role="alert">
+                        <p class="ubuntu-bold text-white">
+                          {{ errorMessage }}
+                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="custom-btn btn-4 button"><span class="ubuntu-bold">Sign up</span></button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

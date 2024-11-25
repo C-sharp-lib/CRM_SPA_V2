@@ -29,7 +29,8 @@ import { CustomerCreateComponent } from './components/dashboard/customers/custom
 import { CustomerListComponent } from './components/dashboard/customers/customer-list/customer-list.component';
 import { CustomerDetailComponent } from './components/dashboard/customers/customer-detail/customer-detail.component';
 import { CustomerSearchComponent } from './components/dashboard/customers/customer-search/customer-search.component';
-import { JobDetailsComponent } from './components/dashboard/jobs/job-detail/job-details.component'; // the main connector
+import { JobDetailsComponent } from './components/dashboard/jobs/job-detail/job-details.component';
+import { DashboardMainComponent } from './components/dashboard/dashboard-main/dashboard-main.component'; // the main connector
 
 
 
@@ -59,6 +60,7 @@ import { JobDetailsComponent } from './components/dashboard/jobs/job-detail/job-
     CustomerDetailComponent,
     CustomerSearchComponent,
     JobDetailsComponent,
+    DashboardMainComponent,
   ],
   imports: [
     BrowserModule,

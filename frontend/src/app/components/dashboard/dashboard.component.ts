@@ -40,4 +40,7 @@ export class DashboardComponent {
   showUsers(): boolean {
     return this.router.url === 'users';
   }
+  showDashboardMain(): boolean {
+    return this.router.url === 'dashboard/dashboard-main';
+  }
 }

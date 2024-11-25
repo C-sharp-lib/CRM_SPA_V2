@@ -53,6 +53,7 @@
               "src/assets/js/plugins/chartjs.min.js",
               "src/assets/js/admin.js",
               "src/assets/js/site.js",
+              "src/assets/js/chart-line.js",
               "src/assets/js/soft-design-system-pro.min.js"
             ],
             "server": "src/main.server.ts",

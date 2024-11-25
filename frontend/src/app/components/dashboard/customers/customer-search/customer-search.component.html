@@ -23,7 +23,10 @@
   <div *ngIf="errorMessage" class="row error-message">
     <div class="col-12">
       <div class="alert alert-danger" role="alert">
-        {{ errorMessage }}
+        <p class="ubuntu-bold text-white">
+          {{ errorMessage }}
+          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </p>
       </div>
     </div>
   </div>

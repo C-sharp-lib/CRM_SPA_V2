@@ -3,31 +3,33 @@ import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {map} from 'rxjs/operators';
 import {response} from 'express';
+import {Router} from '@angular/router';
+import {environment} from '../../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class AccountService {
-  private apiUrl: string = "http://localhost:5130/api/Account";
-  constructor(private http: HttpClient) { }
-  // login(email: string, password: string, rememberMe: boolean) : Observable<boolean> {
-  //   const headers = new HttpHeaders({ 'Content-Type': 'application/json' });
-  //   const body = {email, password, rememberMe};
-  //   return this.http.post<{token: string}>(`${this.apiUrl}/login`, body, {headers})
-  //     .pipe(
-  //       map(response => {
-  //         if(response && response.token) {
-  //           localStorage.setItem('authToken', response.token);
-  //           return true;
-  //         }
-  //         return false;
-  //       })
-  //     );
-  // }
-  // logout(): void {
-  //   localStorage.removeItem('authToken');
-  // }
-  // isAuthenticated(): boolean {
-  //   return localStorage.getItem('authToken') !== null;
-  // }
+  baseUrl: string = environment.apiUrl + "/Account";
+  constructor(private http: HttpClient, private router: Router) { }
+  register(user: any): Observable<any> {
+    return this.http.post(`${this.baseUrl}/register`, user);
+  }
+
+  login(credentials: { email: string; password: string }): Observable<any> {
+    return this.http.post(`${this.baseUrl}/login`, credentials);
+  }
+
+  logout() {
+    localStorage.removeItem('token');
+    this.router.navigate(['/login']);
+  }
+
+  isAuthenticated(): boolean {
+    return !!localStorage.getItem('token');
+  }
+
+  getToken(): string | null {
+    return localStorage.getItem('token');
+  }
 }
