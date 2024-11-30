@@ -1,20 +1,26 @@
-<div class="row">
+<div class="row mt-11">
   <div class="col-12">
-    <div class="mt-11">
-      <h1 class="text-center text-gradient text-primary">
-        Job Calendar
-      </h1>
+    <div class="card shadow-lg bg-gradient-dark">
+      <div class="card-header bg-gradient-dark">
+        <h1 class="text-gradient text-primary">
+          Job Calendar
+        </h1>
+      </div>
+      <div class="card-body p-3">
+        <full-calendar
+          [options]="calendarOptions"
+          [events]=""
+          class="calendar">
+          <ng-template let-arg #eventTemplate>
+            <div>
+              <p>{{arg.event.title}} | {{arg.event.start}} - {{arg.event.end}}</p>
+            </div>
+          </ng-template>
+        </full-calendar>
+      </div>
     </div>
   </div>
 </div>
 
-<div class="row">
-  <div class="col-12" *ngIf="isBrowser">
-    <full-calendar [options]="calendarOptions" class="calendar">
-      <ng-template #eventContent let-arg class="event">
-        <b class="text-white text-bold">{{arg.timeText}}</b>
-        <i class="text-white text-bold">{{arg.event.title}}</i>
-      </ng-template>
-    </full-calendar>
-  </div>
-</div>
+
+

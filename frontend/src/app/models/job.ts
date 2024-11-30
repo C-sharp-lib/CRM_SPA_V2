@@ -1,25 +1,31 @@
 import {JobStatus} from './job-status';
 import {JobPriority} from './job-priority';
+import {Customer} from './customer';
+import {User} from './user';
+import {Note} from './note';
 
-export class Job {
-  jobId: number | undefined;
-  customerId: number | undefined;
-  jobTitle: string = '';
-  jobDescription: string = '';
-  jobStatus: JobStatus | undefined;
-  startDate: Date | undefined;
-  endDate: Date | undefined;
-  assignedTo: string = '';
-  priority: JobPriority | undefined;
-  estimatedCost: number | undefined;
-  actualCost: number | undefined;
-  createdAt: Date = new Date();
-  createdBy: string = '';
-  lastUpdatedBy?: string = '';
-  lastUpdatedDate: Date = new Date();
+interface CustomerJobs{
+  customerId: Customer;
+  jobId: Job;
+}
 
-  constructor(init?: Partial<Job>) {
-    Object.assign(this, init);
-  }
+interface JobUserNotes {
+  jobId: Job;
+  userId: User;
+  noteId: Note;
+}
+
+export interface Job {
+  jobId: number;
+  jobTitle: string;
+  jobDescription: string;
+  jobStatus: JobStatus;
+  startDate: Date;
+  endDate: Date;
+  priority: JobPriority;
+  estimatedCost: number;
+  actualCost: number;
+  customerJobs?: CustomerJobs;
+  jobUserNotes?: JobUserNotes;
 }
 

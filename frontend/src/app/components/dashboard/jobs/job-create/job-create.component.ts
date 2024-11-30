@@ -17,37 +17,28 @@ export class JobCreateComponent {
   jobPriority = Object.values(JobPriority);
   constructor(private fb: FormBuilder, private jobService: JobService, private http: HttpClient) {
     this.jobForm = this.fb.group({
-      customerId: ['', Validators.required],
       jobTitle: ['', Validators.required],
       jobDescription: ['', Validators.required],
       jobStatus: ['', Validators.required],
       startDate: ['', Validators.required],
       endDate: ['', Validators.required],
-      assignedTo: ['', Validators.required],
       priority: ['', Validators.required],
       estimatedCost: ['', [Validators.required, Validators.pattern('^[0-9]*\\.?[0-9]{0,2}$')]],
-      actualCost: ['', [Validators.required, Validators.pattern('^[0-9]*\\.?[0-9]{0,2}$')]],
-      createdBy: ['', Validators.required],
+      actualCost: ['', [Validators.required, Validators.pattern('^[0-9]*\\.?[0-9]{0,2}$')]]
     });
   }
 
   onSubmit(): void {
-    if(this.jobForm.invalid) {
+    if(!this.jobForm.invalid) {
       const newJob: Job = {
-        customerId: this.jobForm.value.customerId,
         jobTitle: this.jobForm.value.jobTitle,
         jobDescription: this.jobForm.value.jobDescription,
         jobStatus: this.jobForm.value.jobStatus,
         startDate: new Date(this.jobForm.value.startDate),
         endDate: new Date(this.jobForm.value.endDate),
-        assignedTo: this.jobForm.value.assignedTo,
         priority: this.jobForm.value.priority,
         estimatedCost: this.jobForm.value.estimatedCost,
         actualCost: this.jobForm.value.actualCost,
-        createdAt: new Date(), // Use current date
-        createdBy: this.jobForm.value.createdBy,
-        lastUpdatedBy: this.jobForm.value.createdBy,
-        lastUpdatedDate: new Date(),
         jobId: undefined
       };
       this.jobService.createJob(newJob).subscribe(

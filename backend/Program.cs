@@ -8,7 +8,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 using Serilog;
-using backend.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,15 +17,15 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString);
 });
 
-builder.Services.AddIdentityCore<AppUser>(options =>
+builder.Services.AddIdentityCore<AspNetUsers>(options =>
 {
     options.SignIn.RequireConfirmedAccount = false;
 })
-    .AddRoles<AppRole>()
-    .AddRoleManager<RoleManager<AppRole>>()
+    .AddRoles<AspNetRoles>()
+    .AddRoleManager<RoleManager<AspNetRoles>>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
-    .AddSignInManager<SignInManager<AppUser>>()
-    .AddUserManager<UserManager<AppUser>>()
+    .AddSignInManager<SignInManager<AspNetUsers>>()
+    .AddUserManager<UserManager<AspNetUsers>>()
     .AddDefaultTokenProviders();
 builder.Services.ConfigureApplicationCookie(options =>
 {
@@ -72,10 +71,13 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
     options.IdleTimeout = TimeSpan.FromMinutes(30);
 });
+builder.Services.AddControllersWithViews()
+    .AddNewtonsoftJson(options =>
+    options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+);
 builder.Services.AddScoped<ApplicationDbContext>();
 builder.Host.UseSerilog();
 builder.Services.AddHttpContextAccessor();
-builder.Services.AddScoped<UserService>();
 builder.Services.AddAuthorization();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();

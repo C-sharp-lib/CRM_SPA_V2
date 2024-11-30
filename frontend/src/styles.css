@@ -54,7 +54,6 @@ body {
 .custom-btn {
   height: 50px;
   color: #fff;
-  border-radius: 5px;
   padding: 10px 25px;
   font-family: 'Lato', sans-serif;
   font-weight: 500;
@@ -66,12 +65,14 @@ body {
   margin: 5% auto;
   box-shadow: inset 2px 2px 2px 0px rgba(255,255,255,.5), 7px 7px 20px 0px rgba(0,0,0,.1), 4px 4px 5px 0px rgba(0,0,0,.1);
   outline: none;
+  border-radius: 6px;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
 }
 .button {
   margin: 20px;
 }
 .btn-4 {
-  background: rgb(50,250,50);
   background: linear-gradient(0deg, rgb(10,250,10) 0%, rgb(0,250,0) 100%);
   width: 50% !important;
   margin: 0 auto;
@@ -163,18 +164,18 @@ body {
 }
 /*btn-5*/
 .btn-5 {
-  background: rgb(50,50,250);
   background: linear-gradient(0deg, rgb(10,10,250) 0%, rgb(100,10,250) 100%);
-  width: 50% !important;
+  width: 100% !important;
   margin: 0 auto;
   height: 40px;
   line-height: 42px;
-  padding: 0;
+  padding: 10px;
   border: none;
 }
 
 .btn-5 span {
   position: relative;
+
   display: block;
   width: 100%;
   height: 100%;
@@ -189,21 +190,25 @@ body {
   top: 0;
   background: rgb(50,50,200);
   transition: all 0.3s ease;
+
 }
 
 .btn-5:before {
   height: 0%;
   width: 2px;
+
 }
 
 .btn-5:after {
   width: 0%;
   height: 2px;
+
 }
 
 .btn-5:hover {
   background: transparent;
   box-shadow: none;
+
 }
 
 .btn-5:hover:before {
@@ -248,4 +253,10 @@ body {
 
 .btn-5 > span {
   text-shadow: 3px 3px 4px #000;
+}
+.fc-daygrid-day-number {
+  color: white !important;
+}
+.fc-toolbar-title {
+  color: dodgerblue !important;
 }

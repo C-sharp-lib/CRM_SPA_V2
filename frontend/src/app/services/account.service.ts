@@ -5,6 +5,7 @@ import {map} from 'rxjs/operators';
 import {response} from 'express';
 import {Router} from '@angular/router';
 import {environment} from '../../environments/environment';
+import {User} from '../models/user';
 
 @Injectable({
   providedIn: 'root'
@@ -12,10 +13,9 @@ import {environment} from '../../environments/environment';
 export class AccountService {
   baseUrl: string = environment.apiUrl + "/Account";
   constructor(private http: HttpClient, private router: Router) { }
-  register(user: any): Observable<any> {
+  register(user: { email: string; password: string }): Observable<any> {
     return this.http.post(`${this.baseUrl}/register`, user);
   }
-
   login(credentials: { email: string; password: string }): Observable<any> {
     return this.http.post(`${this.baseUrl}/login`, credentials);
   }
@@ -26,7 +26,8 @@ export class AccountService {
   }
 
   isAuthenticated(): boolean {
-    return !!localStorage.getItem('token');
+    const token = localStorage.getItem('token');
+    return token != null;
   }
 
   getToken(): string | null {

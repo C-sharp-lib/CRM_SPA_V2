@@ -25,6 +25,9 @@ const routes: Routes = [
   {path: '', component: fromPages.HomeComponent, pathMatch: 'full'},
   {path: 'about', component: fromPages.AboutComponent},
   {path: 'contact', component: fromPages.ContactComponent},
+  {path: 'privacy', component: fromPages.PrivacyComponent},
+  {path: 'terms', component: fromPages.TermsComponent},
+  {path: 'faq', component: fromPages.FaqComponent},
   {path: 'login-page', component: fromAccount.LoginComponent},
   {path: 'register-page', component: fromAccount.RegisterComponent},
   {path: 'dashboard', children: [

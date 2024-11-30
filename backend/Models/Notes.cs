@@ -10,7 +10,7 @@ namespace backend.Models
         public int NoteId { get; set; }
         public string Note {  get; set; }
         public DateTime CreatedAt { get; set; }
-        public string UserId { get; set; }
-        public AppUser User { get; set; }
+        public ICollection<CampaignUserNotes> CampaignUserNotes { get; set; }
+        public ICollection<JobUserNotes> JobUserNotes { get; set; }
     }
 }

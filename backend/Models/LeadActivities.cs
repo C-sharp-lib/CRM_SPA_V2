@@ -14,7 +14,7 @@ namespace backend.Models
         public DateTime ActivityDate { get; set; }
         public string Notes { get; set; }
         public string CreatedBy { get; set; }
-        public AppUser CreatedByUser { get; set; }
+        public AspNetUsers CreatedByUser { get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
     }
 }

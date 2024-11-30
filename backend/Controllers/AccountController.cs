@@ -25,12 +25,12 @@ namespace backend.Controllers
     public class AccountController : ControllerBase
     {
         private readonly JwtBearerTokenSettings jwtBearerTokenSettings;
-        private readonly UserManager<AppUser> _userManager;
-        private readonly SignInManager<AppUser> _signInManager;
+        private readonly UserManager<AspNetUsers> _userManager;
+        private readonly SignInManager<AspNetUsers> _signInManager;
         private readonly ApplicationDbContext _context;
         private readonly IConfiguration _configuration;
         private readonly ApplicationLogger _logger;
-        public AccountController(IOptions<JwtBearerTokenSettings> jwt, UserManager<AppUser> manager, SignInManager<AppUser> signIn,
+        public AccountController(IOptions<JwtBearerTokenSettings> jwt, UserManager<AspNetUsers> manager, SignInManager<AspNetUsers> signIn,
                                    ApplicationDbContext context, IConfiguration configuration, ApplicationLogger logger) 
         {
             jwtBearerTokenSettings = jwt.Value;
@@ -42,7 +42,7 @@ namespace backend.Controllers
         }
 
         [HttpPost]
-        [Route("Register")]
+        [Route("register")]
         public async Task<IActionResult> Register([FromBody] RegisterDTO register)
         {
             if (!ModelState.IsValid || register == null)
@@ -50,7 +50,7 @@ namespace backend.Controllers
                 return new BadRequestObjectResult(new { Message = "User Registration Failed" });
             }
 
-            var identityUser = new AppUser() { UserName = register.UserName, Email = register.Email };
+            var identityUser = new AspNetUsers() { UserName = register.UserName, Email = register.Email };
             var result = await _userManager.CreateAsync(identityUser, register.Password);
             if (!result.Succeeded)
             {
@@ -67,10 +67,10 @@ namespace backend.Controllers
         }
 
         [HttpPost]
-        [Route("Login")]
+        [Route("login")]
         public async Task<IActionResult> Login([FromBody] LoginDTO login)
         {
-            AppUser identityUser;
+            AspNetUsers identityUser;
 
             if (!ModelState.IsValid || login == null || (identityUser = await ValidateUser(login)) == null)
             {
@@ -122,7 +122,7 @@ namespace backend.Controllers
         }
 
         [HttpPost]
-        [Route("Logout")]
+        [Route("logout")]
         public async Task<IActionResult> Logout()
         {
             // Revoke Refresh Token 
@@ -130,7 +130,7 @@ namespace backend.Controllers
             return Ok(new { Token = "", Message = "Logged Out" });
         }
 
-        private RefreshToken GetValidRefreshToken(string token, AppUser identityUser)
+        private RefreshToken GetValidRefreshToken(string token, AspNetUsers identityUser)
         {
             if (identityUser == null)
             {
@@ -160,7 +160,7 @@ namespace backend.Controllers
             return true;
         }
 
-        private async Task<AppUser> ValidateUser(LoginDTO login)
+        private async Task<AspNetUsers> ValidateUser(LoginDTO login)
         {
             var identityUser = await _userManager.FindByEmailAsync(login.Email);
             if (identityUser != null)
@@ -172,7 +172,7 @@ namespace backend.Controllers
             return null;
         }
 
-        private string GenerateTokens(AppUser identityUser)
+        private string GenerateTokens(AspNetUsers identityUser)
         {
             // Generate access token
             string accessToken = GenerateAccessToken(identityUser);
@@ -201,7 +201,7 @@ namespace backend.Controllers
             return accessToken;
         }
 
-        private string GenerateAccessToken(AppUser identityUser)
+        private string GenerateAccessToken(AspNetUsers identityUser)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(jwtBearerTokenSettings.SecretKey);

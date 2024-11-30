@@ -2,3 +2,20 @@
   font-family: 'Ubuntu', sans-serif !important;
   color: white !important;
 }
+.nav > .dropdown > .btn-5 > span {
+ position: relative !important;
+  bottom: 0.6rem !important;
+}
+.nav > .dropdown {
+  margin-left: 2rem;
+}
+.dropdown-menu {
+  background-color: #222 !important;
+}
+.dropdown-menu.show::before {
+  color: #222 !important;
+}
+.dropdown-menu > li a:hover {
+  background-color: dodgerblue !important;
+  color: white !important;
+}

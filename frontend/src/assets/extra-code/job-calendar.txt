@@ -1,0 +1,41 @@
+  // handleEventClick(info : any) : void{
+  //   const job = info.event.extendedProps;
+  //   alert(
+  //     `Job Details:\n
+  //     Title: ${info.event.title}\n
+  //     Assigned To: ${job.assignedTo}\n
+  //     Status: ${job.jobStatus}\n
+  //     Priority: ${job.priority}\n
+  //     Description: ${job.jobDescription}\r
+  //     Notes: ${job.notes}\r`
+  //   );
+  // }
+  //
+  // handleCalendarToggle() {
+  //   this.calendarVisible = !this.calendarVisible;
+  // }
+  //
+  // handleWeekendsToggle() {
+  //   const { calendarOptions } = this;
+  //   calendarOptions.weekends = !calendarOptions.weekends;
+  // }
+  //
+  // handleDateSelect(selectInfo: DateSelectArg) {
+  //   const title = prompt('Please enter a new title for your event');
+  //   const calendarApi = selectInfo.view.calendar;
+  //
+  //   calendarApi.unselect();
+  //
+  //   if (title) {
+  //     calendarApi.addEvent({
+  //       title,
+  //       start: selectInfo.startStr,
+  //       end: selectInfo.endStr,
+  //       allDay: selectInfo.allDay
+  //     });
+  //   }
+  // }
+  // handleEvents(events: EventApi[]) {
+  //   this.currentEvents = events;
+  //   this.changeDetector.detectChanges();
+  // }

@@ -1,0 +1,76 @@
+<div class="modal-header bg-gradient-dark">
+  <h4 class="modal-title text-gradient text-primary ubuntu-bold left">Create New Job</h4>
+  <a class="close text-gradient text-danger text-bold text-2xl ms-11" (click)="activeModal.dismiss('Cross click')">&times;</a>
+</div>
+<div class="modal-body bg-gradient-dark">
+  <form>
+    <div class="row">
+      <div class="col-12 col-md-12">
+        <div class="form-group">
+          <label for="jobTitle" class="text-gradient text-primary ubuntu-bold">Job Title</label>
+          <input type="text" id="jobTitle" class="form-control" [(ngModel)]="jobTitle" name="jobTitle" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="form-group">
+          <label for="startDate" class="ubuntu-bold text-gradient text-primary">Start Date</label>
+          <input type="datetime-local" id="startDate" [(ngModel)]="startDate" name="startDate" class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold">
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="form-group">
+          <label for="endDate" class="ubuntu-bold text-gradient text-primary">End Date</label>
+          <input type="datetime-local" id="endDate" [(ngModel)]="endDate" name="endDate" class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="form-group">
+          <label for="estimatedCost" class="text-gradient text-primary ubuntu-bold">Estimated Cost</label>
+          <input type="number" id="estimatedCost" class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold" [(ngModel)]="estimatedCost" name="estimatedCost" />
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="form-group">
+          <label for="actualCost" class="ubuntu-bold text-gradient text-primary">Actual Cost</label>
+          <input type="text" id="actualCost" [(ngModel)]="actualCost" name="actualCost" class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6">
+          <div class="form-group">
+            <label for="priority" class="ubuntu-bold text-gradient text-primary">Priority</label>
+            <select id="priority" [(ngModel)]="priority" name="priority" class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold">
+              <option class="bg-dark text-white ubuntu-bold" *ngFor="let type of jobPriority" [value]="type">{{ type }}</option>
+            </select>
+          </div>
+        </div>
+      <div class="col-12 col-md-6">
+        <div class="form-group">
+          <label for="jobStatus" class="ubuntu-bold text-gradient text-primary">Job Status</label>
+          <select type="number" id="jobStatus" [(ngModel)]="jobStatus" class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold">
+            <option class="bg-dark text-white ubuntu-bold" *ngFor="let type of jobStatus" [value]="type">{{ type }}</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-12">
+        <div class="form-group">
+          <label for="jobDescription" class="ubuntu-bold text-gradient text-primary">Job Description</label>
+          <textarea [(ngModel)]="jobDescription" name="jobDescription" id="jobDescription" cols="10" rows="5" class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold"></textarea>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="modal-footer">
+    <button type="button" class="btn bg-gradient-primary" (click)="save()">Save</button>
+    <button type="button" class="btn bg-gradient-info" (click)="activeModal.dismiss('cancel')">Cancel</button>
+  </div>
+</div>
+
+

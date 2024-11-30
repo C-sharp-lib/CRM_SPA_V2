@@ -21,12 +21,10 @@ namespace backend.Models
         public string Industry { get; set; }
         public string Website { get; set; }
         public string ContactPerson { get; set; }
-        public string CreatedBy { get; set; }
-        public AppUser CreatedByUser { get; set; }
-        [NotMapped]
-        public string? UpdatedBy { get; set; }
-        [NotMapped]
-        public AppUser? UpdatedByUser { get; set; }
+        public ICollection<CustomerJobs> CustomerJobs { get; set; }
+        public ICollection<CustomerUsers> CustomerUsers { get; set; }
+        public ICollection<CustomerOrders> CustomerOrders { get; set; }
+
         public string Notes { get; set; }
     }
 }

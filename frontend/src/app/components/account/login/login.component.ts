@@ -17,7 +17,7 @@ export class LoginComponent {
   errorMessage: string = '';
   isPasswordVisible: boolean = false;
 
-  constructor(private fb: FormBuilder, private authService: AccountService) {
+  constructor(private fb: FormBuilder, private accountService: AccountService, private router: Router) {
     this.loginForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', Validators.required],
@@ -25,20 +25,18 @@ export class LoginComponent {
     });
   }
 
-  onLogin() {
-    if (this.loginForm.valid) {
-      this.authService.login(this.loginForm.value).subscribe({
-        next: (response) => {
-          localStorage.setItem('token', response.token); // Save token
-          // Redirect to dashboard or home
-          window.location.href = '/';
-        },
-        error: (err) => {
-          this.errorMessage = err.error?.message || 'Login failed. Please try again.';
-        }
-      });
-    }
+  login(): void {
+    this.accountService.login({ email: this.email, password: this.password }).subscribe(
+      response => {
+        localStorage.setItem('token', response.token);
+        this.router.navigate(['/dashboard/dashboard-main']);
+      },
+      error => {
+        this.errorMessage = 'Login failed. Please check your credentials.';
+      }
+    );
   }
+
   togglePasswordVisibility(): void {
     this.isPasswordVisible = !this.isPasswordVisible;
   }
