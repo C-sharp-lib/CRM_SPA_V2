@@ -21,7 +21,6 @@ namespace backend.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [AllowAnonymous]
     public class AccountController : ControllerBase
     {
         private readonly JwtBearerTokenSettings jwtBearerTokenSettings;
@@ -29,9 +28,9 @@ namespace backend.Controllers
         private readonly SignInManager<AspNetUsers> _signInManager;
         private readonly ApplicationDbContext _context;
         private readonly IConfiguration _configuration;
-        private readonly ApplicationLogger _logger;
+        private readonly ILogger<AccountController> _logger;
         public AccountController(IOptions<JwtBearerTokenSettings> jwt, UserManager<AspNetUsers> manager, SignInManager<AspNetUsers> signIn,
-                                   ApplicationDbContext context, IConfiguration configuration, ApplicationLogger logger) 
+                                   ApplicationDbContext context, IConfiguration configuration, ILogger<AccountController> logger) 
         {
             jwtBearerTokenSettings = jwt.Value;
             _userManager = manager;
@@ -43,6 +42,7 @@ namespace backend.Controllers
 
         [HttpPost]
         [Route("register")]
+        [AllowAnonymous]
         public async Task<IActionResult> Register([FromBody] RegisterDTO register)
         {
             if (!ModelState.IsValid || register == null)
@@ -68,21 +68,38 @@ namespace backend.Controllers
 
         [HttpPost]
         [Route("login")]
+        [AllowAnonymous]
         public async Task<IActionResult> Login([FromBody] LoginDTO login)
         {
-            AspNetUsers identityUser;
-
-            if (!ModelState.IsValid || login == null || (identityUser = await ValidateUser(login)) == null)
+            if(login.Email != null && login.Password != null)
             {
-                return new BadRequestObjectResult(new { Message = "Login failed" });
+                var token = GenerateAccessToken(login.Email);
+                return Ok(new {Token =  token});
             }
-
-            var token = GenerateTokens(identityUser);
-            return Ok(new { Token = token, Message = "Success" });
+            return Unauthorized("Invalid email or password.");
         }
 
+        private string GenerateAccessToken(string email) 
+        {
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtBearerTokenSettings.SecretKey)); // Replace with a strong key
+            var credentials = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+            var claims = new[]
+            {
+            new Claim(JwtRegisteredClaimNames.Sub, email),
+            new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+            new Claim(ClaimTypes.Name, email)
+        };
 
+            var token = new JwtSecurityToken(
+                issuer: jwtBearerTokenSettings.Issuer,
+                audience: jwtBearerTokenSettings.Audience,
+                claims: claims,
+                expires: DateTime.UtcNow.AddHours(10),
+                signingCredentials: credentials
+            );
 
+            return new JwtSecurityTokenHandler().WriteToken(token);
+        }
         [AllowAnonymous]
         [HttpPost]
         [Route("RefreshToken")]
@@ -128,6 +145,30 @@ namespace backend.Controllers
             // Revoke Refresh Token 
             RevokeRefreshToken();
             return Ok(new { Token = "", Message = "Logged Out" });
+        }
+        [HttpGet("users/{id}")]
+        public async Task<IActionResult> GetUser(string id)
+        {
+            var user = await _context.Users
+                .Include(jt => jt.JobUserTasks)
+                .ThenInclude(jt => jt.Job)
+                .Include(jt => jt.JobUserTasks)
+                .ThenInclude(jt => jt.Task)
+                .Include(jt => jt.JobUserNotes)
+                .ThenInclude(jt => jt.Job)
+                .Include(jt => jt.JobUserNotes)
+                .ThenInclude(jt => jt.Notes)
+                .FirstOrDefaultAsync(u => u.Id == id);
+            if (user == null) 
+            {
+                return NotFound("Cannot find user.");
+            }
+            return Ok(user);
+        }
+        [HttpGet("users")]
+        public async Task<ActionResult<IEnumerable<AspNetUsers>>> GetUsers()
+        {
+            return await _context.Users.ToListAsync();
         }
 
         private RefreshToken GetValidRefreshToken(string token, AspNetUsers identityUser)
@@ -214,7 +255,8 @@ namespace backend.Controllers
                     new Claim(ClaimTypes.Email, identityUser.Email)
                 }),
 
-                Expires = DateTime.Now.AddSeconds(jwtBearerTokenSettings.ExpiryTimeInSeconds),
+                Expires = DateTime.Now.AddMinutes(20),
+                NotBefore = DateTime.Now,
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature),
                 Audience = jwtBearerTokenSettings.Audience,
                 Issuer = jwtBearerTokenSettings.Issuer

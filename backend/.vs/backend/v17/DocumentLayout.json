@@ -3,16 +3,56 @@
   "WorkspaceRootPath": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\aspnetusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\aspnetusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\controllers\\campaigncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:controllers\\campaigncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\controllers\\jobcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:controllers\\jobcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\dto\\campaigndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:dto\\campaigndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\campaigns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\campaigns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\campaignusertasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\campaignusertasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\campaignusernotes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\campaignusernotes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\campaigns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\campaigns.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\notes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,20 +63,8 @@
       "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\jobs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\controllers\\jobcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:controllers\\jobcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\jobusernotes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -55,10 +83,6 @@
       "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\aspnetusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\aspnetusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\customerusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\customerusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -67,24 +91,12 @@
       "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\jobusertasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\dto\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:dto\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\dto\\jobdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:dto\\jobdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:dto\\registerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:dto\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\leads.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -113,8 +125,8 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 222,
-          "SelectedChildIndex": 6,
+          "DockedWidth": 292,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -126,7 +138,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-30T23:59:39.585Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CampaignController.cs",
+              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Controllers\\CampaignController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CampaignController.cs",
+              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Controllers\\CampaignController.cs",
+              "RelativeToolTip": "Controllers\\CampaignController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAswDMAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T19:59:14.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CampaignDTO.cs",
+              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\DTO\\CampaignDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\CampaignDTO.cs",
+              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\DTO\\CampaignDTO.cs",
+              "RelativeToolTip": "DTO\\CampaignDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-30T19:54:20.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "CustomerDTO.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\DTO\\CustomerDTO.cs",
               "RelativeDocumentMoniker": "DTO\\CustomerDTO.cs",
@@ -138,19 +189,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 5,
               "Title": "RegisterDTO.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\DTO\\RegisterDTO.cs",
               "RelativeDocumentMoniker": "DTO\\RegisterDTO.cs",
               "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\DTO\\RegisterDTO.cs",
               "RelativeToolTip": "DTO\\RegisterDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T02:52:10.742Z"
+              "WhenOpened": "2024-11-28T02:52:10.742Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 2,
               "Title": "LoginDTO.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\DTO\\LoginDTO.cs",
               "RelativeDocumentMoniker": "DTO\\LoginDTO.cs",
@@ -158,36 +210,51 @@
               "RelativeToolTip": "DTO\\LoginDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T02:52:07.11Z"
+              "WhenOpened": "2024-11-28T02:52:07.11Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAAAEwAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-20T19:32:25.673Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
               "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Controllers\\AccountController.cs",
               "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AgIAAHUBAAAAAAAAAAAQwBgBAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAI8AAAAAAAAAAAAYwKQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-28T02:51:23.389Z"
+              "WhenOpened": "2024-11-28T02:51:23.389Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 11,
               "Title": "CampaignUserTasks.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\CampaignUserTasks.cs",
               "RelativeDocumentMoniker": "Models\\CampaignUserTasks.cs",
               "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\CampaignUserTasks.cs",
               "RelativeToolTip": "Models\\CampaignUserTasks.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-28T00:42:27.284Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "Contacts.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\Contacts.cs",
               "RelativeDocumentMoniker": "Models\\Contacts.cs",
@@ -199,7 +266,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "Leads.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\Leads.cs",
               "RelativeDocumentMoniker": "Models\\Leads.cs",
@@ -211,7 +278,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 21,
               "Title": "JobUserTasks.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\JobUserTasks.cs",
               "RelativeDocumentMoniker": "Models\\JobUserTasks.cs",
@@ -223,7 +290,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 16,
               "Title": "JobUserNotes.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\JobUserNotes.cs",
               "RelativeDocumentMoniker": "Models\\JobUserNotes.cs",
@@ -235,7 +302,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 13,
               "Title": "Notes.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\Notes.cs",
               "RelativeDocumentMoniker": "Models\\Notes.cs",
@@ -247,19 +314,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Campaigns.cs",
-              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\Campaigns.cs",
-              "RelativeDocumentMoniker": "Models\\Campaigns.cs",
-              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\Campaigns.cs",
-              "RelativeToolTip": "Models\\Campaigns.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T23:52:37.787Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 23,
               "Title": "JobDTO.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\DTO\\JobDTO.cs",
               "RelativeDocumentMoniker": "DTO\\JobDTO.cs",
@@ -271,19 +326,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 4,
               "Title": "AspNetUsers.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\AspNetUsers.cs",
               "RelativeDocumentMoniker": "Models\\AspNetUsers.cs",
               "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\AspNetUsers.cs",
               "RelativeToolTip": "Models\\AspNetUsers.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAgwAcAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAADwvxUAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T21:00:12.071Z"
+              "WhenOpened": "2024-11-26T21:00:12.071Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "CustomerJobs.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\CustomerJobs.cs",
               "RelativeDocumentMoniker": "Models\\CustomerJobs.cs",
@@ -295,7 +351,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Models\\ApplicationDbContext.cs",
@@ -307,7 +363,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 20,
               "Title": "CustomerUsers.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\CustomerUsers.cs",
               "RelativeDocumentMoniker": "Models\\CustomerUsers.cs",
@@ -319,7 +375,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "Customers.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\Customers.cs",
               "RelativeDocumentMoniker": "Models\\Customers.cs",
@@ -331,49 +387,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "JobController.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Controllers\\JobController.cs",
               "RelativeDocumentMoniker": "Controllers\\JobController.cs",
               "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Controllers\\JobController.cs",
               "RelativeToolTip": "Controllers\\JobController.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAswD0AAABIAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAywD0AAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T16:46:37.544Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAADYAAAAAAAAAAAAAAEwAAAACAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T19:32:25.673Z"
+              "WhenOpened": "2024-11-22T16:46:37.544Z",
+              "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedWidth": 178,
-          "SelectedChildIndex": 6,
+          "DockedWidth": 108,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Tasks.cs",
-              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\Tasks.cs",
-              "RelativeDocumentMoniker": "Models\\Tasks.cs",
-              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\Tasks.cs",
-              "RelativeToolTip": "Models\\Tasks.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAiwAgAAAA9AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T23:41:19.629Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "OrderItems.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\OrderItems.cs",
               "RelativeDocumentMoniker": "Models\\OrderItems.cs",
@@ -385,7 +418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "CustomerOrders.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\CustomerOrders.cs",
               "RelativeDocumentMoniker": "Models\\CustomerOrders.cs",
@@ -397,7 +430,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 10,
+              "Title": "Campaigns.cs",
+              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\Campaigns.cs",
+              "RelativeDocumentMoniker": "Models\\Campaigns.cs",
+              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\Campaigns.cs",
+              "RelativeToolTip": "Models\\Campaigns.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA6wB0AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T23:52:37.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
               "Title": "Orders.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\Orders.cs",
               "RelativeDocumentMoniker": "Models\\Orders.cs",
@@ -409,19 +455,32 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 8,
               "Title": "CustomerController.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Controllers\\CustomerController.cs",
               "RelativeDocumentMoniker": "Controllers\\CustomerController.cs",
               "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Controllers\\CustomerController.cs",
               "RelativeToolTip": "Controllers\\CustomerController.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAUwCQAAAAWAAAAAAAAAA==",
+              "ViewState": "AgIAADAAAAAAAAAAAAAswCQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:00:52.076Z"
+              "WhenOpened": "2024-11-22T19:00:52.076Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 15,
+              "Title": "Tasks.cs",
+              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\Tasks.cs",
+              "RelativeDocumentMoniker": "Models\\Tasks.cs",
+              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\Tasks.cs",
+              "RelativeToolTip": "Models\\Tasks.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAiwAgAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T23:41:19.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Jobs.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\Jobs.cs",
               "RelativeDocumentMoniker": "Models\\Jobs.cs",
@@ -433,7 +492,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
               "Title": "CampaignUserNotes.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\CampaignUserNotes.cs",
               "RelativeDocumentMoniker": "Models\\CampaignUserNotes.cs",

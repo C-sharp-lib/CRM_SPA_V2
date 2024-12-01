@@ -8,7 +8,7 @@
             <p class="mb-0 ubuntu-bold text-white">Join our network of professionals</p>
           </div>
           <div class="card-body">
-            <form [formGroup]="registerForm" (ngSubmit)="onRegister()">
+            <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
               <div class="row">
                 <div class="col-12 col-sm-12 col-md-6">
                   <label for="userName" class="text-gradient text-primary">Username</label>
@@ -26,60 +26,10 @@
                 </div>
               </div>
               <div class="row">
-                <div class="col-12 col-sm-12 col-md-4">
-                  <label for="phoneNumber" class="text-gradient text-primary">Phone Number</label>
-                  <div class="mb-3">
-                    <input type="text" id="phoneNumber" formControlName="phoneNumber" autocomplete="false" class="form-control form-control-lg color-background bg-gradient-dark ubuntu-bold text-white"  placeholder="Phone Number" aria-label="PhoneNumber">
-                  </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-4">
-                  <div class="form-group">
-                    <label for="firstName" class="text-gradient text-primary">First Name</label>
-                    <div class="mb-3">
-                      <input type="text" formControlName="firstName" id="firstName" autocomplete="false" class="form-control form-control-lg color-background bg-gradient-dark ubuntu-bold text-white" placeholder="First Name" aria-label="FirstName">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-4">
-                  <div class="form-group">
-                    <label for="lastName" class="text-gradient text-primary">Last Name</label>
-                    <div class="mb-3">
-                      <input type="text" formControlName="lastName" id="lastName" autocomplete="false" class="form-control form-control-lg color-background bg-gradient-dark ubuntu-bold text-white" placeholder="Last Name" aria-label="LastName">
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-12 col-sm-12 col-md-4">
-                  <label for="dob" class="text-gradient text-primary">Date of Birth</label>
-                  <div class="mb-3">
-                    <input type="datetime-local" id="dob" formControlName="dob" autocomplete="false" class="form-control form-control-lg color-background bg-gradient-dark ubuntu-bold text-white"  placeholder="Date of Birth" aria-label="Date of Birth">
-                  </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-4">
-                  <div class="form-group">
-                    <label for="hireDate" class="text-gradient text-primary">Hire Date</label>
-                    <div class="mb-3">
-                      <input type="datetime-local" formControlName="hireDate" id="hireDate" autocomplete="false" class="form-control form-control-lg color-background bg-gradient-dark ubuntu-bold text-white" placeholder="Hire Date" aria-label="Hire Date">
-                    </div>
-                  </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-4">
-                  <div class="form-group">
-                    <div class="mb-3 form-check form-switch">
-                      <input type="checkbox" formControlName="isActive" id="isActive" class="form-check-input" aria-label="Is Active">
-                      <label for="isActive" class="form-check-label text-gradient text-primary">Is Active</label>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="col-12 col-sm-12 col-md-4">
-                  <label for="passwordHash" class="text-gradient text-primary">Password</label>
+                <div class="col-12 col-sm-12 col-md-6">
+                  <label for="password" class="text-gradient text-primary">Password</label>
                   <div class="mb-3 clearfix">
-                    <input type="{{isPasswordVisiblePassword ? 'text' : 'password'}}" id="passwordHash" formControlName="passwordHash" autocomplete="false" class="form-control form-control-lg color-background bg-gradient-dark ubuntu-bold text-white"  placeholder="Password Hash" aria-label="Password Hash">
+                    <input type="{{isPasswordVisiblePassword ? 'text' : 'password'}}" id="password" formControlName="password" autocomplete="false" class="form-control form-control-lg color-background bg-gradient-dark ubuntu-bold text-white"  placeholder="Password" aria-label="Password">
                     <a
                       (click)="togglePasswordVisibilityPassword()"
                       class="check-password"
@@ -88,9 +38,9 @@
                     </a>
                   </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-4">
+                <div class="col-12 col-sm-12 col-md-6">
                   <div class="form-group">
-                    <label for="hireDate" class="text-gradient text-primary">Confirm Password</label>
+                    <label for="confirmPassword" class="text-gradient text-primary">Confirm Password</label>
                     <div class="mb-3 ">
                       <input type="{{isPasswordVisibleConfirmPassword ? 'text' : 'password'}}" formControlName="confirmPassword" id="confirmPassword" autocomplete="false" class="form-control form-control-lg color-background bg-gradient-dark ubuntu-bold text-white inline" placeholder="Confirm Password" aria-label="Confirm Password">
                       <a
@@ -102,11 +52,26 @@
                     </div>
                   </div>
                 </div>
-
-                <div class="col-12 col-md-4">
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-12">
+                  <div *ngIf="successMessage" class="row error-message">
+                    <div class="col-12">
+                      <div class="alert bg-gradient-success" role="alert">
+                        <p class="ubuntu-bold text-white">
+                          {{ successMessage }}
+                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-md-12">
                   <div *ngIf="errorMessage" class="row error-message">
                     <div class="col-12">
-                      <div class="alert alert-danger" role="alert">
+                      <div class="alert bg-gradient-danger" role="alert">
                         <p class="ubuntu-bold text-white">
                           {{ errorMessage }}
                           <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -116,10 +81,7 @@
                   </div>
                 </div>
               </div>
-
-              <div class="text-center">
-                <button type="submit" class="custom-btn btn-4 button"><span class="ubuntu-bold">Sign up</span></button>
-              </div>
+              <button type="submit" class="btn bg-gradient-info">Sign Up</button>
             </form>
           </div>
         </div>

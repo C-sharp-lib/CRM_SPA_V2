@@ -1,6 +1,7 @@
 import {Component, HostListener, Injectable, OnInit, PLATFORM_ID} from '@angular/core';
 import {ActivatedRoute, Router, NavigationEnd} from '@angular/router';
 import {WindowService} from '../../../services/window.service';
+import {AccountService} from '../../../services';
 
 @Component({
   selector: 'app-navbar',
@@ -9,9 +10,10 @@ import {WindowService} from '../../../services/window.service';
 })
 export class NavbarComponent implements OnInit {
   showMenu: boolean = false;
+  userData: any;
+  errorMessage: string = '';
 
-  constructor(private router: Router, private route: ActivatedRoute) {
-  }
+  constructor(private router: Router, private route: ActivatedRoute, private authService: AccountService) {}
   ngOnInit(): void {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
@@ -79,6 +81,14 @@ export class NavbarComponent implements OnInit {
     } else {
       return this.showMenu = false;
     }
+  }
+  authenticated() {
+    const token = localStorage.getItem('token');
+    return token != null;
+  }
+  logout() {
+    this.authService.logout();
+    this.router.navigate(['/login-page']);
   }
 }
 

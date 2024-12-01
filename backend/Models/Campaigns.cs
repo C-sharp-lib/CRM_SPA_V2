@@ -19,7 +19,7 @@ namespace backend.Models
         public decimal Budget { get; set; }
         [Precision(10,2)]
         public decimal Spend { get; set; }
-        public DateTime CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
         public string TargetAudience { get; set; }
         public string Channel {  get; set; }
         public string Goals { get; set; }
