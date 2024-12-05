@@ -11,7 +11,7 @@ namespace backend.Models
         public int LeadId { get; set; }
         public Leads Lead { get; set; }
         public string UpdatedBy { get; set; }
-        public AspNetUsers UpdatedByUser { get; set; }
+        public AppUsers UpdatedByUser { get; set; }
         public DateTime UpdatedAt { get; set; }
         public DateTime CreatedAt { get; set; }
         public string FieldChanged { get; set; }

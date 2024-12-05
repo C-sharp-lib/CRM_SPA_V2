@@ -1,9 +1,10 @@
-import { Injectable } from '@angular/core';
+import {Inject, Injectable} from '@angular/core';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
 import {Observable} from 'rxjs';
 import {Router} from '@angular/router';
 import {environment} from '../../environments/environment';
 import {jwtDecode} from 'jwt-decode';
+
 
 @Injectable({
   providedIn: 'root'
@@ -21,11 +22,6 @@ export class AccountService {
   logout() {
     this.clearToken();
     this.router.navigate(['/login-page']);
-  }
-
-  isAuthenticated(): boolean {
-    const token = localStorage.getItem('token');
-    return token != null;
   }
 
   saveToken(token: string): void {
@@ -48,13 +44,13 @@ export class AccountService {
     }
     return jwtDecode(token);
   }
-  getUserData(): Observable<any> {
-    return this.http.get(`${this.baseUrl}/userData`);
-  }
   getUsers(): Observable<any> {
     return this.http.get(`${this.baseUrl}/users`);
   }
   getUserById(id: string): Observable<any> {
-    return this.http.get(`${this.baseUrl}/users/${id}`);
+    return this.http.get(`${this.baseUrl}/user-details/${id}`);
+  }
+  isAuthenticated(): boolean {
+    return !!localStorage.getItem('token');
   }
 }

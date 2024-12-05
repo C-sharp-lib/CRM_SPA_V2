@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core';
-import {AccountService} from '../../../../services';
 import {ActivatedRoute} from '@angular/router';
+import {AccountService} from '../../../../services';
 
 @Component({
   selector: 'app-user-detail',
@@ -9,12 +9,23 @@ import {ActivatedRoute} from '@angular/router';
 })
 export class UserDetailComponent implements OnInit {
   user: any;
-  userId: string | null = null;
-  constructor(private route: ActivatedRoute) {
+  errorMessage: string = '';
+  constructor(private route: ActivatedRoute, private authService: AccountService) {
   }
   ngOnInit(): void {
-    this.route.paramMap.subscribe((params) => {
-      this.userId = params.get('id');
+    this.route.params.subscribe(params => {
+      const id = params['id'];
+      this.showUser(id);
     });
   }
+
+  showUser(id: string): void {
+    this.authService.getUserById(id).subscribe(data => {
+      this.user = data;
+    }, error => {
+      this.errorMessage = "Could not fetch the user with the id: " + id;
+      console.error(error);
+    })
+  }
+
 }

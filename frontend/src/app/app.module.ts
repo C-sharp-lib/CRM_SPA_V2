@@ -10,6 +10,7 @@ import * as fromPages from './components/pages';
 import * as fromAccount from './components/account';
 import * as fromDashboardJobs from './components/dashboard/jobs';
 import * as fromDashboardCustomers from './components/dashboard/customers';
+import * as fromDashboardUsers from './components/dashboard/users';
 import * as fromServices from './services';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { CampaignsComponent } from './components/dashboard/campaigns/campaigns.component';
@@ -19,10 +20,9 @@ import { OrdersComponent } from './components/dashboard/orders/orders.component'
 import { ContactsComponent } from './components/dashboard/contacts/contacts.component';
 import { LeadsComponent } from './components/dashboard/leads/leads.component';
 import { TasksComponent } from './components/dashboard/tasks/tasks.component';
-import { UsersComponent } from './components/dashboard/users/users.component';
 import { FullCalendarModule } from '@fullcalendar/angular';
 import { DashboardMainComponent } from './components/dashboard/dashboard-main/dashboard-main.component';
-import { UserDetailComponent } from './components/dashboard/users/user-detail/user-detail.component';
+import { UserDetailFormComponent } from './components/dashboard/users/user-detail-form/user-detail-form.component';
 
 
 @NgModule({
@@ -33,6 +33,7 @@ import { UserDetailComponent } from './components/dashboard/users/user-detail/us
     ...fromDashboardJobs.components,
     ...fromAccount.components,
     ...fromDashboardCustomers.components,
+    ...fromDashboardUsers.components,
     DashboardComponent,
     CampaignsComponent,
     NotesComponent,
@@ -41,9 +42,8 @@ import { UserDetailComponent } from './components/dashboard/users/user-detail/us
     ContactsComponent,
     LeadsComponent,
     TasksComponent,
-    UsersComponent,
     DashboardMainComponent,
-    UserDetailComponent,
+    UserDetailFormComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,7 +56,7 @@ import { UserDetailComponent } from './components/dashboard/users/user-detail/us
   providers: [
     provideClientHydration(),
     provideHttpClient(withFetch()),
-    ...fromServices.services,
+    ...fromServices.services
   ],
   bootstrap: [AppComponent]
 })

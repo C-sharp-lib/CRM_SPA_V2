@@ -13,7 +13,7 @@ namespace backend.Models
         public string FileName { get; set; }
         public string FilePath { get; set; }
         public string UploadedBy { get; set; }
-        public AspNetUsers UploadedByUser { get; set; }
+        public AppUsers UploadedByUser { get; set; }
         public DateTime UploadedDate { get; set; }
     }
 }

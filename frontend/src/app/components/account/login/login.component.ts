@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Inject} from '@angular/core';
 import {AccountService} from '../../../services';
 import {Router} from '@angular/router';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
@@ -14,7 +14,7 @@ export class LoginComponent {
   isSubmitting: boolean = false;
   email: string = '';
   password: string = '';
-  rememberMe: boolean = false;
+  rememberMe: boolean = true;
   errorMessage: string = '';
   successMessage: string = '';
   isPasswordVisiblePassword: boolean = false;
@@ -23,8 +23,9 @@ export class LoginComponent {
     this.loginForm = this.fb.group({
       email: ['', [Validators.required, Validators.email]],
       password: ['', [Validators.required, Validators.minLength(6)]],
-      rememberMe: ['', Validators.required],
+      rememberMe: [true],
     });
+
   }
 
   login(): void {
@@ -36,7 +37,9 @@ export class LoginComponent {
           localStorage.setItem('token', response.token);
           this.successMessage = 'User logged in successfully.';
           this.loginForm.reset();
-          this.router.navigate(['/dashboard/dashboard-main']);
+          this.router.navigate(['/dashboard/dashboard-main']).then(() => {
+            window.location.reload();
+          });
           this.isSubmitting = false;
         },
         error => {

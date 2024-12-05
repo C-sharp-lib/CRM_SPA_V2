@@ -1,6 +1,5 @@
 import {Component, HostListener, Injectable, OnInit, PLATFORM_ID} from '@angular/core';
 import {ActivatedRoute, Router, NavigationEnd} from '@angular/router';
-import {WindowService} from '../../../services/window.service';
 import {AccountService} from '../../../services';
 
 @Component({
@@ -12,9 +11,10 @@ export class NavbarComponent implements OnInit {
   showMenu: boolean = false;
   userData: any;
   errorMessage: string = '';
-
+  isAuthenticated: boolean = false;
   constructor(private router: Router, private route: ActivatedRoute, private authService: AccountService) {}
-  ngOnInit(): void {
+  ngOnInit() {
+
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
         const childRoute = this.route.firstChild;
@@ -25,6 +25,7 @@ export class NavbarComponent implements OnInit {
         }
       }
     });
+    this.checkAuthenticationStatus();
   }
   //
   // toggleMobileMenu(): void {
@@ -51,6 +52,16 @@ export class NavbarComponent implements OnInit {
       return this.showMenu = false;
     }
   }
+  showUsersMenu(): boolean {
+    if(this.router.url === '/dashboard/users' ||
+      this.router.url === '/dashboard/users/user-list' ||
+      this.router.url === '/dashboard/users/user-create' ||
+      this.router.url === '/dashboard/users/:id') {
+      return this.showMenu = true;
+    } else {
+      return this.showMenu = false;
+    }
+  }
   showCustomersMenu(): boolean {
     if(this.router.url === '/dashboard/customers' ||
       this.router.url === '/dashboard/customers/customer-list' ||
@@ -70,25 +81,26 @@ export class NavbarComponent implements OnInit {
   }
 
   showContactsMenu(): boolean {
-    if (this.router.url == '/dasboard/contacts') {
+    if (this.router.url == '/dashboard/contacts') {
       return this.showMenu = true;
-    } else if (this.router.url === '/dasboard/contacts/contact-list') {
+    } else if (this.router.url === '/dashboard/contacts/contact-list') {
       return this.showMenu = true;
-    } else if (this.router.url === '/dasboard/contacts/contact-search') {
+    } else if (this.router.url === '/dashboard/contacts/contact-search') {
       return this.showMenu = true;
-    } else if (this.router.url === '/dasboard/contacts/contact-create') {
+    } else if (this.router.url === '/dashboard/contacts/contact-create') {
       return this.showMenu = true;
     } else {
       return this.showMenu = false;
     }
   }
-  authenticated() {
-    const token = localStorage.getItem('token');
-    return token != null;
-  }
+
   logout() {
     this.authService.logout();
     this.router.navigate(['/login-page']);
+    this.checkAuthenticationStatus();
+  }
+  checkAuthenticationStatus(): void {
+    this.isAuthenticated = this.authService.isAuthenticated();
   }
 }
 

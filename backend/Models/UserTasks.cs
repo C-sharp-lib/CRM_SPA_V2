@@ -11,6 +11,6 @@ namespace backend.Models
         public int TaskId { get; set; }
         public Tasks Task {  get; set; }
         public string UserId { get; set; }
-        public AspNetUsers User { get; set; }
+        public AppUsers User { get; set; }
     }
 }

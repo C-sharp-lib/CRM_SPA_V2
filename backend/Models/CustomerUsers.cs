@@ -11,7 +11,7 @@ namespace backend.Models
         public int CustomerUsersId { get; set; }
         [ForeignKey("UserId")]
         public string UserId { get; set; }
-        public AspNetUsers User { get; set; }
+        public AppUsers User { get; set; }
         [ForeignKey("CustomerId")]
         public int CustomerId { get; set; }
         public Customers Customer { get; set; }

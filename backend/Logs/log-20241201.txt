@@ -278,3 +278,1195 @@ FROM [AspNetUsers] AS [a]
 2024-12-01 00:03:01.402 -05:00 [DBG] Disposing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
 2024-12-01 00:03:01.408 -05:00 [DBG] Disposed connection to database '' on server '' (6ms).
 2024-12-01 00:03:01.416 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/Account/users - 200 4887 application/json; charset=utf-8 515.3803ms
+2024-12-01 00:25:11.380 -05:00 [DBG] Initializing Razor view compiler with no compiled views.
+2024-12-01 00:25:11.445 -05:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-12-01 00:25:11.543 -05:00 [DBG] Hosting starting
+2024-12-01 00:25:11.592 -05:00 [INF] User profile is available. Using 'C:\Users\strad\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-01 00:25:11.602 -05:00 [DBG] Reading data from file 'C:\Users\strad\AppData\Local\ASP.NET\DataProtection-Keys\key-9338f9b7-d73a-4445-9bd4-86fb7d486786.xml'.
+2024-12-01 00:25:11.614 -05:00 [DBG] Reading data from file 'C:\Users\strad\AppData\Local\ASP.NET\DataProtection-Keys\key-c8006c83-15ce-44d5-8fbf-153ddb6d45cd.xml'.
+2024-12-01 00:25:11.626 -05:00 [DBG] Found key {9338f9b7-d73a-4445-9bd4-86fb7d486786}.
+2024-12-01 00:25:11.639 -05:00 [DBG] Found key {c8006c83-15ce-44d5-8fbf-153ddb6d45cd}.
+2024-12-01 00:25:11.651 -05:00 [DBG] Considering key {c8006c83-15ce-44d5-8fbf-153ddb6d45cd} with expiration date 2025-02-24 18:11:44Z as default key.
+2024-12-01 00:25:11.661 -05:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-12-01 00:25:11.666 -05:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-12-01 00:25:11.670 -05:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=8.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-12-01 00:25:11.679 -05:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-12-01 00:25:11.684 -05:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-12-01 00:25:11.689 -05:00 [DBG] Using key {c8006c83-15ce-44d5-8fbf-153ddb6d45cd} as the default key.
+2024-12-01 00:25:11.692 -05:00 [DBG] Key ring with default key {c8006c83-15ce-44d5-8fbf-153ddb6d45cd} was loaded during application startup.
+2024-12-01 00:25:11.912 -05:00 [INF] Now listening on: https://localhost:7168
+2024-12-01 00:25:11.914 -05:00 [INF] Now listening on: http://localhost:5130
+2024-12-01 00:25:11.916 -05:00 [DBG] Loaded hosting startup assembly backend
+2024-12-01 00:25:11.920 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.ApiEndpointDiscovery
+2024-12-01 00:25:11.922 -05:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-12-01 00:25:11.924 -05:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-12-01 00:25:11.972 -05:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-01 00:25:11.974 -05:00 [INF] Hosting environment: Development
+2024-12-01 00:25:11.975 -05:00 [INF] Content root path: C:\Users\strad\Desktop2\UniversalCRM\backend
+2024-12-01 00:25:11.977 -05:00 [DBG] Hosting started
+2024-12-01 00:25:12.246 -05:00 [DBG] Connection id "0HN8HP23PEN5K" accepted.
+2024-12-01 00:25:12.250 -05:00 [DBG] Connection id "0HN8HP23PEN5L" accepted.
+2024-12-01 00:25:12.251 -05:00 [DBG] Connection id "0HN8HP23PEN5K" started.
+2024-12-01 00:25:12.254 -05:00 [DBG] Connection id "0HN8HP23PEN5L" started.
+2024-12-01 00:25:12.259 -05:00 [DBG] Connection id "0HN8HP23PEN5L" received FIN.
+2024-12-01 00:25:12.259 -05:00 [DBG] Connection id "0HN8HP23PEN5K" received FIN.
+2024-12-01 00:25:12.310 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-12-01 00:25:12.310 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-12-01 00:25:12.368 -05:00 [DBG] Connection id "0HN8HP23PEN5L" stopped.
+2024-12-01 00:25:12.369 -05:00 [DBG] Connection id "0HN8HP23PEN5K" stopped.
+2024-12-01 00:25:12.374 -05:00 [DBG] Connection id "0HN8HP23PEN5L" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-12-01 00:25:12.374 -05:00 [DBG] Connection id "0HN8HP23PEN5K" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-12-01 00:25:13.494 -05:00 [DBG] Connection id "0HN8HP23PEN5M" accepted.
+2024-12-01 00:25:13.497 -05:00 [DBG] Connection id "0HN8HP23PEN5M" started.
+2024-12-01 00:25:13.576 -05:00 [DBG] Connection 0HN8HP23PEN5M established using the following protocol: "Tls13"
+2024-12-01 00:25:13.661 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/index.html - null null
+2024-12-01 00:25:13.794 -05:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-12-01 00:25:13.808 -05:00 [DBG] No candidates found for the request path '/swagger/index.html'
+2024-12-01 00:25:13.811 -05:00 [DBG] Request did not match any endpoints
+2024-12-01 00:25:13.855 -05:00 [DBG] Response markup is scheduled to include Browser Link script injection.
+2024-12-01 00:25:13.858 -05:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-12-01 00:25:13.891 -05:00 [DBG] Response markup was updated to include Browser Link script injection.
+2024-12-01 00:25:13.895 -05:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-12-01 00:25:13.906 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/index.html - 200 null text/html;charset=utf-8 252.9504ms
+2024-12-01 00:25:13.909 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7168/_framework/aspnetcore-browser-refresh.js - null null
+2024-12-01 00:25:13.929 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7168/_framework/aspnetcore-browser-refresh.js - 200 13750 application/javascript; charset=utf-8 19.8945ms
+2024-12-01 00:25:13.945 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7168/_vs/browserLink - null null
+2024-12-01 00:25:14.019 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7168/_vs/browserLink - 200 null text/javascript; charset=UTF-8 74.0273ms
+2024-12-01 00:25:14.114 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - null null
+2024-12-01 00:25:14.119 -05:00 [DBG] No candidates found for the request path '/swagger/v1/swagger.json'
+2024-12-01 00:25:14.121 -05:00 [DBG] Request did not match any endpoints
+2024-12-01 00:25:14.294 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7168/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 180.6587ms
+2024-12-01 00:25:15.742 -05:00 [DBG] Connection id "0HN8HP23PEN5M" received FIN.
+2024-12-01 00:25:15.746 -05:00 [DBG] The connection queue processing loop for 0HN8HP23PEN5M completed.
+2024-12-01 00:25:15.747 -05:00 [DBG] Connection id "0HN8HP23PEN5M" is closed. The last processed stream ID was 7.
+2024-12-01 00:25:15.755 -05:00 [DBG] Connection id "0HN8HP23PEN5M" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-12-01 00:25:15.764 -05:00 [DBG] Connection id "0HN8HP23PEN5M" stopped.
+2024-12-01 00:29:55.618 -05:00 [DBG] Connection id "0HN8HP23PEN5N" accepted.
+2024-12-01 00:29:55.637 -05:00 [DBG] Connection id "0HN8HP23PEN5N" started.
+2024-12-01 00:29:55.662 -05:00 [DBG] Connection 0HN8HP23PEN5N established using the following protocol: "Tls13"
+2024-12-01 00:29:55.685 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/Account/users - null null
+2024-12-01 00:29:55.728 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Account/users'
+2024-12-01 00:29:55.744 -05:00 [DBG] Endpoint 'backend.Controllers.AccountController.GetUsers (backend)' with route pattern 'api/Account/users' is valid for the request path '/api/Account/users'
+2024-12-01 00:29:55.755 -05:00 [DBG] Request matched endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:29:55.766 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-12-01 00:29:55.774 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-12-01 00:29:55.779 -05:00 [INF] CORS policy execution successful.
+2024-12-01 00:29:55.994 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-12-01 00:29:56.003 -05:00 [INF] Executing endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:29:56.047 -05:00 [INF] Route matched with {action = "GetUsers", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[backend.Models.AspNetUsers]]] GetUsers() on controller backend.Controllers.AccountController (backend).
+2024-12-01 00:29:56.057 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-12-01 00:29:56.062 -05:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-12-01 00:29:56.066 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-12-01 00:29:56.070 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-12-01 00:29:56.074 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-12-01 00:29:56.082 -05:00 [DBG] Executing controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:29:56.325 -05:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-12-01 00:29:56.390 -05:00 [DBG] Executed controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:29:57.241 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.245 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.248 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.255 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.260 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.263 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.265 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.271 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.275 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.277 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.280 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.282 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.430 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.433 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.434 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.436 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.438 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.441 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.443 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.449 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.452 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.457 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.460 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.465 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.467 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.472 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.476 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.479 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.482 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.484 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.490 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.494 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.496 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.498 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.500 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.505 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.509 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.511 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.513 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.516 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.738 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:57.833 -05:00 [DBG] The index {'UserId'} was not created on entity type 'IdentityUserToken<string>' as the properties are already covered by the index {'UserId', 'LoginProvider', 'Name'}.
+2024-12-01 00:29:57.836 -05:00 [DBG] The index {'UserId'} was not created on entity type 'AspNetUserRoles' as the properties are already covered by the index {'UserId', 'RoleId'}.
+2024-12-01 00:29:57.839 -05:00 [DBG] The index {'TaskId'} was not created on entity type 'CampaignUserTasks' as the properties are already covered by the index {'TaskId', 'CampaignUserTaskId', 'UserId', 'CampaignId'}.
+2024-12-01 00:29:57.842 -05:00 [DBG] The index {'JobId'} was not created on entity type 'CustomerJobs' as the properties are already covered by the index {'JobId', 'CustomerId', 'CustomerJobsId'}.
+2024-12-01 00:29:57.845 -05:00 [DBG] The index {'OrderId'} was not created on entity type 'CustomerOrders' as the properties are already covered by the index {'OrderId', 'CustomerId', 'CustomerOrderId'}.
+2024-12-01 00:29:57.849 -05:00 [DBG] The index {'CustomerId'} was not created on entity type 'CustomerUsers' as the properties are already covered by the index {'CustomerId', 'UserId', 'CustomerUsersId'}.
+2024-12-01 00:29:57.851 -05:00 [DBG] The index {'LeadId'} was not created on entity type 'LeadActivities' as the properties are already covered by the index {'LeadId', 'LeadActivitiesId', 'CreatedBy'}.
+2024-12-01 00:29:57.854 -05:00 [DBG] The index {'LeadId'} was not created on entity type 'LeadHistory' as the properties are already covered by the index {'LeadId', 'LeadHistoryId', 'UpdatedBy'}.
+2024-12-01 00:29:57.856 -05:00 [DBG] The index {'OrderId'} was not created on entity type 'OrderItems' as the properties are already covered by the index {'OrderId', 'OrderItemId', 'ProductId'}.
+2024-12-01 00:29:57.858 -05:00 [DBG] The index {'TaskId'} was not created on entity type 'TaskAttachments' as the properties are already covered by the index {'TaskId', 'TaskAttachmentId', 'UploadedBy'}.
+2024-12-01 00:29:57.860 -05:00 [DBG] The index {'UserId'} was not created on entity type 'UserTasks' as the properties are already covered by the index {'UserId', 'TaskId', 'UserTaskId'}.
+2024-12-01 00:29:57.866 -05:00 [DBG] For the relationship between dependent 'CustomerRelationships.RelatedCustomer' and principal 'Customers', the foreign key properties haven't been configured by convention because the best match {'RelatedCustomerId' : string} are incompatible with the current principal key {'CustomerId' : int}. This message can be disregarded if explicit configuration has been specified in 'OnModelCreating'.
+2024-12-01 00:29:58.246 -05:00 [DBG] The property 'CustomerRelationships.RelatedCustomerCustomerId' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-12-01 00:29:58.248 -05:00 [DBG] The property 'LeadActivities.CreatedByUserId' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-12-01 00:29:58.250 -05:00 [DBG] The property 'LeadHistory.UpdatedByUserId' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-12-01 00:29:58.252 -05:00 [DBG] The property 'RefreshToken.AspNetUsersId' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-12-01 00:29:58.253 -05:00 [DBG] The property 'TaskAttachments.UploadedByUserId' was created in shadow state because there are no eligible CLR members with a matching name.
+2024-12-01 00:29:58.700 -05:00 [DBG] Entity Framework Core 8.0.0 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-12-01 00:29:58.771 -05:00 [DBG] Compiling query expression: 
+'DbSet<AspNetUsers>()'
+2024-12-01 00:29:59.072 -05:00 [DBG] Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<AspNetUsers>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> Dictionary<IProperty, int> { [Property: AspNetUsers.Id (string) Required PK AfterSave:Throw, 0], [Property: AspNetUsers.AccessFailedCount (int) Required, 1], [Property: AspNetUsers.ConcurrencyStamp (string) Concurrency, 2], [Property: AspNetUsers.DOB (DateTime?), 3], [Property: AspNetUsers.Email (string) MaxLength(256), 4], [Property: AspNetUsers.EmailConfirmed (bool) Required, 5], [Property: AspNetUsers.FirstName (string), 6], [Property: AspNetUsers.HireDate (DateTime?), 7], [Property: AspNetUsers.IsActive (bool?), 8], [Property: AspNetUsers.LastName (string), 9], [Property: AspNetUsers.LockoutEnabled (bool) Required, 10], [Property: AspNetUsers.LockoutEnd (DateTimeOffset?), 11], [Property: AspNetUsers.MiddleName (string), 12], [Property: AspNetUsers.NormalizedEmail (string) Index MaxLength(256), 13], [Property: AspNetUsers.NormalizedUserName (string) Index MaxLength(256), 14], [Property: AspNetUsers.PasswordHash (string), 15], [Property: AspNetUsers.PhoneNumber (string), 16], [Property: AspNetUsers.PhoneNumberConfirmed (bool) Required, 17], [Property: AspNetUsers.SecurityStamp (string), 18], [Property: AspNetUsers.TwoFactorEnabled (bool) Required, 19], [Property: AspNetUsers.UserName (string) MaxLength(256), 20] }
+        SELECT a.Id, a.AccessFailedCount, a.ConcurrencyStamp, a.DOB, a.Email, a.EmailConfirmed, a.FirstName, a.HireDate, a.IsActive, a.LastName, a.LockoutEnabled, a.LockoutEnd, a.MiddleName, a.NormalizedEmail, a.NormalizedUserName, a.PasswordHash, a.PhoneNumber, a.PhoneNumberConfirmed, a.SecurityStamp, a.TwoFactorEnabled, a.UserName
+        FROM AspNetUsers AS a), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, AspNetUsers>, 
+    backend.Models.ApplicationDbContext, 
+    False, 
+    False, 
+    True
+)'
+2024-12-01 00:29:59.141 -05:00 [DBG] Creating DbConnection.
+2024-12-01 00:29:59.174 -05:00 [DBG] Created DbConnection. (32ms).
+2024-12-01 00:29:59.183 -05:00 [DBG] Opening connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:30:00.848 -05:00 [DBG] Opened connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:30:00.860 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-12-01 00:30:00.873 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (11ms).
+2024-12-01 00:30:00.881 -05:00 [DBG] Initialized DbCommand for 'ExecuteReader' (22ms).
+2024-12-01 00:30:00.899 -05:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:30:00.984 -05:00 [INF] Executed DbCommand (89ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:30:01.103 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:30:01.202 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:30:01.205 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:30:01.207 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:30:01.210 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:30:01.213 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:30:01.224 -05:00 [DBG] Closing data reader to 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:30:01.238 -05:00 [DBG] A data reader for 'crm_v1' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 240ms reading results.
+2024-12-01 00:30:01.251 -05:00 [DBG] Closing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:30:01.277 -05:00 [DBG] Closed connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB' (28ms).
+2024-12-01 00:30:01.297 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-12-01 00:30:01.313 -05:00 [DBG] No information found on request to perform content negotiation.
+2024-12-01 00:30:01.323 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-12-01 00:30:01.327 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-12-01 00:30:01.331 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-12-01 00:30:01.338 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[backend.Models.AspNetUsers, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-01 00:30:01.624 -05:00 [INF] Executed action backend.Controllers.AccountController.GetUsers (backend) in 5541.2252ms
+2024-12-01 00:30:01.627 -05:00 [INF] Executed endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:30:01.636 -05:00 [DBG] 'ApplicationDbContext' disposed.
+2024-12-01 00:30:01.645 -05:00 [DBG] Disposing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:30:01.651 -05:00 [DBG] Disposed connection to database '' on server '' (6ms).
+2024-12-01 00:30:01.656 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/Account/users - 200 4919 application/json; charset=utf-8 5973.566ms
+2024-12-01 00:30:01.802 -05:00 [DBG] Connection id "0HN8HP23PEN5O" accepted.
+2024-12-01 00:30:01.805 -05:00 [DBG] Connection id "0HN8HP23PEN5O" started.
+2024-12-01 00:30:01.857 -05:00 [DBG] Connection id "0HN8HP23PEN5O" received FIN.
+2024-12-01 00:30:01.862 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-12-01 00:30:01.866 -05:00 [DBG] Connection id "0HN8HP23PEN5O" stopped.
+2024-12-01 00:30:01.868 -05:00 [DBG] Connection id "0HN8HP23PEN5O" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-12-01 00:30:02.056 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/Account/users - null null
+2024-12-01 00:30:02.069 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Account/users'
+2024-12-01 00:30:02.073 -05:00 [DBG] Endpoint 'backend.Controllers.AccountController.GetUsers (backend)' with route pattern 'api/Account/users' is valid for the request path '/api/Account/users'
+2024-12-01 00:30:02.079 -05:00 [DBG] Request matched endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:30:02.087 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-12-01 00:30:02.092 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-12-01 00:30:02.096 -05:00 [INF] CORS policy execution successful.
+2024-12-01 00:30:02.103 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-12-01 00:30:02.111 -05:00 [INF] Executing endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:30:02.116 -05:00 [INF] Route matched with {action = "GetUsers", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[backend.Models.AspNetUsers]]] GetUsers() on controller backend.Controllers.AccountController (backend).
+2024-12-01 00:30:02.123 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-12-01 00:30:02.130 -05:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-12-01 00:30:02.136 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-12-01 00:30:02.146 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-12-01 00:30:02.152 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-12-01 00:30:02.160 -05:00 [DBG] Executing controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:30:02.172 -05:00 [DBG] Executed controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:30:02.208 -05:00 [DBG] Entity Framework Core 8.0.0 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-12-01 00:30:02.216 -05:00 [DBG] Creating DbConnection.
+2024-12-01 00:30:02.220 -05:00 [DBG] Created DbConnection. (3ms).
+2024-12-01 00:30:02.223 -05:00 [DBG] Opening connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:30:02.229 -05:00 [DBG] Opened connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:30:02.232 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-12-01 00:30:02.235 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2024-12-01 00:30:02.239 -05:00 [DBG] Initialized DbCommand for 'ExecuteReader' (6ms).
+2024-12-01 00:30:02.244 -05:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:30:02.267 -05:00 [INF] Executed DbCommand (24ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:30:02.272 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:30:02.276 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:30:02.279 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:30:02.282 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:30:02.284 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:30:02.286 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:30:02.288 -05:00 [DBG] Closing data reader to 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:30:02.291 -05:00 [DBG] A data reader for 'crm_v1' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 19ms reading results.
+2024-12-01 00:30:02.295 -05:00 [DBG] Closing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:30:02.298 -05:00 [DBG] Closed connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB' (2ms).
+2024-12-01 00:30:02.301 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-12-01 00:30:02.307 -05:00 [DBG] No information found on request to perform content negotiation.
+2024-12-01 00:30:02.309 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-12-01 00:30:02.311 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-12-01 00:30:02.314 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-12-01 00:30:02.317 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[backend.Models.AspNetUsers, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-01 00:30:02.327 -05:00 [INF] Executed action backend.Controllers.AccountController.GetUsers (backend) in 167.601ms
+2024-12-01 00:30:02.333 -05:00 [INF] Executed endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:30:02.338 -05:00 [DBG] 'ApplicationDbContext' disposed.
+2024-12-01 00:30:02.344 -05:00 [DBG] Disposing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:30:02.351 -05:00 [DBG] Disposed connection to database '' on server '' (7ms).
+2024-12-01 00:30:02.358 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/Account/users - 200 4919 application/json; charset=utf-8 303.4314ms
+2024-12-01 00:32:12.334 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/Account/users - null null
+2024-12-01 00:32:12.356 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Account/users'
+2024-12-01 00:32:12.358 -05:00 [DBG] Endpoint 'backend.Controllers.AccountController.GetUsers (backend)' with route pattern 'api/Account/users' is valid for the request path '/api/Account/users'
+2024-12-01 00:32:12.361 -05:00 [DBG] Request matched endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:32:12.363 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-12-01 00:32:12.366 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-12-01 00:32:12.368 -05:00 [INF] CORS policy execution successful.
+2024-12-01 00:32:12.375 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-12-01 00:32:12.378 -05:00 [INF] Executing endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:32:12.382 -05:00 [INF] Route matched with {action = "GetUsers", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[backend.Models.AspNetUsers]]] GetUsers() on controller backend.Controllers.AccountController (backend).
+2024-12-01 00:32:12.388 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-12-01 00:32:12.393 -05:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-12-01 00:32:12.397 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-12-01 00:32:12.400 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-12-01 00:32:12.403 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-12-01 00:32:12.406 -05:00 [DBG] Executing controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:32:12.434 -05:00 [DBG] Executed controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:32:12.554 -05:00 [DBG] Entity Framework Core 8.0.0 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-12-01 00:32:12.559 -05:00 [DBG] Creating DbConnection.
+2024-12-01 00:32:12.561 -05:00 [DBG] Created DbConnection. (2ms).
+2024-12-01 00:32:12.563 -05:00 [DBG] Opening connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:32:12.565 -05:00 [DBG] Opened connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:32:12.567 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-12-01 00:32:12.569 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-12-01 00:32:12.572 -05:00 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2024-12-01 00:32:12.575 -05:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:32:12.582 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:32:12.586 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:32:12.590 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:32:12.593 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:32:12.595 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:32:12.598 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:32:12.600 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:32:12.602 -05:00 [DBG] Closing data reader to 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:32:12.604 -05:00 [DBG] A data reader for 'crm_v1' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 18ms reading results.
+2024-12-01 00:32:12.606 -05:00 [DBG] Closing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:32:12.608 -05:00 [DBG] Closed connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB' (1ms).
+2024-12-01 00:32:12.611 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-12-01 00:32:12.614 -05:00 [DBG] No information found on request to perform content negotiation.
+2024-12-01 00:32:12.615 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-12-01 00:32:12.617 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-12-01 00:32:12.618 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-12-01 00:32:12.620 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[backend.Models.AspNetUsers, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-01 00:32:12.626 -05:00 [INF] Executed action backend.Controllers.AccountController.GetUsers (backend) in 220.1095ms
+2024-12-01 00:32:12.633 -05:00 [INF] Executed endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:32:12.635 -05:00 [DBG] 'ApplicationDbContext' disposed.
+2024-12-01 00:32:12.637 -05:00 [DBG] Disposing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:32:12.639 -05:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-12-01 00:32:12.642 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/Account/users - 200 4919 application/json; charset=utf-8 313.7334ms
+2024-12-01 00:32:24.855 -05:00 [DBG] Connection id "0HN8HP23PEN5P" accepted.
+2024-12-01 00:32:24.857 -05:00 [DBG] Connection id "0HN8HP23PEN5P" started.
+2024-12-01 00:32:24.867 -05:00 [DBG] Connection id "0HN8HP23PEN5P" received FIN.
+2024-12-01 00:32:24.871 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-12-01 00:32:24.877 -05:00 [DBG] Connection id "0HN8HP23PEN5P" stopped.
+2024-12-01 00:32:24.879 -05:00 [DBG] Connection id "0HN8HP23PEN5P" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-12-01 00:32:25.109 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/Account/users - null null
+2024-12-01 00:32:25.116 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Account/users'
+2024-12-01 00:32:25.120 -05:00 [DBG] Endpoint 'backend.Controllers.AccountController.GetUsers (backend)' with route pattern 'api/Account/users' is valid for the request path '/api/Account/users'
+2024-12-01 00:32:25.125 -05:00 [DBG] Request matched endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:32:25.129 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-12-01 00:32:25.132 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-12-01 00:32:25.137 -05:00 [INF] CORS policy execution successful.
+2024-12-01 00:32:25.139 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-12-01 00:32:25.141 -05:00 [INF] Executing endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:32:25.144 -05:00 [INF] Route matched with {action = "GetUsers", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[backend.Models.AspNetUsers]]] GetUsers() on controller backend.Controllers.AccountController (backend).
+2024-12-01 00:32:25.152 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-12-01 00:32:25.157 -05:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-12-01 00:32:25.162 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-12-01 00:32:25.168 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-12-01 00:32:25.172 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-12-01 00:32:25.178 -05:00 [DBG] Executing controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:32:25.183 -05:00 [DBG] Executed controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:32:25.188 -05:00 [DBG] Entity Framework Core 8.0.0 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-12-01 00:32:25.194 -05:00 [DBG] Creating DbConnection.
+2024-12-01 00:32:25.195 -05:00 [DBG] Created DbConnection. (1ms).
+2024-12-01 00:32:25.198 -05:00 [DBG] Opening connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:32:25.202 -05:00 [DBG] Opened connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:32:25.206 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-12-01 00:32:25.210 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2024-12-01 00:32:25.216 -05:00 [DBG] Initialized DbCommand for 'ExecuteReader' (9ms).
+2024-12-01 00:32:25.221 -05:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:32:25.243 -05:00 [INF] Executed DbCommand (21ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:32:25.254 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:32:25.257 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:32:25.261 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:32:25.263 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:32:25.266 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:32:25.269 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:32:25.272 -05:00 [DBG] Closing data reader to 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:32:25.275 -05:00 [DBG] A data reader for 'crm_v1' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 21ms reading results.
+2024-12-01 00:32:25.278 -05:00 [DBG] Closing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:32:25.280 -05:00 [DBG] Closed connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB' (2ms).
+2024-12-01 00:32:25.283 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-12-01 00:32:25.286 -05:00 [DBG] No information found on request to perform content negotiation.
+2024-12-01 00:32:25.288 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-12-01 00:32:25.289 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-12-01 00:32:25.291 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-12-01 00:32:25.293 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[backend.Models.AspNetUsers, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-01 00:32:25.298 -05:00 [INF] Executed action backend.Controllers.AccountController.GetUsers (backend) in 120.295ms
+2024-12-01 00:32:25.306 -05:00 [INF] Executed endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:32:25.308 -05:00 [DBG] 'ApplicationDbContext' disposed.
+2024-12-01 00:32:25.310 -05:00 [DBG] Disposing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:32:25.313 -05:00 [DBG] Disposed connection to database '' on server '' (2ms).
+2024-12-01 00:32:25.316 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/Account/users - 200 4919 application/json; charset=utf-8 208.4614ms
+2024-12-01 00:32:38.172 -05:00 [DBG] Connection id "0HN8HP23PEN5Q" accepted.
+2024-12-01 00:32:38.175 -05:00 [DBG] Connection id "0HN8HP23PEN5Q" started.
+2024-12-01 00:32:38.183 -05:00 [DBG] Connection id "0HN8HP23PEN5Q" received FIN.
+2024-12-01 00:32:38.186 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-12-01 00:32:38.198 -05:00 [DBG] Connection id "0HN8HP23PEN5Q" stopped.
+2024-12-01 00:32:38.202 -05:00 [DBG] Connection id "0HN8HP23PEN5Q" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-12-01 00:32:38.364 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/Account/users - null null
+2024-12-01 00:32:38.370 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Account/users'
+2024-12-01 00:32:38.373 -05:00 [DBG] Endpoint 'backend.Controllers.AccountController.GetUsers (backend)' with route pattern 'api/Account/users' is valid for the request path '/api/Account/users'
+2024-12-01 00:32:38.376 -05:00 [DBG] Request matched endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:32:38.378 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-12-01 00:32:38.380 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-12-01 00:32:38.382 -05:00 [INF] CORS policy execution successful.
+2024-12-01 00:32:38.384 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-12-01 00:32:38.387 -05:00 [INF] Executing endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:32:38.388 -05:00 [INF] Route matched with {action = "GetUsers", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[backend.Models.AspNetUsers]]] GetUsers() on controller backend.Controllers.AccountController (backend).
+2024-12-01 00:32:38.393 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-12-01 00:32:38.398 -05:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-12-01 00:32:38.402 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-12-01 00:32:38.406 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-12-01 00:32:38.408 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-12-01 00:32:38.411 -05:00 [DBG] Executing controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:32:38.413 -05:00 [DBG] Executed controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:32:38.416 -05:00 [DBG] Entity Framework Core 8.0.0 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-12-01 00:32:38.420 -05:00 [DBG] Creating DbConnection.
+2024-12-01 00:32:38.421 -05:00 [DBG] Created DbConnection. (1ms).
+2024-12-01 00:32:38.424 -05:00 [DBG] Opening connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:32:38.426 -05:00 [DBG] Opened connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:32:38.428 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-12-01 00:32:38.429 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-12-01 00:32:38.431 -05:00 [DBG] Initialized DbCommand for 'ExecuteReader' (3ms).
+2024-12-01 00:32:38.433 -05:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:32:38.439 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:32:38.443 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:32:38.445 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:32:38.448 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:32:38.450 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:32:38.452 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:32:38.454 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:32:38.456 -05:00 [DBG] Closing data reader to 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:32:38.458 -05:00 [DBG] A data reader for 'crm_v1' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 15ms reading results.
+2024-12-01 00:32:38.460 -05:00 [DBG] Closing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:32:38.462 -05:00 [DBG] Closed connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB' (2ms).
+2024-12-01 00:32:38.465 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-12-01 00:32:38.468 -05:00 [DBG] No information found on request to perform content negotiation.
+2024-12-01 00:32:38.469 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-12-01 00:32:38.470 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-12-01 00:32:38.471 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-12-01 00:32:38.474 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[backend.Models.AspNetUsers, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-01 00:32:38.480 -05:00 [INF] Executed action backend.Controllers.AccountController.GetUsers (backend) in 69.2403ms
+2024-12-01 00:32:38.484 -05:00 [INF] Executed endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:32:38.486 -05:00 [DBG] 'ApplicationDbContext' disposed.
+2024-12-01 00:32:38.487 -05:00 [DBG] Disposing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:32:38.489 -05:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-12-01 00:32:38.491 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/Account/users - 200 4919 application/json; charset=utf-8 127.8197ms
+2024-12-01 00:34:47.076 -05:00 [DBG] Connection id "0HN8HP23PEN5R" accepted.
+2024-12-01 00:34:47.088 -05:00 [DBG] Connection id "0HN8HP23PEN5R" started.
+2024-12-01 00:34:47.098 -05:00 [DBG] Connection id "0HN8HP23PEN5R" received FIN.
+2024-12-01 00:34:47.103 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-12-01 00:34:47.113 -05:00 [DBG] Connection id "0HN8HP23PEN5R" stopped.
+2024-12-01 00:34:47.118 -05:00 [DBG] Connection id "0HN8HP23PEN5R" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-12-01 00:34:47.390 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/Account/users - null null
+2024-12-01 00:34:47.421 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Account/users'
+2024-12-01 00:34:47.428 -05:00 [DBG] Endpoint 'backend.Controllers.AccountController.GetUsers (backend)' with route pattern 'api/Account/users' is valid for the request path '/api/Account/users'
+2024-12-01 00:34:47.433 -05:00 [DBG] Request matched endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:34:47.437 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-12-01 00:34:47.444 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-12-01 00:34:47.449 -05:00 [INF] CORS policy execution successful.
+2024-12-01 00:34:47.451 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-12-01 00:34:47.454 -05:00 [INF] Executing endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:34:47.457 -05:00 [INF] Route matched with {action = "GetUsers", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[backend.Models.AspNetUsers]]] GetUsers() on controller backend.Controllers.AccountController (backend).
+2024-12-01 00:34:47.465 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-12-01 00:34:47.467 -05:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-12-01 00:34:47.470 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-12-01 00:34:47.476 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-12-01 00:34:47.479 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-12-01 00:34:47.482 -05:00 [DBG] Executing controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:34:47.484 -05:00 [DBG] Executed controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:34:47.487 -05:00 [DBG] Entity Framework Core 8.0.0 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-12-01 00:34:47.494 -05:00 [DBG] Creating DbConnection.
+2024-12-01 00:34:47.496 -05:00 [DBG] Created DbConnection. (2ms).
+2024-12-01 00:34:47.498 -05:00 [DBG] Opening connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:34:47.501 -05:00 [DBG] Opened connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:34:47.507 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-12-01 00:34:47.511 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (3ms).
+2024-12-01 00:34:47.515 -05:00 [DBG] Initialized DbCommand for 'ExecuteReader' (7ms).
+2024-12-01 00:34:47.518 -05:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:34:47.528 -05:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:34:47.537 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:34:47.541 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:34:47.544 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:34:47.549 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:34:47.552 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:34:47.557 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:34:47.560 -05:00 [DBG] Closing data reader to 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:34:47.562 -05:00 [DBG] A data reader for 'crm_v1' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 26ms reading results.
+2024-12-01 00:34:47.565 -05:00 [DBG] Closing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:34:47.568 -05:00 [DBG] Closed connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB' (2ms).
+2024-12-01 00:34:47.571 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-12-01 00:34:47.575 -05:00 [DBG] No information found on request to perform content negotiation.
+2024-12-01 00:34:47.577 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-12-01 00:34:47.578 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-12-01 00:34:47.580 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-12-01 00:34:47.582 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[backend.Models.AspNetUsers, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-01 00:34:47.589 -05:00 [INF] Executed action backend.Controllers.AccountController.GetUsers (backend) in 107.3808ms
+2024-12-01 00:34:47.613 -05:00 [INF] Executed endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:34:47.616 -05:00 [DBG] 'ApplicationDbContext' disposed.
+2024-12-01 00:34:47.620 -05:00 [DBG] Disposing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:34:47.624 -05:00 [DBG] Disposed connection to database '' on server '' (4ms).
+2024-12-01 00:34:47.629 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/Account/users - 200 4919 application/json; charset=utf-8 239.752ms
+2024-12-01 00:34:54.362 -05:00 [DBG] Connection id "0HN8HP23PEN5S" accepted.
+2024-12-01 00:34:54.365 -05:00 [DBG] Connection id "0HN8HP23PEN5S" started.
+2024-12-01 00:34:54.375 -05:00 [DBG] Connection id "0HN8HP23PEN5S" received FIN.
+2024-12-01 00:34:54.378 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-12-01 00:34:54.383 -05:00 [DBG] Connection id "0HN8HP23PEN5S" stopped.
+2024-12-01 00:34:54.387 -05:00 [DBG] Connection id "0HN8HP23PEN5S" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-12-01 00:34:54.584 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/Account/users - null null
+2024-12-01 00:34:54.587 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Account/users'
+2024-12-01 00:34:54.590 -05:00 [DBG] Endpoint 'backend.Controllers.AccountController.GetUsers (backend)' with route pattern 'api/Account/users' is valid for the request path '/api/Account/users'
+2024-12-01 00:34:54.594 -05:00 [DBG] Request matched endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:34:54.595 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-12-01 00:34:54.597 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-12-01 00:34:54.598 -05:00 [INF] CORS policy execution successful.
+2024-12-01 00:34:54.600 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-12-01 00:34:54.602 -05:00 [INF] Executing endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:34:54.605 -05:00 [INF] Route matched with {action = "GetUsers", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[backend.Models.AspNetUsers]]] GetUsers() on controller backend.Controllers.AccountController (backend).
+2024-12-01 00:34:54.609 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-12-01 00:34:54.613 -05:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-12-01 00:34:54.616 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-12-01 00:34:54.620 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-12-01 00:34:54.628 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-12-01 00:34:54.632 -05:00 [DBG] Executing controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:34:54.636 -05:00 [DBG] Executed controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:34:54.640 -05:00 [DBG] Entity Framework Core 8.0.0 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-12-01 00:34:54.646 -05:00 [DBG] Creating DbConnection.
+2024-12-01 00:34:54.648 -05:00 [DBG] Created DbConnection. (1ms).
+2024-12-01 00:34:54.650 -05:00 [DBG] Opening connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:34:54.653 -05:00 [DBG] Opened connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:34:54.657 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-12-01 00:34:54.659 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2024-12-01 00:34:54.662 -05:00 [DBG] Initialized DbCommand for 'ExecuteReader' (5ms).
+2024-12-01 00:34:54.664 -05:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:34:54.673 -05:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:34:54.679 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:34:54.683 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:34:54.686 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:34:54.689 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:34:54.692 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:34:54.695 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:34:54.698 -05:00 [DBG] Closing data reader to 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:34:54.701 -05:00 [DBG] A data reader for 'crm_v1' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 21ms reading results.
+2024-12-01 00:34:54.704 -05:00 [DBG] Closing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:34:54.707 -05:00 [DBG] Closed connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB' (2ms).
+2024-12-01 00:34:54.711 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-12-01 00:34:54.718 -05:00 [DBG] No information found on request to perform content negotiation.
+2024-12-01 00:34:54.720 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-12-01 00:34:54.722 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-12-01 00:34:54.728 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-12-01 00:34:54.732 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[backend.Models.AspNetUsers, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-01 00:34:54.738 -05:00 [INF] Executed action backend.Controllers.AccountController.GetUsers (backend) in 105.4379ms
+2024-12-01 00:34:54.744 -05:00 [INF] Executed endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:34:54.750 -05:00 [DBG] 'ApplicationDbContext' disposed.
+2024-12-01 00:34:54.753 -05:00 [DBG] Disposing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:34:54.761 -05:00 [DBG] Disposed connection to database '' on server '' (7ms).
+2024-12-01 00:34:54.767 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/Account/users - 200 4919 application/json; charset=utf-8 183.513ms
+2024-12-01 00:35:29.998 -05:00 [DBG] Connection id "0HN8HP23PEN5T" accepted.
+2024-12-01 00:35:30.000 -05:00 [DBG] Connection id "0HN8HP23PEN5T" started.
+2024-12-01 00:35:30.006 -05:00 [DBG] Connection id "0HN8HP23PEN5T" received FIN.
+2024-12-01 00:35:30.009 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-12-01 00:35:30.013 -05:00 [DBG] Connection id "0HN8HP23PEN5T" stopped.
+2024-12-01 00:35:30.016 -05:00 [DBG] Connection id "0HN8HP23PEN5T" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-12-01 00:35:30.313 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/Account/users - null null
+2024-12-01 00:35:30.332 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Account/users'
+2024-12-01 00:35:30.335 -05:00 [DBG] Endpoint 'backend.Controllers.AccountController.GetUsers (backend)' with route pattern 'api/Account/users' is valid for the request path '/api/Account/users'
+2024-12-01 00:35:30.337 -05:00 [DBG] Request matched endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:35:30.338 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-12-01 00:35:30.339 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-12-01 00:35:30.341 -05:00 [INF] CORS policy execution successful.
+2024-12-01 00:35:30.342 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-12-01 00:35:30.343 -05:00 [INF] Executing endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:35:30.345 -05:00 [INF] Route matched with {action = "GetUsers", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[backend.Models.AspNetUsers]]] GetUsers() on controller backend.Controllers.AccountController (backend).
+2024-12-01 00:35:30.347 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-12-01 00:35:30.349 -05:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-12-01 00:35:30.351 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-12-01 00:35:30.353 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-12-01 00:35:30.355 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-12-01 00:35:30.357 -05:00 [DBG] Executing controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:35:30.360 -05:00 [DBG] Executed controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:35:30.362 -05:00 [DBG] Entity Framework Core 8.0.0 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-12-01 00:35:30.365 -05:00 [DBG] Creating DbConnection.
+2024-12-01 00:35:30.366 -05:00 [DBG] Created DbConnection. (1ms).
+2024-12-01 00:35:30.367 -05:00 [DBG] Opening connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:35:30.369 -05:00 [DBG] Opened connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:35:30.370 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-12-01 00:35:30.372 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-12-01 00:35:30.373 -05:00 [DBG] Initialized DbCommand for 'ExecuteReader' (2ms).
+2024-12-01 00:35:30.375 -05:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:35:30.380 -05:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:35:30.388 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:35:30.390 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:35:30.392 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:35:30.394 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:35:30.396 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:35:30.398 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:35:30.399 -05:00 [DBG] Closing data reader to 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:35:30.401 -05:00 [DBG] A data reader for 'crm_v1' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 12ms reading results.
+2024-12-01 00:35:30.402 -05:00 [DBG] Closing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:35:30.404 -05:00 [DBG] Closed connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB' (1ms).
+2024-12-01 00:35:30.406 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-12-01 00:35:30.409 -05:00 [DBG] No information found on request to perform content negotiation.
+2024-12-01 00:35:30.410 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-12-01 00:35:30.411 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-12-01 00:35:30.412 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-12-01 00:35:30.414 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[backend.Models.AspNetUsers, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-01 00:35:30.417 -05:00 [INF] Executed action backend.Controllers.AccountController.GetUsers (backend) in 59.7174ms
+2024-12-01 00:35:30.419 -05:00 [INF] Executed endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:35:30.420 -05:00 [DBG] 'ApplicationDbContext' disposed.
+2024-12-01 00:35:30.422 -05:00 [DBG] Disposing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:35:30.424 -05:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-12-01 00:35:30.426 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/Account/users - 200 4919 application/json; charset=utf-8 113.0499ms
+2024-12-01 00:35:59.115 -05:00 [DBG] Connection id "0HN8HP23PEN5U" accepted.
+2024-12-01 00:35:59.120 -05:00 [DBG] Connection id "0HN8HP23PEN5U" started.
+2024-12-01 00:35:59.127 -05:00 [DBG] Connection id "0HN8HP23PEN5U" received FIN.
+2024-12-01 00:35:59.130 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-12-01 00:35:59.136 -05:00 [DBG] Connection id "0HN8HP23PEN5U" stopped.
+2024-12-01 00:35:59.138 -05:00 [DBG] Connection id "0HN8HP23PEN5U" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-12-01 00:35:59.437 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/Account/users - null null
+2024-12-01 00:35:59.447 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Account/users'
+2024-12-01 00:35:59.449 -05:00 [DBG] Endpoint 'backend.Controllers.AccountController.GetUsers (backend)' with route pattern 'api/Account/users' is valid for the request path '/api/Account/users'
+2024-12-01 00:35:59.453 -05:00 [DBG] Request matched endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:35:59.455 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-12-01 00:35:59.456 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-12-01 00:35:59.458 -05:00 [INF] CORS policy execution successful.
+2024-12-01 00:35:59.459 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-12-01 00:35:59.461 -05:00 [INF] Executing endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:35:59.462 -05:00 [INF] Route matched with {action = "GetUsers", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[backend.Models.AspNetUsers]]] GetUsers() on controller backend.Controllers.AccountController (backend).
+2024-12-01 00:35:59.465 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-12-01 00:35:59.467 -05:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-12-01 00:35:59.470 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-12-01 00:35:59.473 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-12-01 00:35:59.475 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-12-01 00:35:59.478 -05:00 [DBG] Executing controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:35:59.480 -05:00 [DBG] Executed controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:35:59.482 -05:00 [DBG] Entity Framework Core 8.0.0 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-12-01 00:35:59.485 -05:00 [DBG] Creating DbConnection.
+2024-12-01 00:35:59.486 -05:00 [DBG] Created DbConnection. (1ms).
+2024-12-01 00:35:59.489 -05:00 [DBG] Opening connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:35:59.491 -05:00 [DBG] Opened connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:35:59.492 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-12-01 00:35:59.494 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-12-01 00:35:59.496 -05:00 [DBG] Initialized DbCommand for 'ExecuteReader' (3ms).
+2024-12-01 00:35:59.497 -05:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:35:59.504 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:35:59.512 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:35:59.513 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:35:59.515 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:35:59.517 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:35:59.519 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:35:59.522 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:35:59.523 -05:00 [DBG] Closing data reader to 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:35:59.525 -05:00 [DBG] A data reader for 'crm_v1' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 13ms reading results.
+2024-12-01 00:35:59.527 -05:00 [DBG] Closing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:35:59.529 -05:00 [DBG] Closed connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB' (1ms).
+2024-12-01 00:35:59.531 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-12-01 00:35:59.534 -05:00 [DBG] No information found on request to perform content negotiation.
+2024-12-01 00:35:59.535 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-12-01 00:35:59.536 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-12-01 00:35:59.537 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-12-01 00:35:59.539 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[backend.Models.AspNetUsers, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-01 00:35:59.542 -05:00 [INF] Executed action backend.Controllers.AccountController.GetUsers (backend) in 63.9698ms
+2024-12-01 00:35:59.547 -05:00 [INF] Executed endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:35:59.550 -05:00 [DBG] 'ApplicationDbContext' disposed.
+2024-12-01 00:35:59.552 -05:00 [DBG] Disposing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:35:59.554 -05:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-12-01 00:35:59.555 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/Account/users - 200 4919 application/json; charset=utf-8 118.2077ms
+2024-12-01 00:50:23.014 -05:00 [DBG] Connection id "0HN8HP23PEN5V" accepted.
+2024-12-01 00:50:23.028 -05:00 [DBG] Connection id "0HN8HP23PEN5V" started.
+2024-12-01 00:50:23.090 -05:00 [DBG] Connection id "0HN8HP23PEN5V" received FIN.
+2024-12-01 00:50:23.094 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-12-01 00:50:23.098 -05:00 [DBG] Connection id "0HN8HP23PEN5V" stopped.
+2024-12-01 00:50:23.100 -05:00 [DBG] Connection id "0HN8HP23PEN5V" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-12-01 00:50:23.546 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/Account/users - null null
+2024-12-01 00:50:23.580 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Account/users'
+2024-12-01 00:50:23.585 -05:00 [DBG] Endpoint 'backend.Controllers.AccountController.GetUsers (backend)' with route pattern 'api/Account/users' is valid for the request path '/api/Account/users'
+2024-12-01 00:50:23.592 -05:00 [DBG] Request matched endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:50:23.598 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-12-01 00:50:23.602 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-12-01 00:50:23.607 -05:00 [INF] CORS policy execution successful.
+2024-12-01 00:50:23.612 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-12-01 00:50:23.616 -05:00 [INF] Executing endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:50:23.619 -05:00 [INF] Route matched with {action = "GetUsers", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[backend.Models.AspNetUsers]]] GetUsers() on controller backend.Controllers.AccountController (backend).
+2024-12-01 00:50:23.627 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-12-01 00:50:23.630 -05:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-12-01 00:50:23.634 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-12-01 00:50:23.638 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-12-01 00:50:23.644 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-12-01 00:50:23.647 -05:00 [DBG] Executing controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:50:23.651 -05:00 [DBG] Executed controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:50:23.657 -05:00 [DBG] Entity Framework Core 8.0.0 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-12-01 00:50:23.663 -05:00 [DBG] Creating DbConnection.
+2024-12-01 00:50:23.666 -05:00 [DBG] Created DbConnection. (2ms).
+2024-12-01 00:50:23.670 -05:00 [DBG] Opening connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:50:24.781 -05:00 [DBG] Opened connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:50:24.789 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-12-01 00:50:24.790 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-12-01 00:50:24.794 -05:00 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2024-12-01 00:50:24.795 -05:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:50:24.805 -05:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:50:24.816 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:50:24.819 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:50:24.820 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:50:24.826 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:50:24.829 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:50:24.832 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:50:24.833 -05:00 [DBG] Closing data reader to 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:50:24.835 -05:00 [DBG] A data reader for 'crm_v1' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 19ms reading results.
+2024-12-01 00:50:24.837 -05:00 [DBG] Closing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:50:24.842 -05:00 [DBG] Closed connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB' (5ms).
+2024-12-01 00:50:24.845 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-12-01 00:50:24.847 -05:00 [DBG] No information found on request to perform content negotiation.
+2024-12-01 00:50:24.848 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-12-01 00:50:24.849 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-12-01 00:50:24.850 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-12-01 00:50:24.851 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[backend.Models.AspNetUsers, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-01 00:50:24.855 -05:00 [INF] Executed action backend.Controllers.AccountController.GetUsers (backend) in 1208.1186ms
+2024-12-01 00:50:24.862 -05:00 [INF] Executed endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:50:24.864 -05:00 [DBG] 'ApplicationDbContext' disposed.
+2024-12-01 00:50:24.866 -05:00 [DBG] Disposing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:50:24.867 -05:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-12-01 00:50:24.869 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/Account/users - 200 4919 application/json; charset=utf-8 1325.5231ms
+2024-12-01 00:50:28.561 -05:00 [DBG] Connection id "0HN8HP23PEN60" accepted.
+2024-12-01 00:50:28.562 -05:00 [DBG] Connection id "0HN8HP23PEN60" started.
+2024-12-01 00:50:28.575 -05:00 [DBG] Connection id "0HN8HP23PEN60" received FIN.
+2024-12-01 00:50:28.580 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-12-01 00:50:28.584 -05:00 [DBG] Connection id "0HN8HP23PEN60" stopped.
+2024-12-01 00:50:28.588 -05:00 [DBG] Connection id "0HN8HP23PEN60" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-12-01 00:50:28.881 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/Account/users - null null
+2024-12-01 00:50:28.896 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Account/users'
+2024-12-01 00:50:28.903 -05:00 [DBG] Endpoint 'backend.Controllers.AccountController.GetUsers (backend)' with route pattern 'api/Account/users' is valid for the request path '/api/Account/users'
+2024-12-01 00:50:28.911 -05:00 [DBG] Request matched endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:50:28.915 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-12-01 00:50:28.918 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-12-01 00:50:28.922 -05:00 [INF] CORS policy execution successful.
+2024-12-01 00:50:28.927 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-12-01 00:50:28.932 -05:00 [INF] Executing endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:50:28.937 -05:00 [INF] Route matched with {action = "GetUsers", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[backend.Models.AspNetUsers]]] GetUsers() on controller backend.Controllers.AccountController (backend).
+2024-12-01 00:50:28.949 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-12-01 00:50:28.956 -05:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-12-01 00:50:28.964 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-12-01 00:50:28.974 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-12-01 00:50:28.978 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-12-01 00:50:28.981 -05:00 [DBG] Executing controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:50:28.983 -05:00 [DBG] Executed controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:50:28.987 -05:00 [DBG] Entity Framework Core 8.0.0 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-12-01 00:50:28.991 -05:00 [DBG] Creating DbConnection.
+2024-12-01 00:50:28.992 -05:00 [DBG] Created DbConnection. (1ms).
+2024-12-01 00:50:28.994 -05:00 [DBG] Opening connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:50:28.996 -05:00 [DBG] Opened connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:50:28.998 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-12-01 00:50:29.000 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-12-01 00:50:29.003 -05:00 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2024-12-01 00:50:29.007 -05:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:50:29.015 -05:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:50:29.025 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:50:29.030 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:50:29.036 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:50:29.041 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:50:29.045 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:50:29.051 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:50:29.055 -05:00 [DBG] Closing data reader to 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:50:29.060 -05:00 [DBG] A data reader for 'crm_v1' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 35ms reading results.
+2024-12-01 00:50:29.066 -05:00 [DBG] Closing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:50:29.072 -05:00 [DBG] Closed connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB' (5ms).
+2024-12-01 00:50:29.079 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-12-01 00:50:29.086 -05:00 [DBG] No information found on request to perform content negotiation.
+2024-12-01 00:50:29.090 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-12-01 00:50:29.094 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-12-01 00:50:29.097 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-12-01 00:50:29.101 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[backend.Models.AspNetUsers, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-01 00:50:29.113 -05:00 [INF] Executed action backend.Controllers.AccountController.GetUsers (backend) in 131.9742ms
+2024-12-01 00:50:29.145 -05:00 [INF] Executed endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:50:29.149 -05:00 [DBG] 'ApplicationDbContext' disposed.
+2024-12-01 00:50:29.154 -05:00 [DBG] Disposing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:50:29.161 -05:00 [DBG] Disposed connection to database '' on server '' (7ms).
+2024-12-01 00:50:29.167 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/Account/users - 200 4919 application/json; charset=utf-8 288.4019ms
+2024-12-01 00:50:59.317 -05:00 [INF] Request starting HTTP/2 OPTIONS https://localhost:7168/api/Account/login - null null
+2024-12-01 00:50:59.329 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Account/login'
+2024-12-01 00:50:59.332 -05:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2024-12-01 00:50:59.335 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-12-01 00:50:59.338 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-12-01 00:50:59.340 -05:00 [INF] CORS policy execution successful.
+2024-12-01 00:50:59.343 -05:00 [DBG] The request is a preflight request.
+2024-12-01 00:50:59.347 -05:00 [INF] Request finished HTTP/2 OPTIONS https://localhost:7168/api/Account/login - 204 null null 34.3672ms
+2024-12-01 00:50:59.352 -05:00 [INF] Request starting HTTP/2 POST https://localhost:7168/api/Account/login - application/json 74
+2024-12-01 00:50:59.360 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Account/login'
+2024-12-01 00:50:59.363 -05:00 [DBG] Endpoint 'backend.Controllers.AccountController.Login (backend)' with route pattern 'api/Account/login' is valid for the request path '/api/Account/login'
+2024-12-01 00:50:59.367 -05:00 [DBG] Request matched endpoint 'backend.Controllers.AccountController.Login (backend)'
+2024-12-01 00:50:59.369 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-12-01 00:50:59.371 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-12-01 00:50:59.374 -05:00 [INF] CORS policy execution successful.
+2024-12-01 00:50:59.376 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-12-01 00:50:59.379 -05:00 [INF] Executing endpoint 'backend.Controllers.AccountController.Login (backend)'
+2024-12-01 00:50:59.408 -05:00 [INF] Route matched with {action = "Login", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Login(backend.DTO.LoginDTO) on controller backend.Controllers.AccountController (backend).
+2024-12-01 00:50:59.414 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-12-01 00:50:59.417 -05:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-12-01 00:50:59.420 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-12-01 00:50:59.424 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-12-01 00:50:59.427 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-12-01 00:50:59.430 -05:00 [DBG] Executing controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:50:59.433 -05:00 [DBG] Executed controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:50:59.445 -05:00 [DBG] Attempting to bind parameter 'login' of type 'backend.DTO.LoginDTO' ...
+2024-12-01 00:50:59.453 -05:00 [DBG] Attempting to bind parameter 'login' of type 'backend.DTO.LoginDTO' using the name '' in request data ...
+2024-12-01 00:50:59.459 -05:00 [DBG] Rejected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonPatchInputFormatter' for content type 'application/json'.
+2024-12-01 00:50:59.463 -05:00 [DBG] Selected input formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonInputFormatter' for content type 'application/json'.
+2024-12-01 00:50:59.476 -05:00 [DBG] Connection id "0HN8HP23PEN5N", Request id "0HN8HP23PEN5N:00000019": started reading request body.
+2024-12-01 00:50:59.479 -05:00 [DBG] Connection id "0HN8HP23PEN5N", Request id "0HN8HP23PEN5N:00000019": done reading request body.
+2024-12-01 00:50:59.530 -05:00 [DBG] Done attempting to bind parameter 'login' of type 'backend.DTO.LoginDTO'.
+2024-12-01 00:50:59.534 -05:00 [DBG] Done attempting to bind parameter 'login' of type 'backend.DTO.LoginDTO'.
+2024-12-01 00:50:59.537 -05:00 [DBG] Attempting to validate the bound parameter 'login' of type 'backend.DTO.LoginDTO' ...
+2024-12-01 00:50:59.560 -05:00 [DBG] Done attempting to validate the bound parameter 'login' of type 'backend.DTO.LoginDTO'.
+2024-12-01 00:50:59.628 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-12-01 00:50:59.634 -05:00 [DBG] No information found on request to perform content negotiation.
+2024-12-01 00:50:59.636 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-12-01 00:50:59.637 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-12-01 00:50:59.638 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-12-01 00:50:59.641 -05:00 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2024-12-01 00:50:59.654 -05:00 [INF] Executed action backend.Controllers.AccountController.Login (backend) in 224.2893ms
+2024-12-01 00:50:59.659 -05:00 [INF] Executed endpoint 'backend.Controllers.AccountController.Login (backend)'
+2024-12-01 00:50:59.665 -05:00 [INF] Request finished HTTP/2 POST https://localhost:7168/api/Account/login - 200 408 application/json; charset=utf-8 313.5703ms
+2024-12-01 00:51:04.329 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/Account/users - null null
+2024-12-01 00:51:04.353 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Account/users'
+2024-12-01 00:51:04.360 -05:00 [DBG] Endpoint 'backend.Controllers.AccountController.GetUsers (backend)' with route pattern 'api/Account/users' is valid for the request path '/api/Account/users'
+2024-12-01 00:51:04.368 -05:00 [DBG] Request matched endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:51:04.371 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-12-01 00:51:04.373 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-12-01 00:51:04.379 -05:00 [INF] CORS policy execution successful.
+2024-12-01 00:51:04.383 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-12-01 00:51:04.386 -05:00 [INF] Executing endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:51:04.389 -05:00 [INF] Route matched with {action = "GetUsers", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[backend.Models.AspNetUsers]]] GetUsers() on controller backend.Controllers.AccountController (backend).
+2024-12-01 00:51:04.397 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-12-01 00:51:04.400 -05:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-12-01 00:51:04.403 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-12-01 00:51:04.409 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-12-01 00:51:04.414 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-12-01 00:51:04.418 -05:00 [DBG] Executing controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:51:04.421 -05:00 [DBG] Executed controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:51:04.431 -05:00 [DBG] Entity Framework Core 8.0.0 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-12-01 00:51:04.435 -05:00 [DBG] Creating DbConnection.
+2024-12-01 00:51:04.436 -05:00 [DBG] Created DbConnection. (1ms).
+2024-12-01 00:51:04.438 -05:00 [DBG] Opening connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:51:04.441 -05:00 [DBG] Opened connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:51:04.446 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-12-01 00:51:04.448 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2024-12-01 00:51:04.451 -05:00 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2024-12-01 00:51:04.454 -05:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:51:04.463 -05:00 [INF] Executed DbCommand (9ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:51:04.469 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:51:04.471 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:51:04.474 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:51:04.477 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:51:04.479 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:51:04.482 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:51:04.485 -05:00 [DBG] Closing data reader to 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:51:04.488 -05:00 [DBG] A data reader for 'crm_v1' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 19ms reading results.
+2024-12-01 00:51:04.493 -05:00 [DBG] Closing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:51:04.497 -05:00 [DBG] Closed connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB' (3ms).
+2024-12-01 00:51:04.501 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-12-01 00:51:04.505 -05:00 [DBG] No information found on request to perform content negotiation.
+2024-12-01 00:51:04.506 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-12-01 00:51:04.509 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-12-01 00:51:04.512 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-12-01 00:51:04.514 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[backend.Models.AspNetUsers, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-01 00:51:04.520 -05:00 [INF] Executed action backend.Controllers.AccountController.GetUsers (backend) in 101.3484ms
+2024-12-01 00:51:04.524 -05:00 [INF] Executed endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:51:04.528 -05:00 [DBG] 'ApplicationDbContext' disposed.
+2024-12-01 00:51:04.533 -05:00 [DBG] Disposing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:51:04.536 -05:00 [DBG] Disposed connection to database '' on server '' (2ms).
+2024-12-01 00:51:04.539 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/Account/users - 200 4919 application/json; charset=utf-8 210.3713ms
+2024-12-01 00:52:20.553 -05:00 [DBG] Connection id "0HN8HP23PEN61" accepted.
+2024-12-01 00:52:20.560 -05:00 [DBG] Connection id "0HN8HP23PEN61" started.
+2024-12-01 00:52:20.569 -05:00 [DBG] Connection id "0HN8HP23PEN61" received FIN.
+2024-12-01 00:52:20.575 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-12-01 00:52:20.579 -05:00 [DBG] Connection id "0HN8HP23PEN61" stopped.
+2024-12-01 00:52:20.581 -05:00 [DBG] Connection id "0HN8HP23PEN61" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-12-01 00:52:21.008 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/Account/users - null null
+2024-12-01 00:52:21.029 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Account/users'
+2024-12-01 00:52:21.035 -05:00 [DBG] Endpoint 'backend.Controllers.AccountController.GetUsers (backend)' with route pattern 'api/Account/users' is valid for the request path '/api/Account/users'
+2024-12-01 00:52:21.038 -05:00 [DBG] Request matched endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:52:21.042 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-12-01 00:52:21.045 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-12-01 00:52:21.049 -05:00 [INF] CORS policy execution successful.
+2024-12-01 00:52:21.053 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-12-01 00:52:21.057 -05:00 [INF] Executing endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:52:21.060 -05:00 [INF] Route matched with {action = "GetUsers", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[backend.Models.AspNetUsers]]] GetUsers() on controller backend.Controllers.AccountController (backend).
+2024-12-01 00:52:21.066 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-12-01 00:52:21.069 -05:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-12-01 00:52:21.071 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-12-01 00:52:21.075 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-12-01 00:52:21.078 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-12-01 00:52:21.081 -05:00 [DBG] Executing controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:52:21.084 -05:00 [DBG] Executed controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:52:21.087 -05:00 [DBG] Entity Framework Core 8.0.0 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-12-01 00:52:21.091 -05:00 [DBG] Creating DbConnection.
+2024-12-01 00:52:21.093 -05:00 [DBG] Created DbConnection. (2ms).
+2024-12-01 00:52:21.095 -05:00 [DBG] Opening connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:52:21.098 -05:00 [DBG] Opened connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:52:21.100 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-12-01 00:52:21.102 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-12-01 00:52:21.104 -05:00 [DBG] Initialized DbCommand for 'ExecuteReader' (4ms).
+2024-12-01 00:52:21.107 -05:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:52:21.114 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:52:21.119 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:52:21.122 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:52:21.126 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:52:21.128 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:52:21.130 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:52:21.132 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:52:21.134 -05:00 [DBG] Closing data reader to 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:52:21.136 -05:00 [DBG] A data reader for 'crm_v1' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 18ms reading results.
+2024-12-01 00:52:21.139 -05:00 [DBG] Closing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:52:21.141 -05:00 [DBG] Closed connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB' (2ms).
+2024-12-01 00:52:21.144 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-12-01 00:52:21.147 -05:00 [DBG] No information found on request to perform content negotiation.
+2024-12-01 00:52:21.148 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-12-01 00:52:21.149 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-12-01 00:52:21.151 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-12-01 00:52:21.153 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[backend.Models.AspNetUsers, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-01 00:52:21.157 -05:00 [INF] Executed action backend.Controllers.AccountController.GetUsers (backend) in 75.6345ms
+2024-12-01 00:52:21.162 -05:00 [INF] Executed endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:52:21.169 -05:00 [DBG] 'ApplicationDbContext' disposed.
+2024-12-01 00:52:21.171 -05:00 [DBG] Disposing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:52:21.173 -05:00 [DBG] Disposed connection to database '' on server '' (2ms).
+2024-12-01 00:52:21.175 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/Account/users - 200 4919 application/json; charset=utf-8 168.2798ms
+2024-12-01 00:52:25.901 -05:00 [DBG] Connection id "0HN8HP23PEN62" accepted.
+2024-12-01 00:52:25.904 -05:00 [DBG] Connection id "0HN8HP23PEN62" started.
+2024-12-01 00:52:25.914 -05:00 [DBG] Connection id "0HN8HP23PEN62" received FIN.
+2024-12-01 00:52:25.921 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-12-01 00:52:25.933 -05:00 [DBG] Connection id "0HN8HP23PEN62" stopped.
+2024-12-01 00:52:25.937 -05:00 [DBG] Connection id "0HN8HP23PEN62" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-12-01 00:52:26.145 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/Account/users - null null
+2024-12-01 00:52:26.153 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Account/users'
+2024-12-01 00:52:26.156 -05:00 [DBG] Endpoint 'backend.Controllers.AccountController.GetUsers (backend)' with route pattern 'api/Account/users' is valid for the request path '/api/Account/users'
+2024-12-01 00:52:26.160 -05:00 [DBG] Request matched endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:52:26.164 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-12-01 00:52:26.166 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-12-01 00:52:26.169 -05:00 [INF] CORS policy execution successful.
+2024-12-01 00:52:26.172 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-12-01 00:52:26.178 -05:00 [INF] Executing endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:52:26.181 -05:00 [INF] Route matched with {action = "GetUsers", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[backend.Models.AspNetUsers]]] GetUsers() on controller backend.Controllers.AccountController (backend).
+2024-12-01 00:52:26.184 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-12-01 00:52:26.186 -05:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-12-01 00:52:26.188 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-12-01 00:52:26.193 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-12-01 00:52:26.195 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-12-01 00:52:26.198 -05:00 [DBG] Executing controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:52:26.200 -05:00 [DBG] Executed controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:52:26.202 -05:00 [DBG] Entity Framework Core 8.0.0 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-12-01 00:52:26.206 -05:00 [DBG] Creating DbConnection.
+2024-12-01 00:52:26.207 -05:00 [DBG] Created DbConnection. (1ms).
+2024-12-01 00:52:26.208 -05:00 [DBG] Opening connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:52:26.210 -05:00 [DBG] Opened connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:52:26.211 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-12-01 00:52:26.214 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (2ms).
+2024-12-01 00:52:26.215 -05:00 [DBG] Initialized DbCommand for 'ExecuteReader' (3ms).
+2024-12-01 00:52:26.217 -05:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:52:26.224 -05:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:52:26.228 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:52:26.230 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:52:26.232 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:52:26.234 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:52:26.236 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:52:26.238 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:52:26.240 -05:00 [DBG] Closing data reader to 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:52:26.242 -05:00 [DBG] A data reader for 'crm_v1' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 13ms reading results.
+2024-12-01 00:52:26.245 -05:00 [DBG] Closing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:52:26.247 -05:00 [DBG] Closed connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB' (2ms).
+2024-12-01 00:52:26.249 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-12-01 00:52:26.253 -05:00 [DBG] No information found on request to perform content negotiation.
+2024-12-01 00:52:26.255 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-12-01 00:52:26.256 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-12-01 00:52:26.257 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-12-01 00:52:26.259 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[backend.Models.AspNetUsers, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-01 00:52:26.263 -05:00 [INF] Executed action backend.Controllers.AccountController.GetUsers (backend) in 65.2183ms
+2024-12-01 00:52:26.266 -05:00 [INF] Executed endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:52:26.268 -05:00 [DBG] 'ApplicationDbContext' disposed.
+2024-12-01 00:52:26.270 -05:00 [DBG] Disposing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:52:26.271 -05:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-12-01 00:52:26.274 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/Account/users - 200 4919 application/json; charset=utf-8 129.902ms
+2024-12-01 00:56:16.047 -05:00 [DBG] Connection id "0HN8HP23PEN63" accepted.
+2024-12-01 00:56:16.056 -05:00 [DBG] Connection id "0HN8HP23PEN63" started.
+2024-12-01 00:56:16.063 -05:00 [DBG] Connection id "0HN8HP23PEN63" received FIN.
+2024-12-01 00:56:16.067 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-12-01 00:56:16.072 -05:00 [DBG] Connection id "0HN8HP23PEN63" stopped.
+2024-12-01 00:56:16.074 -05:00 [DBG] Connection id "0HN8HP23PEN63" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-12-01 00:56:16.426 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/Account/users - null null
+2024-12-01 00:56:16.458 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Account/users'
+2024-12-01 00:56:16.462 -05:00 [DBG] Endpoint 'backend.Controllers.AccountController.GetUsers (backend)' with route pattern 'api/Account/users' is valid for the request path '/api/Account/users'
+2024-12-01 00:56:16.468 -05:00 [DBG] Request matched endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:56:16.471 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-12-01 00:56:16.476 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-12-01 00:56:16.482 -05:00 [INF] CORS policy execution successful.
+2024-12-01 00:56:16.487 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-12-01 00:56:16.491 -05:00 [INF] Executing endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:56:16.494 -05:00 [INF] Route matched with {action = "GetUsers", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[backend.Models.AspNetUsers]]] GetUsers() on controller backend.Controllers.AccountController (backend).
+2024-12-01 00:56:16.500 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-12-01 00:56:16.504 -05:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-12-01 00:56:16.509 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-12-01 00:56:16.515 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-12-01 00:56:16.523 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-12-01 00:56:16.528 -05:00 [DBG] Executing controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:56:16.534 -05:00 [DBG] Executed controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:56:16.538 -05:00 [DBG] Entity Framework Core 8.0.0 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-12-01 00:56:16.543 -05:00 [DBG] Creating DbConnection.
+2024-12-01 00:56:16.544 -05:00 [DBG] Created DbConnection. (1ms).
+2024-12-01 00:56:16.548 -05:00 [DBG] Opening connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:56:16.552 -05:00 [DBG] Opened connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:56:16.591 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-12-01 00:56:16.596 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (5ms).
+2024-12-01 00:56:16.602 -05:00 [DBG] Initialized DbCommand for 'ExecuteReader' (10ms).
+2024-12-01 00:56:16.609 -05:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:56:16.626 -05:00 [INF] Executed DbCommand (17ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:56:16.634 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:56:16.639 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:56:16.643 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:56:16.647 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:56:16.651 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:56:16.655 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:56:16.659 -05:00 [DBG] Closing data reader to 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:56:16.663 -05:00 [DBG] A data reader for 'crm_v1' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 29ms reading results.
+2024-12-01 00:56:16.668 -05:00 [DBG] Closing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:56:16.672 -05:00 [DBG] Closed connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB' (3ms).
+2024-12-01 00:56:16.676 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-12-01 00:56:16.682 -05:00 [DBG] No information found on request to perform content negotiation.
+2024-12-01 00:56:16.685 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-12-01 00:56:16.688 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-12-01 00:56:16.690 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-12-01 00:56:16.694 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[backend.Models.AspNetUsers, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-01 00:56:16.700 -05:00 [INF] Executed action backend.Controllers.AccountController.GetUsers (backend) in 172.0516ms
+2024-12-01 00:56:16.705 -05:00 [INF] Executed endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:56:16.710 -05:00 [DBG] 'ApplicationDbContext' disposed.
+2024-12-01 00:56:16.714 -05:00 [DBG] Disposing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:56:16.719 -05:00 [DBG] Disposed connection to database '' on server '' (5ms).
+2024-12-01 00:56:16.724 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/Account/users - 200 4919 application/json; charset=utf-8 298.1429ms
+2024-12-01 00:56:33.770 -05:00 [DBG] Connection id "0HN8HP23PEN64" accepted.
+2024-12-01 00:56:33.773 -05:00 [DBG] Connection id "0HN8HP23PEN64" started.
+2024-12-01 00:56:33.782 -05:00 [DBG] Connection id "0HN8HP23PEN64" received FIN.
+2024-12-01 00:56:33.789 -05:00 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException: Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveHandshakeFrameAsync[TIOAdapter](CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](Boolean receiveFirst, Byte[] reAuthenticationData, CancellationToken cancellationToken)
+   at System.Net.Security.SslStream.ProcessAuthenticationWithTelemetryAsync(Boolean isAsync, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-12-01 00:56:33.800 -05:00 [DBG] Connection id "0HN8HP23PEN64" stopped.
+2024-12-01 00:56:33.804 -05:00 [DBG] Connection id "0HN8HP23PEN64" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-12-01 00:56:34.176 -05:00 [INF] Request starting HTTP/2 GET https://localhost:7168/api/Account/users - null null
+2024-12-01 00:56:34.186 -05:00 [DBG] 1 candidate(s) found for the request path '/api/Account/users'
+2024-12-01 00:56:34.206 -05:00 [DBG] Endpoint 'backend.Controllers.AccountController.GetUsers (backend)' with route pattern 'api/Account/users' is valid for the request path '/api/Account/users'
+2024-12-01 00:56:34.210 -05:00 [DBG] Request matched endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:56:34.212 -05:00 [DBG] Static files was skipped as the request already matched an endpoint.
+2024-12-01 00:56:34.214 -05:00 [DBG] The request has an origin header: 'http://localhost:4200'.
+2024-12-01 00:56:34.219 -05:00 [INF] CORS policy execution successful.
+2024-12-01 00:56:34.221 -05:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-12-01 00:56:34.223 -05:00 [INF] Executing endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:56:34.226 -05:00 [INF] Route matched with {action = "GetUsers", controller = "Account"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[backend.Models.AspNetUsers]]] GetUsers() on controller backend.Controllers.AccountController (backend).
+2024-12-01 00:56:34.229 -05:00 [DBG] Execution plan of authorization filters (in the following order): ["None"]
+2024-12-01 00:56:34.232 -05:00 [DBG] Execution plan of resource filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter"]
+2024-12-01 00:56:34.234 -05:00 [DBG] Execution plan of action filters (in the following order): ["Microsoft.AspNetCore.Mvc.ModelBinding.UnsupportedContentTypeFilter (Order: -3000)","Microsoft.AspNetCore.Mvc.Infrastructure.ModelStateInvalidFilter (Order: -2000)"]
+2024-12-01 00:56:34.237 -05:00 [DBG] Execution plan of exception filters (in the following order): ["None"]
+2024-12-01 00:56:34.239 -05:00 [DBG] Execution plan of result filters (in the following order): ["Microsoft.AspNetCore.Mvc.ViewFeatures.Filters.SaveTempDataFilter","Microsoft.AspNetCore.Mvc.Infrastructure.ClientErrorResultFilter (Order: -2000)"]
+2024-12-01 00:56:34.242 -05:00 [DBG] Executing controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:56:34.244 -05:00 [DBG] Executed controller factory for controller backend.Controllers.AccountController (backend)
+2024-12-01 00:56:34.247 -05:00 [DBG] Entity Framework Core 8.0.0 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.SqlServer:8.0.0' with options: None
+2024-12-01 00:56:34.250 -05:00 [DBG] Creating DbConnection.
+2024-12-01 00:56:34.251 -05:00 [DBG] Created DbConnection. (1ms).
+2024-12-01 00:56:34.253 -05:00 [DBG] Opening connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:56:34.254 -05:00 [DBG] Opened connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:56:34.257 -05:00 [DBG] Creating DbCommand for 'ExecuteReader'.
+2024-12-01 00:56:34.258 -05:00 [DBG] Created DbCommand for 'ExecuteReader' (1ms).
+2024-12-01 00:56:34.260 -05:00 [DBG] Initialized DbCommand for 'ExecuteReader' (3ms).
+2024-12-01 00:56:34.262 -05:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:56:34.267 -05:00 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[AccessFailedCount], [a].[ConcurrencyStamp], [a].[DOB], [a].[Email], [a].[EmailConfirmed], [a].[FirstName], [a].[HireDate], [a].[IsActive], [a].[LastName], [a].[LockoutEnabled], [a].[LockoutEnd], [a].[MiddleName], [a].[NormalizedEmail], [a].[NormalizedUserName], [a].[PasswordHash], [a].[PhoneNumber], [a].[PhoneNumberConfirmed], [a].[SecurityStamp], [a].[TwoFactorEnabled], [a].[UserName]
+FROM [AspNetUsers] AS [a]
+2024-12-01 00:56:34.270 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:56:34.272 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:56:34.274 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:56:34.276 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:56:34.278 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:56:34.279 -05:00 [DBG] Context 'ApplicationDbContext' started tracking 'AspNetUsers' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values.
+2024-12-01 00:56:34.281 -05:00 [DBG] Closing data reader to 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:56:34.283 -05:00 [DBG] A data reader for 'crm_v1' on server '(localdb)\MSSQLLocalDB' is being disposed after spending 13ms reading results.
+2024-12-01 00:56:34.285 -05:00 [DBG] Closing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:56:34.287 -05:00 [DBG] Closed connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB' (2ms).
+2024-12-01 00:56:34.289 -05:00 [DBG] List of registered output formatters, in the following order: ["Microsoft.AspNetCore.Mvc.Formatters.HttpNoContentOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StringOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.StreamOutputFormatter","Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter"]
+2024-12-01 00:56:34.293 -05:00 [DBG] No information found on request to perform content negotiation.
+2024-12-01 00:56:34.294 -05:00 [DBG] Attempting to select an output formatter without using a content type as no explicit content types were specified for the response.
+2024-12-01 00:56:34.295 -05:00 [DBG] Attempting to select the first formatter in the output formatters list which can write the result.
+2024-12-01 00:56:34.297 -05:00 [DBG] Selected output formatter 'Microsoft.AspNetCore.Mvc.Formatters.NewtonsoftJsonOutputFormatter' and content type 'application/json' to write the response.
+2024-12-01 00:56:34.299 -05:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[backend.Models.AspNetUsers, backend, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2024-12-01 00:56:34.303 -05:00 [INF] Executed action backend.Controllers.AccountController.GetUsers (backend) in 60.9041ms
+2024-12-01 00:56:34.312 -05:00 [INF] Executed endpoint 'backend.Controllers.AccountController.GetUsers (backend)'
+2024-12-01 00:56:34.315 -05:00 [DBG] 'ApplicationDbContext' disposed.
+2024-12-01 00:56:34.316 -05:00 [DBG] Disposing connection to database 'crm_v1' on server '(localdb)\MSSQLLocalDB'.
+2024-12-01 00:56:34.318 -05:00 [DBG] Disposed connection to database '' on server '' (1ms).
+2024-12-01 00:56:34.323 -05:00 [INF] Request finished HTTP/2 GET https://localhost:7168/api/Account/users - 200 4919 application/json; charset=utf-8 146.9419ms
+2024-12-01 01:17:25.765 -05:00 [DBG] Connection id "0HN8HP23PEN5N" received FIN.
+2024-12-01 01:17:25.786 -05:00 [DBG] Connection id "0HN8HP23PEN5N" is closed. The last processed stream ID was 35.
+2024-12-01 01:17:25.786 -05:00 [DBG] Connection id "0HN8HP23PEN5N" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-12-01 01:17:25.794 -05:00 [DBG] The connection queue processing loop for 0HN8HP23PEN5N completed.
+2024-12-01 01:17:25.804 -05:00 [DBG] Connection id "0HN8HP23PEN5N" stopped.

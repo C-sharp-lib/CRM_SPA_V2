@@ -17,7 +17,7 @@ namespace backend.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.0")
+                .HasAnnotation("ProductVersion", "8.0.4")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -113,7 +113,7 @@ namespace backend.Migrations
                     b.ToTable("AspNetUserTokens", (string)null);
                 });
 
-            modelBuilder.Entity("backend.Models.AspNetRoles", b =>
+            modelBuilder.Entity("backend.Models.AppRoles", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -140,22 +140,7 @@ namespace backend.Migrations
                     b.ToTable("AspNetRoles", (string)null);
                 });
 
-            modelBuilder.Entity("backend.Models.AspNetUserRoles", b =>
-                {
-                    b.Property<string>("UserId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.Property<string>("RoleId")
-                        .HasColumnType("nvarchar(450)");
-
-                    b.HasKey("UserId", "RoleId");
-
-                    b.HasIndex("RoleId");
-
-                    b.ToTable("AspNetUserRoles", (string)null);
-                });
-
-            modelBuilder.Entity("backend.Models.AspNetUsers", b =>
+            modelBuilder.Entity("backend.Models.AppUsers", b =>
                 {
                     b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
@@ -1045,7 +1030,7 @@ namespace backend.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("AspNetUsersId")
+                    b.Property<string>("AppUsersId")
                         .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("CreatedByIp")
@@ -1075,7 +1060,7 @@ namespace backend.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("AspNetUsersId");
+                    b.HasIndex("AppUsersId");
 
                     b.ToTable("RefreshToken");
                 });
@@ -1160,6 +1145,21 @@ namespace backend.Migrations
                     b.ToTable("Tasks");
                 });
 
+            modelBuilder.Entity("backend.Models.UserRoles", b =>
+                {
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("RoleId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("UserId", "RoleId");
+
+                    b.HasIndex("RoleId");
+
+                    b.ToTable("AspNetUserRoles", (string)null);
+                });
+
             modelBuilder.Entity("backend.Models.UserTasks", b =>
                 {
                     b.Property<string>("UserId")
@@ -1183,7 +1183,7 @@ namespace backend.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
-                    b.HasOne("backend.Models.AspNetRoles", null)
+                    b.HasOne("backend.Models.AppRoles", null)
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1192,7 +1192,7 @@ namespace backend.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
                 {
-                    b.HasOne("backend.Models.AspNetUsers", null)
+                    b.HasOne("backend.Models.AppUsers", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1201,7 +1201,7 @@ namespace backend.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserLogin<string>", b =>
                 {
-                    b.HasOne("backend.Models.AspNetUsers", null)
+                    b.HasOne("backend.Models.AppUsers", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1210,30 +1210,11 @@ namespace backend.Migrations
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserToken<string>", b =>
                 {
-                    b.HasOne("backend.Models.AspNetUsers", null)
+                    b.HasOne("backend.Models.AppUsers", null)
                         .WithMany()
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
-                });
-
-            modelBuilder.Entity("backend.Models.AspNetUserRoles", b =>
-                {
-                    b.HasOne("backend.Models.AspNetRoles", "Role")
-                        .WithMany("UserRoles")
-                        .HasForeignKey("RoleId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("backend.Models.AspNetUsers", "User")
-                        .WithMany("UserRoles")
-                        .HasForeignKey("UserId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Role");
-
-                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("backend.Models.CampaignUserNotes", b =>
@@ -1250,7 +1231,7 @@ namespace backend.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("backend.Models.AspNetUsers", "User")
+                    b.HasOne("backend.Models.AppUsers", "User")
                         .WithMany("CampaignUserNotes")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1277,7 +1258,7 @@ namespace backend.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("backend.Models.AspNetUsers", "User")
+                    b.HasOne("backend.Models.AppUsers", "User")
                         .WithMany("CampaignUserTasks")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1366,7 +1347,7 @@ namespace backend.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("backend.Models.AspNetUsers", "User")
+                    b.HasOne("backend.Models.AppUsers", "User")
                         .WithMany("CustomerUsers")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1391,7 +1372,7 @@ namespace backend.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("backend.Models.AspNetUsers", "User")
+                    b.HasOne("backend.Models.AppUsers", "User")
                         .WithMany("JobUserNotes")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1418,7 +1399,7 @@ namespace backend.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("backend.Models.AspNetUsers", "User")
+                    b.HasOne("backend.Models.AppUsers", "User")
                         .WithMany("JobUserTasks")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1433,7 +1414,7 @@ namespace backend.Migrations
 
             modelBuilder.Entity("backend.Models.LeadActivities", b =>
                 {
-                    b.HasOne("backend.Models.AspNetUsers", "CreatedByUser")
+                    b.HasOne("backend.Models.AppUsers", "CreatedByUser")
                         .WithMany()
                         .HasForeignKey("CreatedByUserId");
 
@@ -1456,7 +1437,7 @@ namespace backend.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("backend.Models.AspNetUsers", "UpdatedByUser")
+                    b.HasOne("backend.Models.AppUsers", "UpdatedByUser")
                         .WithMany()
                         .HasForeignKey("UpdatedByUserId");
 
@@ -1486,9 +1467,9 @@ namespace backend.Migrations
 
             modelBuilder.Entity("backend.Models.RefreshToken", b =>
                 {
-                    b.HasOne("backend.Models.AspNetUsers", null)
+                    b.HasOne("backend.Models.AppUsers", null)
                         .WithMany("RefreshTokens")
-                        .HasForeignKey("AspNetUsersId");
+                        .HasForeignKey("AppUsersId");
                 });
 
             modelBuilder.Entity("backend.Models.TaskAttachments", b =>
@@ -1499,13 +1480,32 @@ namespace backend.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("backend.Models.AspNetUsers", "UploadedByUser")
+                    b.HasOne("backend.Models.AppUsers", "UploadedByUser")
                         .WithMany()
                         .HasForeignKey("UploadedByUserId");
 
                     b.Navigation("Task");
 
                     b.Navigation("UploadedByUser");
+                });
+
+            modelBuilder.Entity("backend.Models.UserRoles", b =>
+                {
+                    b.HasOne("backend.Models.AppRoles", "Role")
+                        .WithMany("UserRoles")
+                        .HasForeignKey("RoleId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("backend.Models.AppUsers", "User")
+                        .WithMany("UserRoles")
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Role");
+
+                    b.Navigation("User");
                 });
 
             modelBuilder.Entity("backend.Models.UserTasks", b =>
@@ -1516,7 +1516,7 @@ namespace backend.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("backend.Models.AspNetUsers", "User")
+                    b.HasOne("backend.Models.AppUsers", "User")
                         .WithMany("UserTasks")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -1527,12 +1527,12 @@ namespace backend.Migrations
                     b.Navigation("User");
                 });
 
-            modelBuilder.Entity("backend.Models.AspNetRoles", b =>
+            modelBuilder.Entity("backend.Models.AppRoles", b =>
                 {
                     b.Navigation("UserRoles");
                 });
 
-            modelBuilder.Entity("backend.Models.AspNetUsers", b =>
+            modelBuilder.Entity("backend.Models.AppUsers", b =>
                 {
                     b.Navigation("CampaignUserNotes");
 

@@ -14,7 +14,7 @@ namespace backend.Models
         public Jobs Job {  get; set; }
         [ForeignKey("UserId")]
         public string UserId { get; set; }
-        public AspNetUsers User { get; set; }
+        public AppUsers User { get; set; }
         [ForeignKey("NoteId")]
         public int NoteId { get; set; }
         public Notes Notes { get; set; }

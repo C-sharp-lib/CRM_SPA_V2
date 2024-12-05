@@ -11,7 +11,7 @@ namespace backend.Models
         public int CampaignId { get; set; }
         public Campaigns Campaign {  get; set; }
         public string UserId { get; set; }
-        public AspNetUsers User { get; set; }
+        public AppUsers User { get; set; }
         public int NoteId { get; set; }
         public Notes Notes {  get; set; }
     }

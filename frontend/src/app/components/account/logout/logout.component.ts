@@ -12,6 +12,6 @@ export class LogoutComponent {
   }
   logout(): void {
     this.accountService.logout();
-    this.router.navigate(['/']);
+    this.router.navigate(['/login-page']);
   }
 }

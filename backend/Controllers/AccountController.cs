@@ -24,12 +24,12 @@ namespace backend.Controllers
     public class AccountController : ControllerBase
     {
         private readonly JwtBearerTokenSettings jwtBearerTokenSettings;
-        private readonly UserManager<AspNetUsers> _userManager;
-        private readonly SignInManager<AspNetUsers> _signInManager;
+        private readonly UserManager<AppUsers> _userManager;
+        private readonly SignInManager<AppUsers> _signInManager;
         private readonly ApplicationDbContext _context;
         private readonly IConfiguration _configuration;
         private readonly ILogger<AccountController> _logger;
-        public AccountController(IOptions<JwtBearerTokenSettings> jwt, UserManager<AspNetUsers> manager, SignInManager<AspNetUsers> signIn,
+        public AccountController(IOptions<JwtBearerTokenSettings> jwt, UserManager<AppUsers> manager, SignInManager<AppUsers> signIn,
                                    ApplicationDbContext context, IConfiguration configuration, ILogger<AccountController> logger) 
         {
             jwtBearerTokenSettings = jwt.Value;
@@ -50,7 +50,7 @@ namespace backend.Controllers
                 return new BadRequestObjectResult(new { Message = "User Registration Failed" });
             }
 
-            var identityUser = new AspNetUsers() { UserName = register.UserName, Email = register.Email };
+            var identityUser = new AppUsers() { UserName = register.UserName, Email = register.Email };
             var result = await _userManager.CreateAsync(identityUser, register.Password);
             if (!result.Succeeded)
             {
@@ -146,7 +146,30 @@ namespace backend.Controllers
             RevokeRefreshToken();
             return Ok(new { Token = "", Message = "Logged Out" });
         }
-        [HttpGet("users/{id}")]
+        [HttpPost("create-user")]
+        public async Task<ActionResult> CreateUser(UserDTO user)
+        {
+            if (!ModelState.IsValid || user == null)
+            {
+                return new BadRequestObjectResult(new { Message = "User Registration Failed" });
+            }
+
+            var identityUser = new AppUsers() { UserName = user.UserName, Email = user.Email, FirstName = user.FirstName, MiddleName = user.MiddleName, LastName = user.LastName, DOB = user.DOB, HireDate = user.HireDate };
+            var result = await _userManager.CreateAsync(identityUser, user.PasswordHash);
+            if (!result.Succeeded)
+            {
+                var dictionary = new ModelStateDictionary();
+                foreach (IdentityError error in result.Errors)
+                {
+                    dictionary.AddModelError(error.Code, error.Description);
+                }
+
+                return new BadRequestObjectResult(new { Message = "User Addition Failed", Errors = dictionary });
+            }
+
+            return Ok(new { Message = "User Added Successfully" });
+        }
+        [HttpGet("user-details/{id}")]
         public async Task<IActionResult> GetUser(string id)
         {
             var user = await _context.Users
@@ -158,7 +181,7 @@ namespace backend.Controllers
                 .ThenInclude(jt => jt.Job)
                 .Include(jt => jt.JobUserNotes)
                 .ThenInclude(jt => jt.Notes)
-                .FirstOrDefaultAsync(u => u.Id == id);
+                .FirstOrDefaultAsync(u => u.Id.Equals(id));
             if (user == null) 
             {
                 return NotFound("Cannot find user.");
@@ -166,12 +189,12 @@ namespace backend.Controllers
             return Ok(user);
         }
         [HttpGet("users")]
-        public async Task<ActionResult<IEnumerable<AspNetUsers>>> GetUsers()
+        public async Task<ActionResult<IEnumerable<AppUsers>>> GetUsers()
         {
             return await _context.Users.ToListAsync();
         }
 
-        private RefreshToken GetValidRefreshToken(string token, AspNetUsers identityUser)
+        private RefreshToken GetValidRefreshToken(string token, AppUsers identityUser)
         {
             if (identityUser == null)
             {
@@ -201,7 +224,7 @@ namespace backend.Controllers
             return true;
         }
 
-        private async Task<AspNetUsers> ValidateUser(LoginDTO login)
+        private async Task<AppUsers> ValidateUser(LoginDTO login)
         {
             var identityUser = await _userManager.FindByEmailAsync(login.Email);
             if (identityUser != null)
@@ -213,7 +236,7 @@ namespace backend.Controllers
             return null;
         }
 
-        private string GenerateTokens(AspNetUsers identityUser)
+        private string GenerateTokens(AppUsers identityUser)
         {
             // Generate access token
             string accessToken = GenerateAccessToken(identityUser);
@@ -242,7 +265,7 @@ namespace backend.Controllers
             return accessToken;
         }
 
-        private string GenerateAccessToken(AspNetUsers identityUser)
+        private string GenerateAccessToken(AppUsers identityUser)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes(jwtBearerTokenSettings.SecretKey);

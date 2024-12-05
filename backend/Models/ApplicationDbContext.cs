@@ -1,11 +1,12 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace backend.Models
 {
-    public class ApplicationDbContext(DbContextOptions options) : IdentityDbContext<AspNetUsers, AspNetRoles, string, 
-        IdentityUserClaim<string>, AspNetUserRoles, IdentityUserLogin<string>, IdentityRoleClaim<string>, IdentityUserToken<string>>(options)
+    public class ApplicationDbContext(DbContextOptions options) : IdentityDbContext<AppUsers, AppRoles, string, 
+        IdentityUserClaim<string>, UserRoles, IdentityUserLogin<string>, IdentityRoleClaim<string>, IdentityUserToken<string>>(options)
     {
         public DbSet<Contacts> Contacts { get; set; }
         public DbSet<Customers> Customers { get; set; }
@@ -32,6 +33,23 @@ namespace backend.Models
         public DbSet<JobUserNotes> JobUserNotes { get; set; }
         public DbSet<JobUserTasks> JobUserTasks { get; set; }
 
+
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            base.OnConfiguring(optionsBuilder);
+            if (!optionsBuilder.IsConfigured)
+            {
+                IConfigurationRoot configuration = new ConfigurationBuilder()
+                    .SetBasePath(Directory.GetCurrentDirectory())
+                    .AddJsonFile("appsettings.json")
+                    .Build();
+                optionsBuilder.ConfigureWarnings(static warnings =>
+                {
+                    warnings.Ignore(CoreEventId.ContextDisposed);
+                    warnings.Ignore(RelationalEventId.MultipleCollectionIncludeWarning);
+                });
+            }
+        }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -85,7 +103,7 @@ namespace backend.Models
             modelBuilder.Entity<TaskAttachments>()
                 .HasKey(t => new { t.TaskId, t.TaskAttachmentId, t.UploadedBy});
 
-            modelBuilder.Entity<AspNetUsers>()
+            modelBuilder.Entity<AppUsers>()
                 .HasMany(ur => ur.UserRoles)
                 .WithOne(ur => ur.User)
                 .HasForeignKey(ur => ur.UserId);
@@ -105,7 +123,7 @@ namespace backend.Models
                 .HasOne(cu => cu.User)
                 .WithMany(cu => cu.UserTasks)
                 .HasForeignKey(cu => cu.UserId);
-            modelBuilder.Entity<AspNetRoles>()
+            modelBuilder.Entity<AppRoles>()
                .HasMany(ur => ur.UserRoles)
                .WithOne(ur => ur.Role)
                .HasForeignKey(ur => ur.RoleId)

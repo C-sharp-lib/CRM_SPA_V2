@@ -17,15 +17,15 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(connectionString);
 });
 
-builder.Services.AddIdentityCore<AspNetUsers>(options =>
+builder.Services.AddIdentityCore<AppUsers>(options =>
 {
     options.SignIn.RequireConfirmedAccount = false;
 })
-    .AddRoles<AspNetRoles>()
-    .AddRoleManager<RoleManager<AspNetRoles>>()
+    .AddRoles<AppRoles>()
+    .AddRoleManager<RoleManager<AppRoles>>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
-    .AddSignInManager<SignInManager<AspNetUsers>>()
-    .AddUserManager<UserManager<AspNetUsers>>()
+    .AddSignInManager<SignInManager<AppUsers>>()
+    .AddUserManager<UserManager<AppUsers>>()
     .AddDefaultTokenProviders();
 builder.Services.ConfigureApplicationCookie(options =>
 {

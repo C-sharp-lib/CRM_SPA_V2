@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {AccountService} from '../../../services';
 import {User} from '../../../models/user';
-import {Router} from '@angular/router';
+import {ActivatedRoute, NavigationEnd, Router} from '@angular/router';
 
 @Component({
   selector: 'app-users',
@@ -9,36 +9,37 @@ import {Router} from '@angular/router';
   styleUrl: './users.component.css'
 })
 export class UsersComponent implements OnInit {
-  users: any;
-  user: any;
-  errorMessage: string = '';
-  constructor(private authService: AccountService, private router: Router) {
+  user: User;
+  showMenu: boolean = false;
+  constructor(private authService: AccountService, private router: Router, private route: ActivatedRoute) {
   }
 
-  ngOnInit(): void {
-    this.showUserData();
+  ngOnInit() {
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        const childRoute = this.route.firstChild;
+        if (childRoute && childRoute.snapshot.data['showMenu'] !== undefined) {
+          this.showMenu = childRoute.snapshot.data['showMenu'];
+        } else {
+          this.showMenu = false;
+        }
+      }
+    });
   }
 
-  showUserData() {
-    return this.authService.getUsers().subscribe(
-      (data) => {
-        this.users = data;
-      },
-      (error) => {
-        this.errorMessage = error.error?.message;
-        console.error('There was an error retrieving the user data: ' + error);
-      }
-    );
+  showUserCreate(): boolean {
+    if(this.router.url === '/dashboard/users/user-create') {
+      return this.showMenu = true;
+    } else {
+      return this.showMenu = false;
+    }
   }
-  showUser(id: string) {
-    this.authService.getUserById(id).subscribe(
-      (data) => {
-        this.user = data;
-      },
-      (error) => {
-        this.errorMessage = error.error?.message;
-        console.error('There was an error retrieving the user data: ' + error);
-      }
-    )
+  showUserList(): boolean {
+    if(this.router.url === '/dashboard/users/user-list') {
+      return this.showMenu = true;
+    } else {
+      return this.showMenu = false;
+    }
   }
+
 }
