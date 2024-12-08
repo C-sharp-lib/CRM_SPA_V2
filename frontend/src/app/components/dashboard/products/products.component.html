@@ -1,5 +1,6 @@
-<div class="row">
-  <div class="col-12 m-7 p-3">
-    <h1 class="text-gradient text-primary text-bold">Products</h1>
-  </div>
+<div class="container-fluid" *ngIf="showProductList()">
+  <app-product-list></app-product-list>
+</div>
+<div class="container-fluid" *ngIf="showProductCreate()">
+  <app-product-create></app-product-create>
 </div>

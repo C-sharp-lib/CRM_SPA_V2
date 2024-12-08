@@ -38,7 +38,7 @@ export class CustomerCreateComponent {
 
   onSubmit(): void {
     if (this.customerForm.valid) {
-      const newCustomer: Customer = new Customer(this.customerForm.value);
+      const newCustomer = this.customerForm.value;
       this.customerService.createCustomer(newCustomer).subscribe(
         (response) => {
           console.log('Customer added successfully', response);

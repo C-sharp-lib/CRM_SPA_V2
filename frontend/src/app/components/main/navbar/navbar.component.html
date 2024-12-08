@@ -55,6 +55,7 @@
                       <li><a class="dropdown-item" routerLink="/dashboard/jobs">Jobs</a></li>
                       <li><a class="dropdown-item" routerLink="/dashboard/customers">Customers</a></li>
                       <li><a class="dropdown-item" routerLink="/dashboard/users">Users</a></li>
+                      <li><a class="dropdown-item" routerLink="/dashboard/products">Products</a></li>
                     </ul>
                   </div>
                     <div class="dropdown m-3" *ngIf="showUsersMenu() && isAuthenticated">
@@ -65,6 +66,16 @@
                       <ul class="dropdown-menu" aria-labelledby="dropdownUsers">
                         <li><a class="dropdown-item" routerLink="/dashboard/users/user-list">User List</a></li>
                         <li><a class="dropdown-item" routerLink="/dashboard/users/user-create">Add User</a></li>
+                      </ul>
+                    </div>
+                    <div class="dropdown m-3" *ngIf="showProductsMenu() && isAuthenticated">
+                      <a class="btn bg-gradient-info dropdown-toggle" id="dropdownProducts"
+                         data-bs-toggle="dropdown" aria-expanded="false">
+                        Products
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownProducts">
+                        <li><a class="dropdown-item" routerLink="/dashboard/products/product-list">Product List</a></li>
+                        <li><a class="dropdown-item" routerLink="/dashboard/products/product-create">Add Product</a></li>
                       </ul>
                     </div>
                   <div class="dropdown m-3" *ngIf="showCustomersMenu() && isAuthenticated">

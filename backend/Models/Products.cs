@@ -18,7 +18,18 @@ namespace backend.Models
         public int QuantityInStock { get; set; } = 0;
         public string? Category {  get; set; } = string.Empty;
         public bool IsActive { get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime UpdatedAt { get; set; }
+        public string? ImageUrl { get; set; }
+        public ICollection<OrderItems> OrderItems { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime UpdatedAt { get; set; } = DateTime.Now;
+
+        public string TruncateWords(string text, int wordCount = 5)
+        {
+            if (string.IsNullOrEmpty(text))
+                return string.Empty;
+            var words = text.Split(new[] { ' ' }, StringSplitOptions.RemoveEmptyEntries);
+            if (words.Length <= wordCount) return text;
+            return string.Join(" ", words.Take(wordCount)) + "...";
+        }
     }
 }

@@ -26,8 +26,14 @@ export class CustomerService {
   deleteCustomer(id: number): Observable<void> {
     return this.http.delete<void>(`${this.baseUrl}/${id}`);
   }
-  searchCustomers(keyword: string): Observable<any> {
-    const params = new HttpParams().set('keyword', keyword);
-    return this.http.get(`${this.baseUrl}/search`, {params});
+  customerCount() {
+    return this.http.get<number>(`${this.baseUrl}/customer-count`);
+  }
+  searchCustomers(name?: string, email?: string, industry?: string): Observable<any> {
+    let params: any = {};
+    if (name) params.name = name;
+    if (email) params.email = email;
+    if (industry) params.industry = industry;
+    return this.http.get<any[]>(`${this.baseUrl}/search-customers`, {params});
   }
 }

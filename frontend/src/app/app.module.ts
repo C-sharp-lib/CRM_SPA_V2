@@ -11,19 +11,17 @@ import * as fromAccount from './components/account';
 import * as fromDashboardJobs from './components/dashboard/jobs';
 import * as fromDashboardCustomers from './components/dashboard/customers';
 import * as fromDashboardUsers from './components/dashboard/users';
+import * as fromDashboardProducts from './components/dashboard/products';
 import * as fromServices from './services';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { CampaignsComponent } from './components/dashboard/campaigns/campaigns.component';
 import { NotesComponent } from './components/dashboard/notes/notes.component';
-import { ProductsComponent } from './components/dashboard/products/products.component';
 import { OrdersComponent } from './components/dashboard/orders/orders.component';
 import { ContactsComponent } from './components/dashboard/contacts/contacts.component';
 import { LeadsComponent } from './components/dashboard/leads/leads.component';
 import { TasksComponent } from './components/dashboard/tasks/tasks.component';
 import { FullCalendarModule } from '@fullcalendar/angular';
 import { DashboardMainComponent } from './components/dashboard/dashboard-main/dashboard-main.component';
-import { UserDetailFormComponent } from './components/dashboard/users/user-detail-form/user-detail-form.component';
-
 
 @NgModule({
   declarations: [
@@ -34,16 +32,15 @@ import { UserDetailFormComponent } from './components/dashboard/users/user-detai
     ...fromAccount.components,
     ...fromDashboardCustomers.components,
     ...fromDashboardUsers.components,
+    ...fromDashboardProducts.components,
     DashboardComponent,
     CampaignsComponent,
     NotesComponent,
-    ProductsComponent,
     OrdersComponent,
     ContactsComponent,
     LeadsComponent,
     TasksComponent,
     DashboardMainComponent,
-    UserDetailFormComponent,
   ],
   imports: [
     BrowserModule,

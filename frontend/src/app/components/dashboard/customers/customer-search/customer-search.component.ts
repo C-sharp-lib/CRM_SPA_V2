@@ -7,28 +7,18 @@ import {CustomerService} from '../../../../services/customer.service';
   styleUrl: './customer-search.component.css'
 })
 export class CustomerSearchComponent {
-  keyword: string = '';
+  searchedQuery: string = '';
   results: any[] = [];
-  errorMessage: string = '';
 
   constructor(private customerService: CustomerService) {
   }
 
   onSearch() {
-    this.errorMessage = '';
-    if (!this.keyword.trim()) {
-      this.errorMessage = 'Please enter a keyword to search.';
-      return;
-    }
-    this.customerService.searchCustomers(this.keyword).subscribe(
-      (data) => {
-        this.results = data;
-      },
-      (error) => {
-        this.errorMessage = error.error?.Message || 'An error occurred when fetching customers.  Please try again.';
-        this.results = [];
-      }
-    );
+    if(this.searchedQuery.trim() === '') return;
+    this.customerService.searchCustomers(this.searchedQuery).subscribe({
+      next: (data) => (this.results = data),
+      error: (err) => console.error(err),
+    });
   }
 
 

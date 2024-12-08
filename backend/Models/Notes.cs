@@ -12,5 +12,6 @@ namespace backend.Models
         public DateTime CreatedAt { get; set; }
         public ICollection<CampaignUserNotes> CampaignUserNotes { get; set; }
         public ICollection<JobUserNotes> JobUserNotes { get; set; }
+        public ICollection<UserTaskNotes> UserTaskNotes { get; set; }
     }
 }

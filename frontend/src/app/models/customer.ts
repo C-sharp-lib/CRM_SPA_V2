@@ -1,24 +1,22 @@
 import {CustomerType} from './customer-type';
 import {CustomerStatus} from './customer-status';
+import {CustomerOrders} from './orders';
 
-export class Customer {
+export interface Customer {
   customerId: number | undefined;
-  customerType: CustomerType | undefined;
-  name: string = '';
-  email: string = '';
-  phone: string = '';
-  fax: string = '';
-  status: CustomerStatus | undefined;
-  address: string = '';
-  city: string = '';
-  state: string = '';
-  zipCode: string = '';
-  industry: string = '';
-  website: string = '';
-  contactPerson: string = '';
-  notes: string = '';
-
-  constructor(init?: Partial<Customer>) {
-    Object.assign(this, init);
-  }
+  customerType: CustomerType;
+  name: string;
+  email: string;
+  phone: string;
+  fax: string;
+  status: CustomerStatus;
+  address: string;
+  city: string;
+  state: string;
+  zipCode: string;
+  industry: string;
+  website: string;
+  contactPerson: string;
+  notes: string;
+  customerOrders: CustomerOrders;
 }

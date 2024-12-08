@@ -21,8 +21,8 @@ namespace backend.Models
         public string ShippingAddress { get; set; }
         public string BillingAddress { get; set; }
         public string Notes {  get; set; }
-        public DateTime CreatedAt { get; set; }
-        public DateTime UpdatedAt { get; set; }
+        public DateTime CreatedAt { get; set; } = DateTime.Now;
+        public DateTime UpdatedAt { get; set; } = DateTime.Now;
         public ICollection<OrderItems> OrderItems { get; set; }
         public ICollection<CustomerOrders> CustomerOrders { get; set; }
     }

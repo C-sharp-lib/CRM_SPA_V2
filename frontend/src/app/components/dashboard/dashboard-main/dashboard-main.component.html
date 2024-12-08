@@ -1,25 +1,71 @@
-<div class="mt-11 p-7">
-<div class="row">
-  <div class="col-12 col-md-4">
-    <div class="card shadow-lg color-background bg-gradient-dark mx-auto">
-      <div class="card-body" style="position: relative; height:33vh; width:100%">
-        <canvas id="chart"></canvas>
+<div class="container-fluid mt-11">
+  <div class="row">
+    <div class="col-lg-3 col-md-6 col-sm-6">
+      <div class="card card-stats">
+        <div class="card-header bg-gradient-dark card-header-icon p-1">
+          <div class="card-icon bg-gradient-info">
+            <i class="fa-solid fa-shop text-white"></i>
+          </div>
+          <p class="card-category text-white me-3">Product</p>
+          <h3 class="card-title text-gradient text-info me-3">
+            <small>{{products}}</small>
+          </h3>
+        </div>
+        <div class="card-footer">
+          <div class="stats">
+<!--            <i class="fa-solid fa-circle-exclamation text-gradient text-danger"></i>-->
+<!--            <a href="#">Get More Space...</a>-->
+          </div>
+        </div>
       </div>
     </div>
-</div>
-<div class="col-12 col-md-4">
-    <div class="card shadow-lg color-background bg-gradient-dark mx-auto">
-      <div class="card-body" style="position: relative; height:33vh; width:100%">
-        <canvas id="line-chart"></canvas>
+    <div class="col-lg-3 col-md-6 col-sm-6">
+      <div class="card card-stats">
+        <div class="card-header bg-gradient-dark card-header-icon p-1">
+          <div class="card-icon bg-gradient-success">
+            <i class="fa-solid fa-bag-shopping text-white"></i>
+          </div>
+          <p class="card-category text-white me-3">Customers</p>
+          <h3 class="card-title text-gradient text-success me-3">{{customers}}</h3>
+        </div>
+        <div class="card-footer">
+          <div class="stats">
+<!--            <i class="fa-regular fa-calendar-days text-gradient text-primary"></i> Last 24 Hours-->
+          </div>
+        </div>
       </div>
     </div>
-</div>
-  <div class="col-12 col-md-4">
-    <div class="card shadow-lg color-background bg-gradient-dark mx-auto">
-      <div class="card-body" style="position: relative; height:33vh; width:100%">
-        <canvas id="pie-chart"></canvas>
+    <div class="col-lg-3 col-md-6 col-sm-6">
+      <div class="card card-stats">
+        <div class="card-header bg-gradient-dark card-header-icon p-1">
+          <div class="card-icon bg-gradient-warning">
+            <i class="fa-solid fa-briefcase text-white"></i>
+          </div>
+          <p class="card-category text-white me-3">Jobs</p>
+          <h3 class="card-title text-gradient text-primary me-3">{{jobs}}</h3>
+        </div>
+        <div class="card-footer">
+          <div class="stats">
+<!--            <i class="fa-solid fa-location-dot text-gradient text-success"></i> Tracked from Github-->
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-6 col-sm-6">
+      <div class="card card-stats">
+        <div class="card-header bg-gradient-dark card-header-icon p-1">
+          <div class="card-icon bg-gradient-danger">
+            <i class="fa-solid fa-users-rectangle text-white"></i>
+          </div>
+          <p class="card-category text-white me-3">Users</p>
+          <h3 class="card-title me-3 text-gradient text-danger">{{users}}</h3>
+        </div>
+        <div class="card-footer">
+          <div class="stats">
+<!--            <i class="fa-regular fa-pen-to-square text-gradient text-info"></i> Just Updated-->
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 </div>

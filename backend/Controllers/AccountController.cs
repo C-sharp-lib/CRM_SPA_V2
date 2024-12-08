@@ -78,7 +78,11 @@ namespace backend.Controllers
             }
             return Unauthorized("Invalid email or password.");
         }
-
+        [HttpGet("user-count")]
+        public async Task<IActionResult> UserCount()
+        {
+            return Ok(await _context.Users.CountAsync());
+        }
         private string GenerateAccessToken(string email) 
         {
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtBearerTokenSettings.SecretKey)); // Replace with a strong key

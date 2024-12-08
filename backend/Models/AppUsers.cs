@@ -25,7 +25,7 @@ namespace backend.Models
         public List<RefreshToken> RefreshTokens { get; set; }
         public ICollection<UserRoles> UserRoles { get; set; }
         public ICollection<CustomerUsers> CustomerUsers { get; set; }
-        public ICollection<UserTasks> UserTasks { get; set; }
+        public ICollection<UserTaskNotes> UserTaskNotes { get; set; }
         public ICollection<CampaignUserNotes> CampaignUserNotes { get; set; }
         public ICollection<JobUserNotes> JobUserNotes { get; set; }
         public ICollection<JobUserTasks> JobUserTasks { get; set; }

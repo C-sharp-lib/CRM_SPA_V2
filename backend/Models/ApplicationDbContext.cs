@@ -25,7 +25,7 @@ namespace backend.Models
         public DbSet<OrderItems> OrderItems { get; set; }
         public DbSet<Products> Products { get; set; }
         public DbSet<Tasks> Tasks { get; set; }
-        public DbSet<UserTasks> UserTasks { get; set; }
+        public DbSet<UserTaskNotes> UserTaskNotes { get; set; }
         public DbSet<TaskAttachments> TaskAttachments { get; set; }
         public DbSet<Campaigns> Campaigns { get; set; }
         public DbSet<CampaignUserNotes> CampaignUserNotes { get; set; }
@@ -98,8 +98,8 @@ namespace backend.Models
                 .HasKey(p => new { p.ProductId });
             modelBuilder.Entity<Tasks>()
                 .HasKey(t => new {t.TaskId});
-            modelBuilder.Entity<UserTasks>()
-                .HasKey(t => new {t.UserId, t.TaskId, t.UserTaskId});
+            modelBuilder.Entity<UserTaskNotes>()
+                .HasKey(t => new {t.UserId, t.TaskId, t.NoteId, t.UserTaskNoteId});
             modelBuilder.Entity<TaskAttachments>()
                 .HasKey(t => new { t.TaskId, t.TaskAttachmentId, t.UploadedBy});
 
@@ -115,14 +115,18 @@ namespace backend.Models
                 .HasOne(cu => cu.Customer)
                 .WithMany(cu => cu.CustomerUsers)
                 .HasForeignKey(cu => cu.CustomerId);
-            modelBuilder.Entity<UserTasks>()
+            modelBuilder.Entity<UserTaskNotes>()
                 .HasOne(cu => cu.Task)
-                .WithMany(cu => cu.UserTasks)
+                .WithMany(cu => cu.UserTaskNotes)
                 .HasForeignKey(cu => cu.TaskId);
-            modelBuilder.Entity<UserTasks>()
+            modelBuilder.Entity<UserTaskNotes>()
                 .HasOne(cu => cu.User)
-                .WithMany(cu => cu.UserTasks)
+                .WithMany(cu => cu.UserTaskNotes)
                 .HasForeignKey(cu => cu.UserId);
+            modelBuilder.Entity<UserTaskNotes>()
+                .HasOne(cu => cu.Note)
+                .WithMany(cu => cu.UserTaskNotes)
+                .HasForeignKey(cu => cu.NoteId);
             modelBuilder.Entity<AppRoles>()
                .HasMany(ur => ur.UserRoles)
                .WithOne(ur => ur.Role)
@@ -195,6 +199,16 @@ namespace backend.Models
                 .HasOne(c => c.User)
                 .WithMany(c => c.JobUserTasks)
                 .HasForeignKey(c => c.UserId);
+
+            modelBuilder.Entity<Products>()
+                .HasMany(o => o.OrderItems)
+                .WithOne(o => o.Products)
+                .HasForeignKey(o => o.ProductId);
+
+            modelBuilder.Entity<OrderItems>()
+                .HasOne(o => o.Products)
+                .WithMany(o => o.OrderItems)
+                .HasForeignKey(o => o.ProductId);
         }
     }
 }

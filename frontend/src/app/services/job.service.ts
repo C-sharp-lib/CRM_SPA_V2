@@ -30,6 +30,9 @@ export class JobService {
       retry(1)
     );
   }
+  jobCount() {
+    return this.http.get<number>(`${this.baseUrl}/job-count`);
+  }
   deleteJob(id: number): Observable<void> {
     return this.http.delete<void>(`${this.baseUrl}/${id}`);
   }

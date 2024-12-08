@@ -24,9 +24,13 @@ namespace backend.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Customers>>> CustomerList()
         {
-            return await _context.Customers.ToListAsync();
+            return Ok(await _context.Customers.ToListAsync());
         }
-
+        [HttpGet("customer-count")]
+        public async Task<IActionResult> CustomerCount()
+        {
+            return Ok(await _context.Customers.CountAsync());
+        }
         [HttpGet("{id}")]
         public async Task<ActionResult<Customers>> GetCustomer(int id)
         {
@@ -74,6 +78,28 @@ namespace backend.Controllers
                 _logger.LogError($"{ex.Message}", "Error in posting customer");
                 return StatusCode(500, new { Message = "Internal Service Error" });
             }
+        }
+
+        [HttpGet("search-customers")]
+        public async Task<IActionResult> SearchCustomers(string? name, string? email, string? industry)
+        {
+            var query = _context.Customers.AsQueryable();
+
+            if (!string.IsNullOrEmpty(name))
+            {
+                query = query.Where(c => c.Name.Contains(name));
+            }
+
+            if (!string.IsNullOrEmpty(email))
+            {
+                query = query.Where(c => c.Email.Contains(email));
+            }
+            if (!string.IsNullOrEmpty(industry))
+            {
+                query = query.Where(c => c.Industry.Contains(industry));
+            }
+            var results = await query.ToListAsync();
+            return Ok(results);
         }
     }
 }

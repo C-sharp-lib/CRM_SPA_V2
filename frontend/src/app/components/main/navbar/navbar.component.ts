@@ -9,7 +9,7 @@ import {AccountService} from '../../../services';
 })
 export class NavbarComponent implements OnInit {
   showMenu: boolean = false;
-  userData: any;
+  userEmail: string | null = null;
   errorMessage: string = '';
   isAuthenticated: boolean = false;
   constructor(private router: Router, private route: ActivatedRoute, private authService: AccountService) {}
@@ -57,6 +57,16 @@ export class NavbarComponent implements OnInit {
       this.router.url === '/dashboard/users/user-list' ||
       this.router.url === '/dashboard/users/user-create' ||
       this.router.url === '/dashboard/users/:id') {
+      return this.showMenu = true;
+    } else {
+      return this.showMenu = false;
+    }
+  }
+  showProductsMenu(): boolean {
+    if(this.router.url === '/dashboard/products' ||
+      this.router.url === '/dashboard/products/product-list' ||
+      this.router.url === '/dashboard/products/product-create' ||
+      this.router.url === '/dashboard/products/:id') {
       return this.showMenu = true;
     } else {
       return this.showMenu = false;

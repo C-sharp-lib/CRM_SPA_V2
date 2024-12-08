@@ -15,7 +15,7 @@ export class JobCreateComponent {
   jobForm: FormGroup;
   jobStatus = Object.values(JobStatus);
   jobPriority = Object.values(JobPriority);
-  constructor(private fb: FormBuilder, private jobService: JobService, private http: HttpClient) {
+  constructor(private fb: FormBuilder, private jobService: JobService) {
     this.jobForm = this.fb.group({
       jobTitle: ['', Validators.required],
       jobDescription: ['', Validators.required],

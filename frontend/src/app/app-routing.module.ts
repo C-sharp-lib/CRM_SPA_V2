@@ -5,12 +5,12 @@ import * as fromAccount from './components/account';
 import * as fromDashboardJobs from './components/dashboard/jobs';
 import * as fromDashboardCustomers from './components/dashboard/customers';
 import * as fromDashboardUsers from './components/dashboard/users';
+import * as fromDashboardProducts from './components/dashboard/products';
 import {CampaignsComponent} from './components/dashboard/campaigns/campaigns.component';
 import {ContactsComponent} from './components/dashboard/contacts/contacts.component';
 import {LeadsComponent} from './components/dashboard/leads/leads.component';
 import {NotesComponent} from './components/dashboard/notes/notes.component';
 import {OrdersComponent} from './components/dashboard/orders/orders.component';
-import {ProductsComponent} from './components/dashboard/products/products.component';
 import {TasksComponent} from './components/dashboard/tasks/tasks.component';
 import {DashboardMainComponent} from './components/dashboard/dashboard-main/dashboard-main.component';
 import {AccountGuard} from './guards/account-guard.guard';
@@ -44,7 +44,12 @@ const routes: Routes = [
       {path: 'leads', component: LeadsComponent},
       {path: 'notes', component: NotesComponent},
       {path: 'orders', component: OrdersComponent},
-      {path: 'products', component: ProductsComponent},
+      {path: 'products', component: fromDashboardProducts.ProductsComponent, children: [
+          {path: 'product-list', component: fromDashboardProducts.ProductListComponent},
+          {path: 'product-create', component: fromDashboardProducts.ProductCreateComponent},
+          {path: '', pathMatch: 'full', redirectTo: '/dashboard/products/product-list'}
+        ]},
+      {path: 'product-details/:id', component: fromDashboardProducts.ProductDetailComponent},
       {path: 'tasks', component: TasksComponent},
 
       {path: 'users', component: fromDashboardUsers.UsersComponent, children: [

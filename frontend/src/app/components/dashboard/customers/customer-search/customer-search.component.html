@@ -1,47 +1,33 @@
-<div class="row mt-5">
-
-</div>
 <div class="container">
 <div class="row mt-5">
-  <div class="col-12">
-    <form class="form inline" (ngSubmit)="onSearch()">
       <div class="row">
         <div class="col-12 col-sm-12 col-md-8">
           <div class="form-group">
-            <input type="search" [(ngModel)]="keyword" class="form-control form-control-lg color-background bg-gradient-dark" id="search-customers"/>
+            <input type="search" [(ngModel)]="searchedQuery" class="form-control form-control-lg color-background bg-gradient-dark" id="search-customers"/>
           </div>
         </div>
         <div class="col-12 col-sm-12 col-md-4">
           <div class="form-group">
-            <button type="submit" class="custom-btn btn-4 button"><span>Submit</span></button>
+            <button type="submit" class="btn bg-gradient-info" (click)="onSearch()"><span>Search</span></button>
           </div>
         </div>
-      </div>
-    </form>
   </div>
 </div>
-  <div *ngIf="errorMessage" class="row error-message">
-    <div class="col-12">
-      <div class="alert alert-danger" role="alert">
-        <p class="ubuntu-bold text-white">
-          {{ errorMessage }}
-          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-        </p>
-      </div>
-    </div>
-  </div>
-  <div class="search-container">
+  <div class="search-container mx-auto">
   <div class="row">
     <div class="col-12 text-center">
-      <div *ngIf="results.length > 0">
+      <div *ngIf="results.length > 0; else noResults">
         <h4 class="text-gradient text-primary">Search Results</h4>
         <ul>
-          <li *ngFor="let customer of results">
+          <li *ngFor="let customer of results" class="list-unstyled">
             {{customer.name}} {{customer.address}} {{customer.status}} {{customer.customerType}}
           </li>
         </ul>
       </div>
-    </div>
+        </div>
+    <ng-template #noResults>
+      <p class="bg-gradient-warning text-white p-2 rounded-3">No Results Found.</p>
+    </ng-template>
   </div>
   </div>
 </div>

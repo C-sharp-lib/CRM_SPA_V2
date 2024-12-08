@@ -35,7 +35,11 @@ namespace backend.Controllers
                 .ToListAsync();
             return Ok(jobs);
         }
-
+        [HttpGet("job-count")]
+        public async Task<IActionResult> JobCount()
+        {
+            return Ok(await _context.Jobs.CountAsync());
+        }
         [HttpGet("{id}")]
         public async Task<IActionResult> JobDetail(int id)
         {
