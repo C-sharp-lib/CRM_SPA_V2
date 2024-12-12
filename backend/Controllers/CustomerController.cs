@@ -31,17 +31,20 @@ namespace backend.Controllers
         {
             return Ok(await _context.Customers.CountAsync());
         }
-        [HttpGet("{id}")]
+        [HttpGet("customer-details/{id}")]
         public async Task<ActionResult<Customers>> GetCustomer(int id)
         {
-            var customer = await _context.Customers.FindAsync(id);
+            var customer = await _context.Customers
+                .Include(c => c.CustomerOrders)
+                .ThenInclude(c => c.Order)
+                .FirstOrDefaultAsync(c => c.CustomerId == id);
 
             if (customer == null)
             {
                 return NotFound();
             }
 
-            return customer;
+            return Ok(customer);
         }
 
         [HttpPost("CreateCustomer")]

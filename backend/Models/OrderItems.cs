@@ -10,9 +10,6 @@ namespace backend.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int OrderItemId { get; set; }
         [Required]
-        public int OrderId { get; set; }
-        public Orders Order { get; set; }
-        [Required]
         public int ProductId { get; set; }
         public Products Products { get; set; }
         public int Quantity { get; set; }
@@ -20,5 +17,6 @@ namespace backend.Models
         public decimal UnitPrice { get; set; }
         [Precision(10,2)]
         public decimal TotalPrice { get; set; }
+        public ICollection<OrdersOrderItems> OrdersOrderItems { get; set; }
     }
 }

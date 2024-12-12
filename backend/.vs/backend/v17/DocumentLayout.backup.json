@@ -3,6 +3,94 @@
   "WorkspaceRootPath": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\controllers\\orderitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:controllers\\orderitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\orderitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\orderitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\dto\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:dto\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\ordersorderitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\ordersorderitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\dto\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:dto\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\controllers\\notecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:controllers\\notecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\controllers\\jobcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:controllers\\jobcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\dto\\taskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:dto\\taskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\dto\\notedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:dto\\notedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\notetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\notetype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\campaignusernotes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\campaignusernotes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\tasktype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\tasktype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\jobusernotes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\jobusernotes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\usertasknotes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\usertasknotes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\notes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\notes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -11,52 +99,12 @@
       "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\approles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\controllers\\jobcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:controllers\\jobcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\tasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:controllers\\taskscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\dto\\taskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:dto\\taskdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\controllers\\campaigncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:controllers\\campaigncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\notes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\notes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\appusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\appusers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\usertasknotes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\usertasknotes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\controllers\\orderitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:controllers\\orderitemcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\dto\\campaigndto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -71,36 +119,12 @@
       "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\campaignusertasks.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\campaignusernotes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\campaignusernotes.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\products.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\dto\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:dto\\orderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:dto\\userdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\orders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\models\\orderitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:models\\orderitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\dto\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|solutionrelative:dto\\orderitemdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3A4025EC-DB63-42CC-807F-C8E65A843D3E}|backend.csproj|c:\\users\\strad\\desktop2\\universalcrm\\backend\\dto\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -141,12 +165,12 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 237,
-          "SelectedChildIndex": 15,
+          "DockedWidth": 189,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 34,
               "Title": "CustomerJobs.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\CustomerJobs.cs",
               "RelativeDocumentMoniker": "Models\\CustomerJobs.cs",
@@ -167,110 +191,159 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "UserTaskNotes.cs",
-              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\UserTaskNotes.cs",
-              "RelativeDocumentMoniker": "Models\\UserTaskNotes.cs",
-              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\UserTaskNotes.cs",
-              "RelativeToolTip": "Models\\UserTaskNotes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvw8AAAAnAAAAAAAAAA==",
+              "DocumentIndex": 15,
+              "Title": "NoteType.cs",
+              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\NoteType.cs",
+              "RelativeDocumentMoniker": "Models\\NoteType.cs",
+              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\NoteType.cs",
+              "RelativeToolTip": "Models\\NoteType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T19:26:54.983Z",
+              "WhenOpened": "2024-12-09T19:26:57.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "NoteController.cs",
+              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Controllers\\NoteController.cs",
+              "RelativeDocumentMoniker": "Controllers\\NoteController.cs",
+              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Controllers\\NoteController.cs",
+              "RelativeToolTip": "Controllers\\NoteController.cs",
+              "ViewState": "AgIAAHwAAAAAAAAAAAAzwJgAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T18:58:54.93Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 21,
               "Title": "Notes.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\Notes.cs",
               "RelativeDocumentMoniker": "Models\\Notes.cs",
               "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\Notes.cs",
               "RelativeToolTip": "Models\\Notes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvw4AAABFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwoAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T19:19:01.505Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T19:19:01.505Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 3,
               "Title": "OrdersController.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Controllers\\OrdersController.cs",
               "RelativeDocumentMoniker": "Controllers\\OrdersController.cs",
               "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Controllers\\OrdersController.cs",
               "RelativeToolTip": "Controllers\\OrdersController.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAkwAgAAAASAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAywBIAAABaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-07T00:42:58.797Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "OrderItemDTO.cs",
-              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\DTO\\OrderItemDTO.cs",
-              "RelativeDocumentMoniker": "DTO\\OrderItemDTO.cs",
-              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\DTO\\OrderItemDTO.cs",
-              "RelativeToolTip": "DTO\\OrderItemDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwoAAAASAAAAAAAAAA==",
+              "DocumentIndex": 16,
+              "Title": "Tasks.cs",
+              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\Tasks.cs",
+              "RelativeDocumentMoniker": "Models\\Tasks.cs",
+              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\Tasks.cs",
+              "RelativeToolTip": "Models\\Tasks.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T21:36:48.191Z"
+              "WhenOpened": "2024-11-27T23:41:19.629Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 1,
               "Title": "OrderItemController.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Controllers\\OrderItemController.cs",
               "RelativeDocumentMoniker": "Controllers\\OrderItemController.cs",
               "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Controllers\\OrderItemController.cs",
               "RelativeToolTip": "Controllers\\OrderItemController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-06T21:31:02.744Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "OrdersOrderItems.cs",
+              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\OrdersOrderItems.cs",
+              "RelativeDocumentMoniker": "Models\\OrdersOrderItems.cs",
+              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\OrdersOrderItems.cs",
+              "RelativeToolTip": "Models\\OrdersOrderItems.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-12T05:22:17.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "UserTaskNotes.cs",
+              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\UserTaskNotes.cs",
+              "RelativeDocumentMoniker": "Models\\UserTaskNotes.cs",
+              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\UserTaskNotes.cs",
+              "RelativeToolTip": "Models\\UserTaskNotes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T19:26:54.983Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "OrderItemDTO.cs",
+              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\DTO\\OrderItemDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\OrderItemDTO.cs",
+              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\DTO\\OrderItemDTO.cs",
+              "RelativeToolTip": "DTO\\OrderItemDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-06T21:36:48.191Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "CustomerController.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Controllers\\CustomerController.cs",
               "RelativeDocumentMoniker": "Controllers\\CustomerController.cs",
               "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Controllers\\CustomerController.cs",
               "RelativeToolTip": "Controllers\\CustomerController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAywBwAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAACEAAAAAAAAAAAAswCkAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-06T18:16:04.964Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 12,
               "Title": "JobController.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Controllers\\JobController.cs",
               "RelativeDocumentMoniker": "Controllers\\JobController.cs",
               "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Controllers\\JobController.cs",
               "RelativeToolTip": "Controllers\\JobController.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAUwCsAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-06T18:06:38.696Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
               "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Controllers\\ProductController.cs",
               "RelativeToolTip": "Controllers\\ProductController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAiwBwAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAIAywCEAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-06T17:44:53.664Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 31,
               "Title": "ProductDTO.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\DTO\\ProductDTO.cs",
               "RelativeDocumentMoniker": "DTO\\ProductDTO.cs",
@@ -282,20 +355,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Tasks.cs",
-              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\Tasks.cs",
-              "RelativeDocumentMoniker": "Models\\Tasks.cs",
-              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\Tasks.cs",
-              "RelativeToolTip": "Models\\Tasks.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAA/wAoAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T23:41:19.629Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 32,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -307,7 +367,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 25,
               "Title": "AppUsers.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\AppUsers.cs",
               "RelativeDocumentMoniker": "Models\\AppUsers.cs",
@@ -315,12 +375,11 @@
               "RelativeToolTip": "Models\\AppUsers.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAA4wBsAAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T19:24:51.81Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T19:24:51.81Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 22,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
@@ -328,12 +387,11 @@
               "RelativeToolTip": "Controllers\\AccountController.cs",
               "ViewState": "AgIAAEgAAAAAAAAAAAAswFMAAAA3AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T17:31:23.838Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T17:31:23.838Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 23,
               "Title": "AppRoles.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\AppRoles.cs",
               "RelativeDocumentMoniker": "Models\\AppRoles.cs",
@@ -341,12 +399,11 @@
               "RelativeToolTip": "Models\\AppRoles.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T17:31:08.509Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-04T17:31:08.509Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 35,
               "Title": "backend.csproj.nuget.g.targets",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\obj\\backend.csproj.nuget.g.targets",
               "RelativeDocumentMoniker": "obj\\backend.csproj.nuget.g.targets",
@@ -358,7 +415,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 33,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -370,7 +427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 36,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Properties\\launchSettings.json",
@@ -382,7 +439,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 30,
               "Title": "UserDTO.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\DTO\\UserDTO.cs",
               "RelativeDocumentMoniker": "DTO\\UserDTO.cs",
@@ -394,7 +451,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 8,
               "Title": "OrderDTO.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\DTO\\OrderDTO.cs",
               "RelativeDocumentMoniker": "DTO\\OrderDTO.cs",
@@ -402,52 +459,50 @@
               "RelativeToolTip": "DTO\\OrderDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T00:38:46.923Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 163,
-          "SelectedChildIndex": 11,
-          "Children": [
+              "WhenOpened": "2024-12-07T00:38:46.923Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 13,
               "Title": "TaskDTO.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\DTO\\TaskDTO.cs",
               "RelativeDocumentMoniker": "DTO\\TaskDTO.cs",
               "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\DTO\\TaskDTO.cs",
               "RelativeToolTip": "DTO\\TaskDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T19:36:18.073Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-11T18:09:36.197Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 211,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "TaskType.cs",
+              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\TaskType.cs",
+              "RelativeDocumentMoniker": "Models\\TaskType.cs",
+              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\TaskType.cs",
+              "RelativeToolTip": "Models\\TaskType.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwQAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T18:06:47.713Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TasksController.cs",
-              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Controllers\\TasksController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TasksController.cs",
-              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Controllers\\TasksController.cs",
-              "RelativeToolTip": "Controllers\\TasksController.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAIAwwEoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 19,
+              "Title": "JobUserNotes.cs",
+              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\JobUserNotes.cs",
+              "RelativeDocumentMoniker": "Models\\JobUserNotes.cs",
+              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\JobUserNotes.cs",
+              "RelativeToolTip": "Models\\JobUserNotes.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvxMAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T19:33:26.628Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "CampaignUserTasks.cs",
-              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\CampaignUserTasks.cs",
-              "RelativeDocumentMoniker": "Models\\CampaignUserTasks.cs",
-              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\CampaignUserTasks.cs",
-              "RelativeToolTip": "Models\\CampaignUserTasks.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T18:57:20.702Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T19:21:48.472Z"
             },
             {
               "$type": "Document",
@@ -457,14 +512,38 @@
               "RelativeDocumentMoniker": "Models\\CampaignUserNotes.cs",
               "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\CampaignUserNotes.cs",
               "RelativeToolTip": "Models\\CampaignUserNotes.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw8AAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T18:57:19.615Z",
+              "WhenOpened": "2024-12-07T18:57:19.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TasksController.cs",
+              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Controllers\\TasksController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TasksController.cs",
+              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Controllers\\TasksController.cs",
+              "RelativeToolTip": "Controllers\\TasksController.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAADwv38AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T19:33:26.628Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 28,
+              "Title": "CampaignUserTasks.cs",
+              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\CampaignUserTasks.cs",
+              "RelativeDocumentMoniker": "Models\\CampaignUserTasks.cs",
+              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\CampaignUserTasks.cs",
+              "RelativeToolTip": "Models\\CampaignUserTasks.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvwAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-07T18:57:20.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
               "Title": "Campaigns.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\Campaigns.cs",
               "RelativeDocumentMoniker": "Models\\Campaigns.cs",
@@ -472,12 +551,36 @@
               "RelativeToolTip": "Models\\Campaigns.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T18:57:18.185Z",
+              "WhenOpened": "2024-12-07T18:57:18.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Models\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAMEAAAAAAAAAAAAkwNMAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T16:38:16.174Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 14,
+              "Title": "NoteDTO.cs",
+              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\DTO\\NoteDTO.cs",
+              "RelativeDocumentMoniker": "DTO\\NoteDTO.cs",
+              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\DTO\\NoteDTO.cs",
+              "RelativeToolTip": "DTO\\NoteDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T18:09:59.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "CampaignController.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Controllers\\CampaignController.cs",
               "RelativeDocumentMoniker": "Controllers\\CampaignController.cs",
@@ -485,12 +588,11 @@
               "RelativeToolTip": "Controllers\\CampaignController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T18:56:58.879Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T18:56:58.879Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 38,
               "Title": "CustomerOrders.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\CustomerOrders.cs",
               "RelativeDocumentMoniker": "Models\\CustomerOrders.cs",
@@ -502,7 +604,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 29,
               "Title": "Products.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\Products.cs",
               "RelativeDocumentMoniker": "Models\\Products.cs",
@@ -510,37 +612,37 @@
               "RelativeToolTip": "Models\\Products.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAA/wCMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-06T17:45:02.413Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-06T17:45:02.413Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 2,
               "Title": "OrderItems.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\OrderItems.cs",
               "RelativeDocumentMoniker": "Models\\OrderItems.cs",
               "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\OrderItems.cs",
               "RelativeToolTip": "Models\\OrderItems.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAADwvwsAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-27T23:29:46.055Z"
+              "WhenOpened": "2024-11-27T23:29:46.055Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 7,
               "Title": "Orders.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\Orders.cs",
               "RelativeDocumentMoniker": "Models\\Orders.cs",
               "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\Orders.cs",
               "RelativeToolTip": "Models\\Orders.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-27T23:24:12.911Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 37,
               "Title": "Jobs.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\Jobs.cs",
               "RelativeDocumentMoniker": "Models\\Jobs.cs",
@@ -552,20 +654,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Models\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\Models\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Models\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAUwFoAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T16:38:16.174Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 26,
               "Title": "CampaignDTO.cs",
               "DocumentMoniker": "C:\\Users\\strad\\Desktop2\\UniversalCRM\\backend\\DTO\\CampaignDTO.cs",
               "RelativeDocumentMoniker": "DTO\\CampaignDTO.cs",
@@ -573,8 +662,7 @@
               "RelativeToolTip": "DTO\\CampaignDTO.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-07T18:57:14.096Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-07T18:57:14.096Z"
             }
           ]
         }

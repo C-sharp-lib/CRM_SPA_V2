@@ -3,12 +3,12 @@
   <a class="close text-gradient text-danger text-bold text-2xl ms-11" (click)="activeModal.dismiss('Cross click')">&times;</a>
 </div>
 <div class="modal-body bg-gradient-dark">
-  <form>
+  <form class="ubuntu p-3">
     <div class="row">
       <div class="col-12 col-md-12">
         <div class="form-group">
           <label for="jobTitle" class="text-gradient text-primary ubuntu-bold">Job Title</label>
-          <input type="text" id="jobTitle" class="form-control" [(ngModel)]="jobTitle" name="jobTitle" />
+          <input type="text" id="jobTitle" [ngModelOptions]="{standalone: true}" class="form-control" [(ngModel)]="jobTitle" name="jobTitle" />
         </div>
       </div>
     </div>
@@ -16,13 +16,13 @@
       <div class="col-12 col-md-6">
         <div class="form-group">
           <label for="startDate" class="ubuntu-bold text-gradient text-primary">Start Date</label>
-          <input type="datetime-local" id="startDate" [(ngModel)]="startDate" name="startDate" class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold">
+          <input type="datetime-local" id="startDate" [(ngModel)]="startDate"  [ngModelOptions]="{standalone: true}" name="startDate" class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold">
         </div>
       </div>
       <div class="col-12 col-md-6">
         <div class="form-group">
           <label for="endDate" class="ubuntu-bold text-gradient text-primary">End Date</label>
-          <input type="datetime-local" id="endDate" [(ngModel)]="endDate" name="endDate" class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold">
+          <input type="datetime-local" id="endDate" [(ngModel)]="endDate" name="endDate" [ngModelOptions]="{standalone: true}" class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold">
         </div>
       </div>
     </div>
@@ -30,13 +30,13 @@
       <div class="col-12 col-md-6">
         <div class="form-group">
           <label for="estimatedCost" class="text-gradient text-primary ubuntu-bold">Estimated Cost</label>
-          <input type="number" id="estimatedCost" class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold" [(ngModel)]="estimatedCost" name="estimatedCost" />
+          <input type="number" id="estimatedCost" [ngModelOptions]="{standalone: true}" class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold" [(ngModel)]="estimatedCost" name="estimatedCost" />
         </div>
       </div>
       <div class="col-12 col-md-6">
         <div class="form-group">
           <label for="actualCost" class="ubuntu-bold text-gradient text-primary">Actual Cost</label>
-          <input type="text" id="actualCost" [(ngModel)]="actualCost" name="actualCost" class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold">
+          <input type="text" id="actualCost" [(ngModel)]="actualCost" [ngModelOptions]="{standalone: true}" name="actualCost" class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold">
         </div>
       </div>
     </div>
@@ -44,16 +44,26 @@
       <div class="col-12 col-md-6">
           <div class="form-group">
             <label for="priority" class="ubuntu-bold text-gradient text-primary">Priority</label>
-            <select id="priority" [(ngModel)]="priority" name="priority" class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold">
-              <option class="bg-dark text-white ubuntu-bold" *ngFor="let type of jobPriority" [value]="type">{{ type }}</option>
+            <select id="priority" [(ngModel)]="priority" [ngModelOptions]="{standalone: true}" name="priority" class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold">
+              <option class="bg-dark text-white ubuntu-bold" [value]="JobPriority.Low">Low</option>
+              <option class="bg-dark text-white ubuntu-bold" [value]="JobPriority.Medium">Medium</option>
+              <option class="bg-dark text-white ubuntu-bold" [value]="JobPriority.High">High</option>
+              <option class="bg-dark text-white ubuntu-bold" [value]="JobPriority.Critical">Critical</option>
             </select>
           </div>
         </div>
       <div class="col-12 col-md-6">
         <div class="form-group">
           <label for="jobStatus" class="ubuntu-bold text-gradient text-primary">Job Status</label>
-          <select type="number" id="jobStatus" [(ngModel)]="jobStatus" class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold">
-            <option class="bg-dark text-white ubuntu-bold" *ngFor="let type of jobStatus" [value]="type">{{ type }}</option>
+          <select type="number" id="jobStatus" [(ngModel)]="jobStatus" [ngModelOptions]="{standalone: true}" class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold">
+            <option class="bg-dark text-white ubuntu-bold" [value]="JobStatus.Completed">Completed</option>
+            <option class="bg-dark text-white ubuntu-bold" [value]="JobStatus.InProgress">In Progress</option>
+            <option class="bg-dark text-white ubuntu-bold" [value]="JobStatus.Failed">Failed</option>
+            <option class="bg-dark text-white ubuntu-bold" [value]="JobStatus.Created">Created</option>
+            <option class="bg-dark text-white ubuntu-bold" [value]="JobStatus.Cancelled">Cancelled</option>
+            <option class="bg-dark text-white ubuntu-bold" [value]="JobStatus.Pending">Pending</option>
+            <option class="bg-dark text-white ubuntu-bold" [value]="JobStatus.Queued">Queued</option>
+            <option class="bg-dark text-white ubuntu-bold" [value]="JobStatus.Running">Running</option>
           </select>
         </div>
       </div>
@@ -62,7 +72,7 @@
       <div class="col-12 col-md-12">
         <div class="form-group">
           <label for="jobDescription" class="ubuntu-bold text-gradient text-primary">Job Description</label>
-          <textarea [(ngModel)]="jobDescription" name="jobDescription" id="jobDescription" cols="10" rows="5" class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold"></textarea>
+          <textarea [(ngModel)]="jobDescription" name="jobDescription" [ngModelOptions]="{standalone: true}" id="jobDescription" cols="10" rows="5" class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold"></textarea>
         </div>
       </div>
     </div>

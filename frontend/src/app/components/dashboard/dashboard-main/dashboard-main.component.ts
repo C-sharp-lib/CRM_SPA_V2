@@ -1,8 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {AccountService, CustomerService, JobService, ProductService} from '../../../services';
-import {Router} from '@angular/router';
-import {Product} from '../../../models/product';
-import {User} from '../../../models/user';
+import {ActivatedRoute, NavigationEnd, Router} from '@angular/router';
+
 
 @Component({
   selector: 'app-dashboard-main',
@@ -14,17 +13,29 @@ export class DashboardMainComponent implements OnInit {
   customers: number;
   jobs: number;
   users: number;
+  showMenu: boolean = false;
   constructor(private productService: ProductService,
               private customerService: CustomerService,
               private jobService: JobService,
               private accountService: AccountService,
-              private router: Router) {}
+              private router: Router,
+              private route: ActivatedRoute) {}
 
   ngOnInit() {
     this.getProductCount();
     this.getCustomerCount();
     this.getJobCount();
     this.getUserCount();
+    this.router.events.subscribe(event => {
+      if (event instanceof NavigationEnd) {
+        const childRoute = this.route.firstChild;
+        if (childRoute && childRoute.snapshot.data['showMenu'] !== undefined) {
+          this.showMenu = childRoute.snapshot.data['showMenu'];
+        } else {
+          this.showMenu = false;
+        }
+      }
+    });
   }
 
   getProductCount() {
@@ -70,5 +81,34 @@ export class DashboardMainComponent implements OnInit {
         console.log(error);
       }
     );
+  }
+  showJobList(): boolean {
+    if(this.router.url === '/dashboard/dashboard-main/job-list') {
+      return this.showMenu = true;
+    } else {
+      return this.showMenu = false;
+    }
+  }
+
+  showCustomerList(): boolean {
+    if(this.router.url === '/dashboard/dashboard-main/customer-list') {
+      return this.showMenu = true;
+    } else {
+      return this.showMenu = false;
+    }
+  }
+  showUserList(): boolean {
+    if(this.router.url === '/dashboard/dashboard-main/user-list') {
+      return this.showMenu = true;
+    } else {
+      return this.showMenu = false;
+    }
+  }
+  showProductList(): boolean {
+    if(this.router.url === '/dashboard/dashboard-main/product-list') {
+      return this.showMenu = true;
+    } else {
+      return this.showMenu = false;
+    }
   }
 }

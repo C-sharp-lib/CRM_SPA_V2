@@ -21,7 +21,7 @@ export class JobService {
   getJob(id: number): Observable<Job> {
     return this.http.get<Job>(`${this.baseUrl}/${id}`);
   }
-  updateJob(job: Job): Observable<Job> {
+  updateJob(id: number, job: any): Observable<Job> {
     if (!job.jobId){
       throw new Error('Job ID is required for update.');
     }

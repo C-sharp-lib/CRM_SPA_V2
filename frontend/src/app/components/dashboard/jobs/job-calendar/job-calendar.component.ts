@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {CalendarOptions, EventInput} from '@fullcalendar/core';
+import {CalendarOptions, EventClickArg, EventInput} from '@fullcalendar/core';
 import interactionPlugin from '@fullcalendar/interaction';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import timeGridPlugin from '@fullcalendar/timegrid';
@@ -9,11 +9,11 @@ import {Job} from '../../../../models/job';
 import {JobStatus} from '../../../../models/job-status';
 import {JobPriority} from '../../../../models/job-priority';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {HttpClient} from '@angular/common/http';
-import {response} from 'express';
-import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 import {ModalService} from '../../../../services/modal.service';
 import {JobModalFormComponent} from '../job-modal-form/job-modal-form.component';
+import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
+import {JobUpdateModalFormComponent} from '../job-update-modal-form/job-update-modal-form.component';
+import {ActivatedRoute} from '@angular/router';
 
 @Component({
   selector: 'app-job-calendar',
@@ -22,10 +22,10 @@ import {JobModalFormComponent} from '../job-modal-form/job-modal-form.component'
 })
 export class JobCalendarComponent implements OnInit {
   calendarOptions: CalendarOptions;
-  jobs: Job[] = [];
+  jobs: any[] = [];
   isFormVisible = false;
   jobStatus = Object.values(JobStatus);
-  jobPriority = Object.values(JobPriority);
+  priority = Object.values(JobPriority);
   job = {
     jobTitle: 'New Job',
     jobDescription: '',
@@ -37,22 +37,10 @@ export class JobCalendarComponent implements OnInit {
     jobStatus: JobStatus.Created,
     priority: JobPriority.Low
   };
-  constructor(private fb: FormBuilder, private jobService: JobService, private modalService: ModalService) {}
+  constructor(private route: ActivatedRoute, private fb: FormBuilder, private jobService: JobService, private modalService: ModalService) {}
   ngOnInit() {
     this.loadJobs();
     this.initializeCalendarOptions();
-  }
-
-  submitJob() {
-    this.jobService.createJob(this.job).subscribe(
-      response => {
-        console.log('Job submitted successfully');
-        this.closeForm();
-      },
-      error => {
-        console.error('Error saving job: ', error);
-      }
-    );
   }
   closeForm() {
     this.isFormVisible = false;
@@ -84,11 +72,8 @@ export class JobCalendarComponent implements OnInit {
   }
 
   handleDateClick(arg: any): void {
-    // Use the modal service to open the JobFormModalComponent
     const modalRef = this.modalService.openModal(JobModalFormComponent);
     modalRef.componentInstance.startDate = arg.dateStr;
-
-    // Handle the result when the modal is closed
     modalRef.result.then((result) => {
       if (result) {
         const newEvent = {
@@ -129,20 +114,29 @@ export class JobCalendarComponent implements OnInit {
       }
     }));
   }
-  handleEventClick(arg) {
-    const job: Job = arg.event.extendedProps.job;
-    job.jobTitle = prompt('Edit Job Title', job.jobTitle) || job.jobTitle;
-    this.jobService.updateJob(job).subscribe((updatedJob) => {
-      const index = this.jobs.findIndex((j) => j.jobId === updatedJob.jobId);
-      this.jobs[index] = updatedJob;
-      this.calendarOptions.events = this.transformJobsToEvents(this.jobs);
-    });
+  handleEventClick(event: any) {
+    const modalRef = this.modalService.openModal(JobUpdateModalFormComponent);
+    modalRef.componentInstance.event = event;
+    modalRef.result
+      .then((updatedEvent) => {
+        this.jobService.updateJob(event.id, updatedEvent).subscribe({
+          next: () => {
+            console.log('Event updated successfully', event);
+          },
+          error: (err) => {
+            console.error('Error updating event', err);
+          },
+        });
+      })
+      .catch((error) => {
+        console.log('Modal dismissed', error);
+      });
   }
   handleEventDrop(arg) {
     const job: Job = arg.event.extendedProps.job;
     job.startDate = arg.event.start;
     job.endDate = arg.event.end;
-    this.jobService.updateJob(job).subscribe((updateJob) => {
+    this.jobService.updateJob(job.jobId, job).subscribe((updateJob) => {
       const index = this.jobs.findIndex((j) => j.jobId === updateJob.jobId);
       this.jobs[index] = updateJob;
     });
@@ -152,7 +146,7 @@ export class JobCalendarComponent implements OnInit {
     const job: Job = arg.event.extendedProps.job;
     job.endDate = arg.event.end;
 
-    this.jobService.updateJob(job).subscribe((updatedJob) => {
+    this.jobService.updateJob(job.jobId, job).subscribe((updatedJob) => {
       const index = this.jobs.findIndex((j) => j.jobId === updatedJob.jobId);
       this.jobs[index] = updatedJob;
     });
@@ -160,12 +154,15 @@ export class JobCalendarComponent implements OnInit {
 
   renderEventContent(arg) {
     const job: Job = arg.event.extendedProps.job;
-    const jobTitle = job.jobTitle + " | Status: " + job.jobStatus + " | Priority: " + job.priority;
-    const jobTime = "Start: " + job.startDate + " - End: " + job.endDate;
+    const eventColor = this.getEventColor(job);
+    const jobTitle = job.jobTitle;
+    const startDate = new Date(job.startDate);
+    const endDate = new Date(job.endDate);
+    const jobTime = "Start: " + startDate.toLocaleDateString() + " - End: " + endDate.toLocaleDateString();
 
     const customHtml = `
-    <div>
-      <b>${jobTitle} <i>${jobTime}</i></b>
+    <div class="p-1 text-white ubuntu-bold" style="background-color: ${eventColor}">
+      <b>${jobTitle.slice(0,7)} | <i>${jobTime}</i></b>
     </div>
   `;
 

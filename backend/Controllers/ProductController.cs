@@ -32,8 +32,6 @@ namespace backend.Controllers
         public async Task<ActionResult> GetProduct(int id)
         {
             var product = await _context.Products
-                .Include(o => o.OrderItems)
-                .ThenInclude(o => o.Order)
                 .SingleOrDefaultAsync(p => p.ProductId == id);
             if (product == null) 
             {

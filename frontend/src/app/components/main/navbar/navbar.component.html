@@ -13,11 +13,12 @@
           <button class="navbar-toggler shadow-none ms-md-2" type="button" data-bs-toggle="collapse"
                   data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false"
                   aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="row">
-            <div class="col-12">
               <div class="nav">
-                <div>
+                <div class="collapse navbar-collapse" id="navigation">
                   <div class="d-flex justify-content-start gap-2">
                     <div class="dropdown m-3">
                       <a class="btn bg-gradient-primary dropdown-toggle" id="dropdownAccountA"
@@ -52,88 +53,13 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownDashboard">
                       <li><a class="dropdown-item" routerLink="/dashboard/dashboard-main">Home</a></li>
-                      <li><a class="dropdown-item" routerLink="/dashboard/jobs">Jobs</a></li>
-                      <li><a class="dropdown-item" routerLink="/dashboard/customers">Customers</a></li>
-                      <li><a class="dropdown-item" routerLink="/dashboard/users">Users</a></li>
-                      <li><a class="dropdown-item" routerLink="/dashboard/products">Products</a></li>
-                    </ul>
-                  </div>
-                    <div class="dropdown m-3" *ngIf="showUsersMenu() && isAuthenticated">
-                      <a class="btn bg-gradient-info dropdown-toggle" id="dropdownUsers"
-                         data-bs-toggle="dropdown" aria-expanded="false">
-                        Users
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownUsers">
-                        <li><a class="dropdown-item" routerLink="/dashboard/users/user-list">User List</a></li>
-                        <li><a class="dropdown-item" routerLink="/dashboard/users/user-create">Add User</a></li>
-                      </ul>
-                    </div>
-                    <div class="dropdown m-3" *ngIf="showProductsMenu() && isAuthenticated">
-                      <a class="btn bg-gradient-info dropdown-toggle" id="dropdownProducts"
-                         data-bs-toggle="dropdown" aria-expanded="false">
-                        Products
-                      </a>
-                      <ul class="dropdown-menu" aria-labelledby="dropdownProducts">
-                        <li><a class="dropdown-item" routerLink="/dashboard/products/product-list">Product List</a></li>
-                        <li><a class="dropdown-item" routerLink="/dashboard/products/product-create">Add Product</a></li>
-                      </ul>
-                    </div>
-                  <div class="dropdown m-3" *ngIf="showCustomersMenu() && isAuthenticated">
-                    <a class="btn bg-gradient-info dropdown-toggle" id="dropdownCustomers"
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                      Customers
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownCustomers">
-                      <li><a class="dropdown-item" routerLink="/dashboard/customers/customer-list">Customer List</a></li>
-                      <li><a class="dropdown-item" routerLink="/dashboard/customers/customer-create">Add Customer</a></li>
-                    </ul>
-                  </div>
-                  <div class="dropdown m-3" *ngIf="showJobsMenu() && isAuthenticated">
-                    <a class="btn bg-gradient-info dropdown-toggle" id="dropdownJobs"
-                       data-bs-toggle="dropdown" aria-expanded="false">
-                      Jobs
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownJobs">
-                      <li><a class="dropdown-item" routerLink="/dashboard/jobs/job-calendar">Calendar</a></li>
-                      <li><a class="dropdown-item" routerLink="/dashboard/jobs/job-create">Add Job</a></li>
-                      <li><a class="dropdown-item" routerLink="/dashboard/jobs/job-list">Job List</a></li>
-                      <li><a class="dropdown-item" routerLink="/dashboard/jobs/job-search">Job Search</a></li>
                     </ul>
                   </div>
                     </div>
               </div>
               </div>
-<!--                <ng-template #loggedOut>-->
-<!--                  <div class="d-flex justify-content-start gap-2">-->
-<!--                  <div class="dropdown m-3">-->
-<!--                    <a class="btn bg-gradient-primary dropdown-toggle" id="dropdownServicesNA"-->
-<!--                       data-bs-toggle="dropdown" aria-expanded="false">-->
-<!--                      Services-->
-<!--                    </a>-->
-<!--                    <ul class="dropdown-menu" aria-labelledby="dropdownServicesNA">-->
-<!--                      <li><a class="dropdown-item" routerLink="">Home</a></li>-->
-<!--                      <li><a class="dropdown-item" routerLink="/about">About</a></li>-->
-<!--                      <li><a class="dropdown-item" routerLink="/contact">Contact</a></li>-->
-<!--                      <li><a class="dropdown-item" routerLink="/terms">Terms and Conditions</a></li>-->
-<!--                      <li><a class="dropdown-item" routerLink="/privacy">Privacy Policy</a></li>-->
-<!--                      <li><a class="dropdown-item" routerLink="/faq">FAQ</a></li>-->
-<!--                    </ul>-->
-<!--                  </div>-->
-<!--                  <div class="dropdown m-3">-->
-<!--                    <a class="btn bg-gradient-primary dropdown-toggle" id="dropdownAccount"-->
-<!--                       data-bs-toggle="dropdown" aria-expanded="false">-->
-<!--                      Accounts-->
-<!--                    </a>-->
-<!--                    <ul class="dropdown-menu" aria-labelledby="dropdownAccount">-->
-<!--                      <li><a class="dropdown-item" routerLink="/login-page">Login</a></li>-->
-<!--                      <li><a class="dropdown-item" routerLink="/register-page">Register</a></li>-->
-<!--                    </ul>-->
-<!--                  </div>-->
-<!--                  </div>-->
-<!--                </ng-template>-->
             </div>
-          </div>
-        </div>
+
       </nav>
       <!-- End Navbar -->
     </div>

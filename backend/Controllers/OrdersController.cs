@@ -16,12 +16,13 @@ namespace backend.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Orders>>> GetOrders()
+        public async Task<ActionResult<IEnumerable<OrdersOrderItems>>> GetOrdersOrderItems()
         {
-            var orders = await _context.Orders
-                .Include(o => o.CustomerOrders)
+            var orders = await _context.OrdersOrderItems
+                .Include(o => o.Order)
+                .ThenInclude(o => o.CustomerOrders)
                 .ThenInclude(o => o.Customer)
-                .Include(o => o.OrderItems)
+                .Include(o => o.OrderItem)
                 .ThenInclude(o => o.Products)
                 .ToListAsync();
             return Ok(orders);
@@ -29,10 +30,11 @@ namespace backend.Controllers
         [HttpGet("order-details/{id}")]
         public async Task<ActionResult> GetOrder(int id)
         {
-            var order = await _context.Orders
-                .Include(o => o.CustomerOrders)
+            var order = await _context.OrdersOrderItems
+                .Include(o => o.Order)
+                .ThenInclude(o => o.CustomerOrders)
                 .ThenInclude(o => o.Customer)
-                .Include(o => o.OrderItems)
+                .Include(o => o.OrderItem)
                 .ThenInclude(o => o.Products)
                 .FirstOrDefaultAsync(o => o.OrderId == id);
             if (order == null) 
@@ -77,11 +79,12 @@ namespace backend.Controllers
         {
             try
             {
-                var or = _context.Orders
-                     .Include(o => o.CustomerOrders)
-                     .ThenInclude(o => o.Customer)
-                     .Include(o => o.OrderItems)
-                     .ThenInclude(o => o.Products)
+                var or = _context.OrdersOrderItems
+                     .Include(o => o.Order)
+                     .ThenInclude(o => o.CustomerOrders)
+                    .ThenInclude(o => o.Customer)
+                    .Include(o => o.OrderItem)
+                    .ThenInclude(o => o.Products)
                     .FirstOrDefault(o => o.OrderId == id);
                 if(or == null)
                 {
@@ -89,16 +92,16 @@ namespace backend.Controllers
                 }
                 if(ModelState.IsValid)
                 {
-                    order.OrderDate = or.OrderDate;
-                    order.TotalAmount = or.TotalAmount;
-                    order.DiscountAmount = or.DiscountAmount;
-                    order.PaymentMethod = or.PaymentMethod;
-                    order.NetAmount = or.NetAmount;
-                    order.PaymentStatus = or.PaymentStatus;
-                    order.ShippingAddress = or.ShippingAddress;
-                    order.BillingAddress = or.BillingAddress;
-                    order.Notes = or.Notes;
-                    _context.Orders.Update(or);
+                    order.OrderDate = or.Order.OrderDate;
+                    order.TotalAmount = or.Order.TotalAmount;
+                    order.DiscountAmount = or.Order.DiscountAmount;
+                    order.PaymentMethod = or.Order.PaymentMethod;
+                    order.NetAmount = or.Order.NetAmount;
+                    order.PaymentStatus = or.Order.PaymentStatus;
+                    order.ShippingAddress = or.Order.ShippingAddress;
+                    order.BillingAddress = or.Order.BillingAddress;
+                    order.Notes = or.Order.Notes;
+                    _context.OrdersOrderItems.Update(or);
                     await _context.SaveChangesAsync();
                     return Ok($"The order with the id: {id} was updated");
                 }

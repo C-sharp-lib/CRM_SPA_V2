@@ -1,0 +1,84 @@
+<div class="modal-header bg-gradient-dark">
+  <h4 class="modal-title text-gradient text-primary ubuntu-bold left">Update Job</h4>
+  <a class="close text-gradient text-danger text-bold text-2xl ms-11" (click)="dismiss()">&times;</a>
+</div>
+<div class="modal-body bg-gradient-dark">
+  <form class="ubuntu p-3" [formGroup]="eventForm">
+    <div class="row">
+      <div class="col-12 col-md-12">
+        <div class="form-group">
+          <label for="jobTitle" class="text-gradient text-primary ubuntu-bold">Job Title</label>
+          <input type="text" id="jobTitle"  class="form-control" formControlName="jobTitle" />
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="form-group">
+          <label for="startDate" class="ubuntu-bold text-gradient text-primary">Start Date</label>
+          <input type="datetime-local" id="startDate" formControlName="startDate" class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold">
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="form-group">
+          <label for="endDate" class="ubuntu-bold text-gradient text-primary">End Date</label>
+          <input type="datetime-local" id="endDate" formControlName="endDate" class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="form-group">
+          <label for="estimatedCost" class="text-gradient text-primary ubuntu-bold">Estimated Cost</label>
+          <input type="number" id="estimatedCost" class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold" formControlName="estimatedCost" />
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="form-group">
+          <label for="actualCost" class="ubuntu-bold text-gradient text-primary">Actual Cost</label>
+          <input type="text" id="actualCost" formControlName="actualCost"  class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold">
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="form-group">
+          <label for="priority" class="ubuntu-bold text-gradient text-primary">Priority</label>
+          <select id="priority" formControlName="priority"  class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold">
+            <option class="bg-dark text-white ubuntu-bold" [value]="JobPriority.Low">Low</option>
+            <option class="bg-dark text-white ubuntu-bold" [value]="JobPriority.Medium">Medium</option>
+            <option class="bg-dark text-white ubuntu-bold" [value]="JobPriority.High">High</option>
+            <option class="bg-dark text-white ubuntu-bold" [value]="JobPriority.Critical">Critical</option>
+          </select>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="form-group">
+          <label for="jobStatus" class="ubuntu-bold text-gradient text-primary">Job Status</label>
+          <select type="number" id="jobStatus" formControlName="jobStatus" class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold">
+            <option class="bg-dark text-white ubuntu-bold" [value]="JobStatus.Completed">Completed</option>
+            <option class="bg-dark text-white ubuntu-bold" [value]="JobStatus.InProgress">In Progress</option>
+            <option class="bg-dark text-white ubuntu-bold" [value]="JobStatus.Failed">Failed</option>
+            <option class="bg-dark text-white ubuntu-bold" [value]="JobStatus.Created">Created</option>
+            <option class="bg-dark text-white ubuntu-bold" [value]="JobStatus.Cancelled">Cancelled</option>
+            <option class="bg-dark text-white ubuntu-bold" [value]="JobStatus.Pending">Pending</option>
+            <option class="bg-dark text-white ubuntu-bold" [value]="JobStatus.Queued">Queued</option>
+            <option class="bg-dark text-white ubuntu-bold" [value]="JobStatus.Running">Running</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-12">
+        <div class="form-group">
+          <label for="jobDescription" class="ubuntu-bold text-gradient text-primary">Job Description</label>
+          <textarea formControlName="jobDescription" id="jobDescription" cols="10" rows="5" class="form-control form-control-lg color-background bg-gradient-dark text-white ubuntu-bold"></textarea>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class="modal-footer">
+    <button type="button" class="btn bg-gradient-primary" (click)="save()">Save</button>
+    <button type="button" class="btn bg-gradient-info" (click)="dismiss()">Cancel</button>
+  </div>
+</div>

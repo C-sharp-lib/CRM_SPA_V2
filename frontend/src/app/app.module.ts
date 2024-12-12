@@ -22,6 +22,9 @@ import { LeadsComponent } from './components/dashboard/leads/leads.component';
 import { TasksComponent } from './components/dashboard/tasks/tasks.component';
 import { FullCalendarModule } from '@fullcalendar/angular';
 import { DashboardMainComponent } from './components/dashboard/dashboard-main/dashboard-main.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { LineChartGradientComponent } from './components/dashboard/dashboard-main/line-chart-gradient/line-chart-gradient.component';
+
 
 @NgModule({
   declarations: [
@@ -41,14 +44,16 @@ import { DashboardMainComponent } from './components/dashboard/dashboard-main/da
     LeadsComponent,
     TasksComponent,
     DashboardMainComponent,
+    LineChartGradientComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgOptimizedImage,
+    NgbModule,
     FormsModule,
     FullCalendarModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [
     provideClientHydration(),

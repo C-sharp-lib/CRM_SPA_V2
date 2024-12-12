@@ -40,7 +40,7 @@ namespace backend.Controllers
         {
             return Ok(await _context.Jobs.CountAsync());
         }
-        [HttpGet("{id}")]
+        [HttpGet("job-details/{id}")]
         public async Task<IActionResult> JobDetail(int id)
         {
             var job = await _context.Jobs

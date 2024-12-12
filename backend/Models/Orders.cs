@@ -23,7 +23,7 @@ namespace backend.Models
         public string Notes {  get; set; }
         public DateTime CreatedAt { get; set; } = DateTime.Now;
         public DateTime UpdatedAt { get; set; } = DateTime.Now;
-        public ICollection<OrderItems> OrderItems { get; set; }
         public ICollection<CustomerOrders> CustomerOrders { get; set; }
+        public ICollection<OrdersOrderItems> OrdersOrderItems { get; set; }
     }
 }

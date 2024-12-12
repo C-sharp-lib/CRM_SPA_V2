@@ -16,6 +16,7 @@ namespace backend.Models
         public DbSet<CustomerRelationships> CustomerRelationships { get; set; }
         public DbSet<CustomerSegments> CustomerSegments { get; set; }
         public DbSet<CustomerOrders> CustomerOrders { get; set; }
+        public DbSet<OrdersOrderItems> OrdersOrderItems { get; set; }
         public DbSet<Jobs> Jobs { get; set; }
         public DbSet<Leads> Leads { get; set; }
         public DbSet<LeadHistory> LeadHistory { get; set; }
@@ -93,7 +94,7 @@ namespace backend.Models
             modelBuilder.Entity<Orders>()
                 .HasKey(o => new {o.OrderId });
             modelBuilder.Entity<OrderItems>()
-                .HasKey(o => new { o.OrderId, o.OrderItemId, o.ProductId });
+                .HasKey(o => new { o.OrderItemId, o.ProductId });
             modelBuilder.Entity<Products>()
                 .HasKey(p => new { p.ProductId });
             modelBuilder.Entity<Tasks>()
@@ -102,7 +103,8 @@ namespace backend.Models
                 .HasKey(t => new {t.UserId, t.TaskId, t.NoteId, t.UserTaskNoteId});
             modelBuilder.Entity<TaskAttachments>()
                 .HasKey(t => new { t.TaskId, t.TaskAttachmentId, t.UploadedBy});
-
+            modelBuilder.Entity<OrdersOrderItems>()
+                .HasKey(o => new { o.OrderId, o.OrderItemId, o.OrdersOrderItemsId });
             modelBuilder.Entity<AppUsers>()
                 .HasMany(ur => ur.UserRoles)
                 .WithOne(ur => ur.User)
@@ -199,7 +201,15 @@ namespace backend.Models
                 .HasOne(c => c.User)
                 .WithMany(c => c.JobUserTasks)
                 .HasForeignKey(c => c.UserId);
-
+            modelBuilder.Entity<OrdersOrderItems>()
+                .HasOne(o => o.Order)
+                .WithMany(o => o.OrdersOrderItems)
+                .HasForeignKey(o => o.OrderId);
+            modelBuilder.Entity<OrdersOrderItems>()
+                .HasOne(o => o.OrderItem)
+                .WithMany(o => o.OrdersOrderItems)
+                .HasForeignKey(o => o.OrderItemId)
+                .HasPrincipalKey(o => o.ProductId);
             modelBuilder.Entity<Products>()
                 .HasMany(o => o.OrderItems)
                 .WithOne(o => o.Products)
@@ -209,6 +219,7 @@ namespace backend.Models
                 .HasOne(o => o.Products)
                 .WithMany(o => o.OrderItems)
                 .HasForeignKey(o => o.ProductId);
+            
         }
     }
 }

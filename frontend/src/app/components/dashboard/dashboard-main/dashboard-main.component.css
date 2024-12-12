@@ -388,3 +388,18 @@
 .fa-solid.fa-circle-exclamation {
   font-size: 24px;
 }
+.job-calendar {
+  position: relative;
+  bottom: 10%;
+}
+.nav.nav-pills.nav-fill {
+  background: transparent !important;
+}
+#line-chart-gradient {
+  width: 100%;
+  height: 300px;
+}
+.line-chart-card {
+  position: relative;
+  bottom: 50% !important;
+}

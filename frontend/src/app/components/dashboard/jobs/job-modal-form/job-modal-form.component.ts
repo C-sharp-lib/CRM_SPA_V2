@@ -10,7 +10,7 @@ import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 })
 export class JobModalFormComponent {
   jobStatus = Object.values(JobStatus);
-  jobPriority = Object.values(JobPriority);
+  jobPriority = Object.values(JobStatus);
   @Input() startDate: string;
   @Input() endDate: string;
   @Input() jobTitle: string;
@@ -38,11 +38,14 @@ export class JobModalFormComponent {
     this.activeModal.close({
       jobTitle: this.jobTitle,
       jobDescription: this.jobDescription,
-      status: JobStatus.Created,
-      priority: JobPriority.Low,
+      status: this.status,
+      priority: this.priority,
       startDate: this.startDate,
       estimatedCost: this.estimatedCost,
       actualCost: this.actualCost
     });
   }
+
+  protected readonly JobPriority = JobPriority;
+  protected readonly JobStatus = JobStatus;
 }

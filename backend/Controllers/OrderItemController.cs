@@ -29,7 +29,8 @@ namespace backend.Controllers
         {
             var item = await _context.OrderItems
                 .Include(o => o.Products)
-                .Include(o => o.Order)
+                .Include(o => o.OrdersOrderItems)
+                .ThenInclude(o => o.Order)
                 .ThenInclude(o => o.CustomerOrders)
                 .ThenInclude(o => o.Customer)
                 .SingleOrDefaultAsync(o => o.OrderItemId == id);
@@ -50,7 +51,6 @@ namespace backend.Controllers
                     OrderItems order = new OrderItems
                     {
                         ProductId = item.ProductId,
-                        OrderId = item.OrderId,
                         Quantity = item.Quantity,
                         UnitPrice = item.UnitPrice,
                         TotalPrice = item.TotalPrice
@@ -81,7 +81,6 @@ namespace backend.Controllers
                 if (ModelState.IsValid)
                 {
                     item.ProductId = updateOrderItem.ProductId;
-                    item.OrderId = updateOrderItem.OrderId;   
                     item.Quantity = updateOrderItem.Quantity;
                     item.UnitPrice = updateOrderItem.UnitPrice;
                     item.TotalPrice = updateOrderItem.TotalPrice;

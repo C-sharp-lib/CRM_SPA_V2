@@ -26,20 +26,22 @@ const routes: Routes = [
   {path: 'register-page', component: fromAccount.RegisterComponent},
   {path: 'dashboard', canActivate: [AccountGuard], children: [
       {path: 'jobs', component: fromDashboardJobs.JobsComponent, children: [
-          {path: 'job-calendar', component: fromDashboardJobs.JobCalendarComponent},
-          {path: 'job-list', component: fromDashboardJobs.JobListComponent},
           {path: 'job-create', component: fromDashboardJobs.JobCreateComponent},
           {path: 'job-search', component: fromDashboardJobs.JobSearchComponent},
-          {path: '', pathMatch: 'full', redirectTo: '/dashboard/jobs/job-calendar'}
         ]},
+      {path: 'job-details/:id', component: fromDashboardJobs.JobDetailsComponent},
       {path: 'campaigns', component: CampaignsComponent},
       {path: 'customers', component: fromDashboardCustomers.CustomersComponent, children: [
-          {path: 'customer-list', component: fromDashboardCustomers.CustomerListComponent},
           {path: 'customer-create', component: fromDashboardCustomers.CustomerCreateComponent},
           {path: 'customer-search', component: fromDashboardCustomers.CustomerSearchComponent},
-          {path: '', pathMatch: 'full', redirectTo: '/dashboard/customers/customer-list'}
         ]},
-      {path: 'dashboard-main', component: DashboardMainComponent},
+      {path: 'customer-details/:id', component: fromDashboardCustomers.CustomerDetailComponent},
+      {path: 'dashboard-main', component: DashboardMainComponent, children: [
+          {path: 'user-list', component: fromDashboardUsers.UserListComponent},
+          {path: 'job-list', component: fromDashboardJobs.JobListComponent},
+          {path: 'customer-list', component: fromDashboardCustomers.CustomerListComponent},
+          {path: 'product-list', component: fromDashboardProducts.ProductListComponent},
+        ]},
       {path: 'contacts', component: ContactsComponent},
       {path: 'leads', component: LeadsComponent},
       {path: 'notes', component: NotesComponent},
@@ -47,15 +49,12 @@ const routes: Routes = [
       {path: 'products', component: fromDashboardProducts.ProductsComponent, children: [
           {path: 'product-list', component: fromDashboardProducts.ProductListComponent},
           {path: 'product-create', component: fromDashboardProducts.ProductCreateComponent},
-          {path: '', pathMatch: 'full', redirectTo: '/dashboard/products/product-list'}
         ]},
       {path: 'product-details/:id', component: fromDashboardProducts.ProductDetailComponent},
       {path: 'tasks', component: TasksComponent},
 
       {path: 'users', component: fromDashboardUsers.UsersComponent, children: [
-          {path: 'user-list', component: fromDashboardUsers.UserListComponent},
           {path: 'user-create', component: fromDashboardUsers.UserCreateComponent},
-          {path: '', pathMatch: 'full', redirectTo: '/dashboard/users/user-list'}
         ]},
       {path: 'user-details/:id', component: fromDashboardUsers.UserDetailComponent},
     ]}
