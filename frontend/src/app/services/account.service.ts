@@ -4,6 +4,9 @@ import {Observable} from 'rxjs';
 import {Router} from '@angular/router';
 import {environment} from '../../environments/environment';
 import {jwtDecode} from 'jwt-decode';
+import {Orders} from '../models/orders';
+import {retry} from 'rxjs/operators';
+import {User} from '../models/user';
 
 
 @Injectable({
@@ -51,6 +54,10 @@ export class AccountService {
   }
   getUserById(id: string): Observable<any> {
     return this.http.get(`${this.baseUrl}/user-details/${id}`);
+  }
+  updateUser(userId: string, user: User): Observable<any> {
+    const url = `${this.baseUrl}/user-update/${userId}`;
+    return this.http.put(url, user);
   }
   isAuthenticated(): boolean {
     return !!localStorage.getItem('token');

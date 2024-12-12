@@ -13,5 +13,5 @@ export interface Product {
   imageUrl: string;
   createdAt?: Date;
   updatedAt?: Date;
-  orderItems: OrderItems;
+  orderItems: OrderItems[];
 }

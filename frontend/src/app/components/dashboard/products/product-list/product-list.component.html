@@ -30,10 +30,10 @@
                   <td class="text-white ubuntu text-sm">{{product.price | currency: product.currency}}</td>
                   <td class="text-white ubuntu text-sm">{{product.quantityInStock}}</td>
                   <td class="text-white ubuntu text-sm">{{product.isActive}}</td>
-                  <td class="text-white ubuntu text-sm">
-                    <a [routerLink]="['/dashboard/product-details', product.productId]" data-bs-toggle="tooltip" data-bs-placement="top" title="View Product" data-container="body" data-animation="true" class="m-3"><i class="fa-solid fa-list text-gradient text-info"></i></a>
-                    <a href="#" class="m-3"><i class="fa-regular fa-pen-to-square text-gradient text-primary"></i></a>
-                    <a href="#" class="m-3"><i class="fa-regular fa-trash-can text-gradient text-danger"></i></a>
+                  <td class="text-sm">
+                    <a [routerLink]="['/dashboard/product-details', product.productId]" data-bs-toggle="tooltip" data-bs-placement="top" title="View {{product.name.slice(0,20)}}" data-container="body" data-animation="true" class="m-3 btn-tooltip"><i class="fa-solid fa-list text-gradient text-info"></i></a>
+                    <a href="#" class="m-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit {{product.name.slice(0,20)}}" data-container="body" data-animation="true"><i class="fa-regular fa-pen-to-square text-gradient text-primary"></i></a>
+                    <a href="#" class="m-3" data-bs-toggle="tooltip" data-bs-placement="top" title="View {{product.name.slice(0,20)}}" data-container="body" data-animation="true"><i class="fa-regular fa-trash-can text-gradient text-danger"></i></a>
                   </td>
                 </tr>
                 </tbody>

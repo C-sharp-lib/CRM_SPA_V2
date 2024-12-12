@@ -111,4 +111,12 @@ export class DashboardMainComponent implements OnInit {
       return this.showMenu = false;
     }
   }
+
+  showCampaignList() {
+    if(this.router.url === '/dashboard/dashboard-main/campaign-list') {
+      return this.showMenu = true;
+    } else {
+      return this.showMenu = false;
+    }
+  }
 }

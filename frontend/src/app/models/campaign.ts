@@ -1,18 +1,25 @@
 import {User} from './user';
-import {Note} from './note';
+import {Notes} from './note';
+import {Tasks} from './tasks';
 
-interface CampaignUserNotes {
+export interface CampaignUserNotes {
   campaignUserNoteId: number;
-  campaignId: Campaign;
-  userId: User;
-  noteId: Note;
+  campaignId: number;
+  userId: string;
+  noteId: number;
+  campaign: Campaign;
+  user: User;
+  notes: Notes;
 }
 
-interface CampaignUserTasks {
+export interface CampaignUserTasks {
   campaignUserTaskId: number;
-  campaignId: Campaign;
-  userId: User;
-  taskId: Task;
+  campaignId: number;
+  userId: string;
+  taskId: number;
+  campaign: Campaign;
+  user: User;
+  task: Tasks;
 }
 
 export interface Campaign {
@@ -24,7 +31,7 @@ export interface Campaign {
   startDate: Date;
   endDate: Date;
   budget: number;
-  spendd: number;
+  spend: number;
   createdAt: Date;
   targetAudience: string;
   channel: string;
@@ -36,6 +43,6 @@ export interface Campaign {
   leadsGenerated: number;
   conversions: number;
   roi: number;
-  campaignUserNotes: CampaignUserNotes;
-  campaignUserTasks: CampaignUserTasks;
+  campaignUserNotes: CampaignUserNotes[];
+  campaignUserTasks: CampaignUserTasks[];
 }

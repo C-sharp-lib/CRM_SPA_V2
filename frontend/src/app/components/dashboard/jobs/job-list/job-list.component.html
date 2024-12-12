@@ -14,8 +14,7 @@
                 <thead>
                 <tr class="text-center">
                   <th class="text-gradient text-primary text-sm">Title</th>
-                  <th class="text-gradient text-primary text-sm">Start</th>
-                  <th class="text-gradient text-primary text-sm">End</th>
+                  <th class="text-gradient text-primary text-sm">Time Frame</th>
                   <th class="text-gradient text-primary text-sm">Priority</th>
                   <th class="text-gradient text-primary text-sm">Estimated Cost</th>
                   <th class="text-gradient text-primary text-sm">Status</th>
@@ -24,16 +23,15 @@
                 </thead>
                 <tbody>
                 <tr *ngFor="let job of jobs" class="text-center">
-                  <td class="text-white ubuntu text-sm">{{job.jobTitle.slice(0,5)}}</td>
-                  <td class="text-white ubuntu text-sm">{{job.startDate|date: 'MM/dd/YYYY'}}</td>
-                  <td class="text-white ubuntu text-sm">{{job.endDate|date: 'MM/dd/YYYY'}}</td>
+                  <td class="text-white ubuntu text-sm">{{job.jobTitle.slice(0,10)}}</td>
+                  <td class="text-white ubuntu text-sm">{{job.startDate|date: 'MM/dd/YYYY'}} - {{job.endDate|date: 'MM/dd/YYYY'}}</td>
                   <td class="text-white ubuntu text-sm">{{job.priority|uppercase}}</td>
                   <td class="text-white ubuntu text-sm">{{job.estimatedCost|currency:'USD'}}</td>
                   <td class="text-white ubuntu text-sm">{{job.jobStatus|uppercase}}</td>
-                  <td class="text-white ubuntu text-sm">
-                    <a [routerLink]="['/dashboard/job-details', job.jobId]" class="m-3"><i class="fa-solid fa-list text-gradient text-info"></i></a>
-                    <a href="#" class="m-3"><i class="fa-regular fa-pen-to-square text-gradient text-primary"></i></a>
-                    <a href="#" class="m-3"><i class="fa-regular fa-trash-can text-gradient text-danger"></i></a>
+                  <td class="text-sm">
+                    <a [routerLink]="['/dashboard/job-details', job.jobId]" class="m-3 btn-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="View {{job.jobTitle}}" data-container="body" data-animation="true"><i class="fa-solid fa-list text-gradient text-info"></i></a>
+                    <a href="#" class="m-3 btn-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit {{job.jobTitle}}" data-container="body" data-animation="true"><i class="fa-regular fa-pen-to-square text-gradient text-primary"></i></a>
+                    <a href="#" class="m-3 btn-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete {{job.jobTitle}}" data-container="body" data-animation="true"><i class="fa-regular fa-trash-can text-gradient text-danger"></i></a>
                   </td>
                 </tr>
                 </tbody>

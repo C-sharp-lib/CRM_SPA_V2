@@ -86,6 +86,9 @@ export class JobCalendarComponent implements OnInit {
           jobId: undefined,
           jobStatus: result.jobStatus || 'Created',
           priority: result.priority || 'Low',
+          customerJobs: [],
+          jobUserNotes:[],
+          jobUserTasks: [],
         };
         this.jobService.createJob(newEvent).subscribe(
           (response) => {

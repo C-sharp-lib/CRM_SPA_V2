@@ -1,14 +1,21 @@
 import {User} from './user';
 import {Campaign} from './campaign';
+import {JobUserNotes} from './job';
+import {UserTaskNotes} from './tasks';
 
-interface CampaignUserNotes {
-  campaignId: Campaign;
-  userId: User;
-  noteId: Note;
+export interface CampaignUserNotes {
+  campaignId: number;
+  userId: string;
+  noteId: number;
+  campaign: Campaign;
+  user: User;
+  notes: Notes;
 }
 
-export interface Note {
+export interface Notes {
   noteId: number;
   note: string;
-  campaignUserNotes: CampaignUserNotes;
+  campaignUserNotes: CampaignUserNotes[];
+  jobUserNotes: JobUserNotes[];
+  userTaskNotes: UserTaskNotes[];
 }

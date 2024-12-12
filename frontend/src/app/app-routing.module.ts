@@ -6,7 +6,9 @@ import * as fromDashboardJobs from './components/dashboard/jobs';
 import * as fromDashboardCustomers from './components/dashboard/customers';
 import * as fromDashboardUsers from './components/dashboard/users';
 import * as fromDashboardProducts from './components/dashboard/products';
-import {CampaignsComponent} from './components/dashboard/campaigns/campaigns.component';
+import * as fromDashboardCampaigns from './components/dashboard/campaigns';
+import * as fromDashboardJobUserTasks from './components/dashboard/job-user-tasks';
+import * as fromDashboardCampaignUserTasks from './components/dashboard/campaign-user-task';
 import {ContactsComponent} from './components/dashboard/contacts/contacts.component';
 import {LeadsComponent} from './components/dashboard/leads/leads.component';
 import {NotesComponent} from './components/dashboard/notes/notes.component';
@@ -30,7 +32,11 @@ const routes: Routes = [
           {path: 'job-search', component: fromDashboardJobs.JobSearchComponent},
         ]},
       {path: 'job-details/:id', component: fromDashboardJobs.JobDetailsComponent},
-      {path: 'campaigns', component: CampaignsComponent},
+      {path: 'campaigns', component: fromDashboardCampaigns.CampaignsComponent, children: [
+          {path: 'campaign-create', component: fromDashboardCampaigns.CampaignCreateComponent}
+        ]},
+      {path: 'campaign-details/:id', component: fromDashboardCampaigns.CampaignDetailComponent},
+      {path: 'update-campaign/:id', component: fromDashboardCampaigns.CampaignUpdateComponent},
       {path: 'customers', component: fromDashboardCustomers.CustomersComponent, children: [
           {path: 'customer-create', component: fromDashboardCustomers.CustomerCreateComponent},
           {path: 'customer-search', component: fromDashboardCustomers.CustomerSearchComponent},
@@ -41,6 +47,7 @@ const routes: Routes = [
           {path: 'job-list', component: fromDashboardJobs.JobListComponent},
           {path: 'customer-list', component: fromDashboardCustomers.CustomerListComponent},
           {path: 'product-list', component: fromDashboardProducts.ProductListComponent},
+          {path: 'campaign-list', component: fromDashboardCampaigns.CampaignListComponent},
         ]},
       {path: 'contacts', component: ContactsComponent},
       {path: 'leads', component: LeadsComponent},
@@ -56,7 +63,17 @@ const routes: Routes = [
       {path: 'users', component: fromDashboardUsers.UsersComponent, children: [
           {path: 'user-create', component: fromDashboardUsers.UserCreateComponent},
         ]},
+      {path: 'update-user/:id', component: fromDashboardUsers.UserUpdateComponent},
       {path: 'user-details/:id', component: fromDashboardUsers.UserDetailComponent},
+      {path: 'campaign-user-tasks', component: fromDashboardCampaignUserTasks.CampaignUserTaskComponent, children: [
+          {path: 'view-campaign-user-task/:id', component: fromDashboardCampaignUserTasks.CampaignUserTaskDetailComponent},
+          {path: 'update-campaign-user-task/:id', component: fromDashboardCampaignUserTasks.CampaignUserTaskUpdateComponent},
+        ]},
+      {path: 'job-user-tasks', component: fromDashboardJobUserTasks.JobUserTasksComponent, children: [
+        {path: 'view-job-user-task/:id', component: fromDashboardJobUserTasks.JobUserTaskDetailComponent},
+          {path: 'update-job-user-task/:id', component: fromDashboardJobUserTasks.JobUserTaskUpdateComponent},
+        ]}
+
     ]}
 ];
 

@@ -12,9 +12,11 @@ import * as fromDashboardJobs from './components/dashboard/jobs';
 import * as fromDashboardCustomers from './components/dashboard/customers';
 import * as fromDashboardUsers from './components/dashboard/users';
 import * as fromDashboardProducts from './components/dashboard/products';
+import * as fromDashboardCampaigns from './components/dashboard/campaigns';
+import * as fromDashboardJobUserTasks from './components/dashboard/job-user-tasks';
+import * as fromDashboardCampaignUserTasks from './components/dashboard/campaign-user-task';
 import * as fromServices from './services';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { CampaignsComponent } from './components/dashboard/campaigns/campaigns.component';
 import { NotesComponent } from './components/dashboard/notes/notes.component';
 import { OrdersComponent } from './components/dashboard/orders/orders.component';
 import { ContactsComponent } from './components/dashboard/contacts/contacts.component';
@@ -24,7 +26,8 @@ import { FullCalendarModule } from '@fullcalendar/angular';
 import { DashboardMainComponent } from './components/dashboard/dashboard-main/dashboard-main.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { LineChartGradientComponent } from './components/dashboard/dashboard-main/line-chart-gradient/line-chart-gradient.component';
-
+import { ContactListComponent } from './components/dashboard/contacts/contact-list/contact-list.component';
+import { ContactCreateComponent } from './components/dashboard/contacts/contact-create/contact-create.component';
 
 @NgModule({
   declarations: [
@@ -36,8 +39,10 @@ import { LineChartGradientComponent } from './components/dashboard/dashboard-mai
     ...fromDashboardCustomers.components,
     ...fromDashboardUsers.components,
     ...fromDashboardProducts.components,
+    ...fromDashboardCampaigns.components,
+    ...fromDashboardJobUserTasks.components,
+    ...fromDashboardCampaignUserTasks.components,
     DashboardComponent,
-    CampaignsComponent,
     NotesComponent,
     OrdersComponent,
     ContactsComponent,
@@ -45,6 +50,8 @@ import { LineChartGradientComponent } from './components/dashboard/dashboard-mai
     TasksComponent,
     DashboardMainComponent,
     LineChartGradientComponent,
+    ContactListComponent,
+    ContactCreateComponent,
   ],
   imports: [
     BrowserModule,

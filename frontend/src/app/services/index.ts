@@ -4,6 +4,8 @@ import {CustomerService} from './customer.service';
 import {ModalService} from './modal.service';
 import {WindowService} from './window.service';
 import {ProductService} from './product.service';
+import {CampaignService} from './campaign.service';
+import {OrderService} from './order.service';
 
 export const services: any[] = [
   AccountService,
@@ -11,7 +13,9 @@ export const services: any[] = [
   CustomerService,
   ProductService,
   ModalService,
-  WindowService
+  WindowService,
+  CampaignService,
+  OrderService,
 ];
 
 
@@ -21,3 +25,5 @@ export * from './customer.service';
 export * from './modal.service';
 export * from './window.service';
 export * from './product.service';
+export * from './campaign.service';
+export * from './order.service';

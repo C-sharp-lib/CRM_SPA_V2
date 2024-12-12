@@ -83,6 +83,38 @@ namespace backend.Controllers
         {
             return Ok(await _context.Users.CountAsync());
         }
+        [HttpPut("user-update/{id}")]
+        public async Task<ActionResult> UpdateUser(string id, [FromBody] UserDTO user)
+        {
+            try
+            {
+                var users = await _context.Users.FirstOrDefaultAsync(u => u.Id == id);
+                if (users == null)
+                {
+                    return NotFound();
+                }
+                if (ModelState.IsValid)
+                {
+                    users.FirstName = user.FirstName;
+                    users.LastName = user.LastName;
+                    users.MiddleName = user.MiddleName;
+                    users.DOB = user.DOB;
+                    users.IsActive = user.IsActive;
+                    users.HireDate = user.HireDate;
+                    users.UserName = user.UserName;
+                    users.Email = user.Email;
+                    users.ImageUrl = user.ImageUrl;
+                    _context.Users.Update(users);
+                    await _context.SaveChangesAsync();
+                    return Ok(users);
+                }
+            }
+            catch(DbUpdateConcurrencyException ex)
+            {
+                return BadRequest(ex.Message);
+            }
+            return BadRequest();
+        }
         private string GenerateAccessToken(string email) 
         {
             var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtBearerTokenSettings.SecretKey)); // Replace with a strong key
@@ -151,7 +183,7 @@ namespace backend.Controllers
             return Ok(new { Token = "", Message = "Logged Out" });
         }
         [HttpPost("create-user")]
-        public async Task<ActionResult> CreateUser(UserDTO user)
+        public async Task<ActionResult> CreateUser([FromBody] CreateUserDTO user)
         {
             if (!ModelState.IsValid || user == null)
             {
@@ -185,6 +217,18 @@ namespace backend.Controllers
                 .ThenInclude(jt => jt.Job)
                 .Include(jt => jt.JobUserNotes)
                 .ThenInclude(jt => jt.Notes)
+                 .Include(jt => jt.CampaignUserTasks)
+                .ThenInclude(jt => jt.Campaign)
+                .Include(jt => jt.CampaignUserTasks)
+                .ThenInclude(jt => jt.Task)
+                .Include(jt => jt.CampaignUserNotes)
+                .ThenInclude(jt => jt.Campaign)
+                .Include(jt => jt.CampaignUserNotes)
+                .ThenInclude(jt => jt.Notes)
+                .Include(jt => jt.UserTaskNotes)
+                .ThenInclude(jt => jt.Task)
+                .Include(jt => jt.UserTaskNotes)
+                .ThenInclude(jt => jt.Note)
                 .FirstOrDefaultAsync(u => u.Id.Equals(id));
             if (user == null) 
             {

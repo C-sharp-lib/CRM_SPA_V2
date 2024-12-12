@@ -260,4 +260,8 @@ body {
 .fc-toolbar-title {
   color: dodgerblue !important;
 }
-
+td > a >.fa-solid.fa-list,
+td > a >.fa-regular.fa-pen-to-square,
+td > a >.fa-regular.fa-trash-can {
+  font-size: 14px !important;
+}

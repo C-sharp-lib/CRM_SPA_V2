@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {AccountService} from '../../../../services';
+import {CustomerUsers, User} from '../../../../models/user';
 
 @Component({
   selector: 'app-user-detail',
@@ -8,7 +9,7 @@ import {AccountService} from '../../../../services';
   styleUrl: './user-detail.component.css'
 })
 export class UserDetailComponent implements OnInit {
-  user: any;
+  user: User;
   errorMessage: string = '';
   constructor(private route: ActivatedRoute, private authService: AccountService) {
   }
@@ -19,10 +20,13 @@ export class UserDetailComponent implements OnInit {
     });
   }
 
-  showUser(id: string): void {
-    this.authService.getUserById(id).subscribe(data => {
-      this.user = data;
-    }, error => {
+  showUser(id: string) {
+    this.authService.getUserById(id).subscribe(
+      (data) => {
+        this.user = data;
+        this.user.campaignUserTasks = data.campaignUserTasks;
+        this.user.jobUserTasks = data.jobUserTasks;
+    }, (error) => {
       this.errorMessage = "Could not fetch the user with the id: " + id;
       console.error(error);
     })

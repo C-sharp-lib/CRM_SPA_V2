@@ -1,1 +1,52 @@
-<p>customer-detail works!</p>
+ <div class="container">
+    <div class="row mt-11">
+      <div class="col-12 col-sm-12 col-md-6">
+        <div class="card shadow-lg bg-gradient-dark">
+          <div class="card-header bg-gradient-dark">
+            <h3 class="text-gradient text-primary ubuntu-bold">{{customer.name}}</h3>
+          </div>
+          <div class="card-body p-3">
+            <p class="lead"><span class="text-gradient text-primary">Customer Type: </span> {{customer.customerType}}</p>
+            <p class="lead"><span class="text-gradient text-primary">Customer Email: </span> {{customer.email}}</p>
+            <p class="lead"><span class="text-gradient text-primary">Customer Phone: </span> {{customer.phone}}</p>
+
+            <p class="lead"><span class="text-gradient text-primary">Customer Fax: </span> {{customer.fax}}</p>
+            <p class="lead"><span class="text-gradient text-primary">Customer Status: </span> {{customer.status}}</p>
+            <p class="lead"><span class="text-gradient text-primary">Customer Location: </span>
+              {{customer.address}} {{customer.city}} {{customer.state}} {{customer.zipCode}}
+            </p>
+
+            <p class="lead"><span class="text-gradient text-primary">Customer Industry: </span> {{customer.industry}}</p>
+            <p class="lead"><span class="text-gradient text-primary">Customer Email: </span> {{customer.website}}</p>
+            <p class="lead"><span class="text-gradient text-primary">Customer Phone: </span> {{customer.contactPerson}}</p>
+
+            <p class="lead"><span class="text-gradient text-primary">Customer Notes: </span> {{customer.notes}}</p>
+            <table class="table table-hover borderless table-striped">
+              <thead>
+                <tr class="text-center">
+                  <th>OrderID(s)</th>
+                  <th>Order Date</th>
+                  <th>Total Amount</th>
+                  <th>Actions</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr *ngFor="let order of customer.customerOrders" class="text-center">
+                  <td>{{order.orderId}}</td>
+                  <td>{{order.orderId.orderDate}}</td>
+                  <td>{{order.orderId.totalAmount|currency:'USD'}}</td>
+                  <td>
+                    <a class="btn-tooltip" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit Order" data-container="body" data-animation="true"><i class="fa-regular fa-pen-to-square text-gradient text-primary"></i></a>
+                    <a class="btn-tooltip" href="#" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete Order" data-container="body" data-animation="true"><i class="fa-regular fa-trash-can text-gradient text-danger"></i></a>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-7">
+
+      </div>
+    </div>
+  </div>

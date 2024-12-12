@@ -1,5 +1,5 @@
-import {OrderItems} from './order-items';
 import {Customer} from './customer';
+import {OrderItems} from './order-items';
 
 export interface Orders {
   orderId: number;
@@ -14,12 +14,19 @@ export interface Orders {
   notes: string;
   createdAt: Date;
   updatedAt: Date;
-  orderItems: OrderItems;
-  customerOrders: CustomerOrders;
+  ordersOrderItems: OrdersOrderItems[];
+  customerOrders: CustomerOrders[];
 }
 
 export interface CustomerOrders {
   customerOrderId: number;
   customerId: Customer;
   orderId: Orders;
+}
+export interface OrdersOrderItems {
+  orderId: number;
+  orderItemId: number;
+  ordersOrderItemsId: number;
+  order: Orders;
+  orderItem: OrderItems;
 }

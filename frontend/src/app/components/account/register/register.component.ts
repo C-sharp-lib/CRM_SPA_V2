@@ -28,7 +28,7 @@ export class RegisterComponent {
 
   onSubmit(): void {
     if(!this.registerForm.invalid) {
-      const newUser: User = {
+      const newUser: { password: any; confirmPassword: any; id: undefined; userName: any; email: any } = {
         id: undefined,
         userName: this.registerForm.value.userName,
         email: this.registerForm.value.email,

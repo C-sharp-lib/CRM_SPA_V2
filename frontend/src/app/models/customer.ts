@@ -18,5 +18,5 @@ export interface Customer {
   website: string;
   contactPerson: string;
   notes: string;
-  customerOrders: CustomerOrders;
+  customerOrders: CustomerOrders[];
 }

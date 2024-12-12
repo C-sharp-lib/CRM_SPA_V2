@@ -24,7 +24,13 @@ namespace backend.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Customers>>> CustomerList()
         {
-            return Ok(await _context.Customers.ToListAsync());
+            return Ok(await _context.Customers
+                .Include(c => c.CustomerOrders)
+                .ThenInclude(c => c.Order)
+                .ThenInclude(c => c.OrdersOrderItems)
+                .ThenInclude(c => c.OrderItem)
+                .ThenInclude(c => c.Products)
+                .ToListAsync());
         }
         [HttpGet("customer-count")]
         public async Task<IActionResult> CustomerCount()

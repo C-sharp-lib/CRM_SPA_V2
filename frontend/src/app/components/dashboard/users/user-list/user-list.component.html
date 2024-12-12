@@ -16,9 +16,6 @@
                   <th class="text-gradient text-primary">Name</th>
                   <th class="text-gradient text-primary">Username</th>
                   <th class="text-gradient text-primary">Email</th>
-                  <th class="text-gradient text-primary">DOB</th>
-                  <th class="text-gradient text-primary">Hire Date</th>
-                  <th class="text-gradient text-primary">Is Active</th>
                   <th class="text-gradient text-primary">Actions</th>
                 </tr>
                 </thead>
@@ -27,13 +24,10 @@
                   <td class="text-white ubuntu">{{user.firstName}} {{user.lastName}}</td>
                   <td class="text-white ubuntu">{{user.userName}}</td>
                   <td class="text-white ubuntu">{{user.email}}</td>
-                  <td class="text-white ubuntu">{{user.dob}}</td>
-                  <td class="text-white ubuntu">{{user.hireDate}}</td>
-                  <td class="text-white ubuntu">{{user.isActive}}</td>
-                  <td class="text-white ubuntu">
-                    <a [routerLink]="['/dashboard/user-details/', user.id]" class="m-3"><i class="fa-solid fa-list text-gradient text-info"></i></a>
-                    <a href="#" class="m-3"><i class="fa-regular fa-pen-to-square text-gradient text-primary"></i></a>
-                    <a href="#" class="m-3"><i class="fa-regular fa-trash-can text-gradient text-danger"></i></a>
+                  <td class="text-sm">
+                    <a [routerLink]="['/dashboard/user-details', user.id]" class="m-3 btn-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="View {{user.userName}}" data-container="body" data-animation="true"><i class="fa-solid fa-list text-gradient text-info"></i></a>
+                    <a [routerLink]="['/dashboard/update-user', user.id]" class="m-3 btn-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit {{user.userName}}" data-container="body" data-animation="true"><i class="fa-regular fa-pen-to-square text-gradient text-primary"></i></a>
+                    <a href="#" class="m-3 btn-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete {{user.userName}}" data-container="body" data-animation="true"><i class="fa-regular fa-trash-can text-gradient text-danger"></i></a>
                   </td>
                 </tr>
                 </tbody>

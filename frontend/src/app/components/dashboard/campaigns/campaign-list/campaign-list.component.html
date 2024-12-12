@@ -1,0 +1,46 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 col-md-12 mt-3">
+      <div class="card shadow-lg bg-gradient-dark">
+        <div>
+          <div class="card-header bg-gradient-dark">
+            <h1 class="text-gradient text-primary ubuntu-bold">
+              Campaigns
+            </h1>
+            <a routerLink="/dashboard/campaigns/campaign-create" class="btn bg-gradient-info">Create A Campaign</a>
+          </div>
+          <div class="card-body p-3">
+            <table class="table table-hover table-borderless table-striped">
+              <thead>
+              <tr class="text-center">
+                <th class="text-gradient text-primary text-sm">ID</th>
+                <th class="text-gradient text-primary text-sm">Title</th>
+                <th class="text-gradient text-primary text-sm">Time Frame</th>
+                <th class="text-gradient text-primary text-sm">Target</th>
+                <th class="text-gradient text-primary text-sm">Leads</th>
+                <th class="text-gradient text-primary text-sm">Clicks</th>
+                <th class="text-gradient text-primary text-sm">Actions</th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr *ngFor="let campaign of campaigns" class="text-center">
+                <td class="text-white ubuntu text-sm">{{campaign.campaignId}}</td>
+                <td class="text-white ubuntu text-sm">{{campaign.title.slice(0, 10)}}</td>
+                <td class="text-white ubuntu text-sm">{{campaign.startDate|date:'MM/dd/YYYY'}} - {{campaign.endDate|date:'MM/dd/YYYY'}}</td>
+                <td class="text-white ubuntu text-sm">{{campaign.revenueTarget|currency:'USD'}}</td>
+                <td class="text-white ubuntu text-sm">{{campaign.leadsGenerated}}</td>
+                <td class="text-white ubuntu text-sm">{{campaign.clicks}}</td>
+                <td class="text-sm">
+                  <a [routerLink]="['/dashboard/campaign-details', campaign.campaignId]" data-bs-toggle="tooltip" data-bs-placement="top" title="View {{campaign.title.slice(0,20)}}" data-container="body" data-animation="true" class="m-3 btn-tooltip"><i class="fa-solid fa-list text-gradient text-info"></i></a>
+                  <a href="#" class="m-3" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit {{campaign.title.slice(0,20)}}" data-container="body" data-animation="true"><i class="fa-regular fa-pen-to-square text-gradient text-primary"></i></a>
+                  <a href="#" class="m-3" data-bs-toggle="tooltip" data-bs-placement="top" title="View {{campaign.title.slice(0,20)}}" data-container="body" data-animation="true"><i class="fa-regular fa-trash-can text-gradient text-danger"></i></a>
+                </td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

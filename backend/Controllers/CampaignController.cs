@@ -18,8 +18,26 @@ namespace backend.Controllers
             _logger = logger;
             _context = context;
         }
-        [HttpGet]
-        public async Task<ActionResult> GetCampaigns()
+        [HttpGet("campaign-user-tasks")]
+        public async Task<ActionResult<IEnumerable<CampaignUserTasks>>> GetCampaignUserTasks()
+        {
+            return Ok(await _context.CampaignUserTasks
+                .Include(c => c.Campaign)
+                .Include(c => c.Task)
+                .Include(c => c.User)
+                .ToListAsync());
+        }
+        [HttpGet("campaign-user-notes")]
+        public async Task<ActionResult<IEnumerable<CampaignUserNotes>>> GetCampaignUserNotes()
+        {
+            return Ok(await _context.CampaignUserNotes
+                .Include(c => c.Campaign)
+                .Include(c => c.Notes)
+                .Include(c => c.User)
+                .ToListAsync());
+        }
+        [HttpGet("campaigns")]
+        public async Task<ActionResult<IEnumerable<Campaigns>>> GetCampaigns()
         {
             return Ok(await _context.Campaigns
                 .Include(c => c.CampaignUserTasks)
@@ -32,7 +50,7 @@ namespace backend.Controllers
                 .ThenInclude(cn => cn.User)
                 .ToListAsync());
         }
-        [HttpGet("{id}")]
+        [HttpGet("campaign-details/{id}")]
         public async Task<ActionResult> GetCampaign(int id)
         {
             var campaign = await _context.Campaigns
@@ -105,24 +123,24 @@ namespace backend.Controllers
                 }
                 if (ModelState.IsValid)
                 {
-                    campaign.Title = camp.Title;
-                    campaign.Description = camp.Description;
-                    campaign.Type = camp.Type;
-                    campaign.Status = camp.Status;
-                    campaign.StartDate = camp.StartDate;
-                    campaign.EndDate = camp.EndDate;
-                    campaign.Budget = camp.Budget;
-                    campaign.Spend = camp.Spend;
-                    campaign.TargetAudience = camp.TargetAudience;
-                    campaign.Channel = camp.Channel;
-                    campaign.Goals = camp.Goals;
-                    campaign.RevenueTarget = camp.RevenueTarget;
-                    campaign.ActualRevenue = camp.ActualRevenue;
-                    campaign.Impressions = camp.Impressions;
-                    campaign.Clicks = camp.Clicks;
-                    campaign.LeadsGenerated = camp.LeadsGenerated;
-                    campaign.Conversions = camp.Conversions;
-                    campaign.ROI = camp.ROI;
+                    camp.Title = campaign.Title;
+                    camp.Description = campaign.Description;
+                    camp.Type = campaign.Type;
+                    camp.Status = campaign.Status;
+                    camp.StartDate = campaign.StartDate;
+                    camp.EndDate = campaign.EndDate;
+                    camp.Budget = campaign.Budget;
+                    camp.Spend = campaign.Spend;
+                    camp.TargetAudience = campaign.TargetAudience;
+                    camp.Channel = campaign.Channel;
+                    camp.Goals = campaign.Goals;
+                    camp.RevenueTarget = campaign.RevenueTarget;
+                    camp.ActualRevenue = campaign.ActualRevenue;
+                    camp.Impressions = campaign.Impressions;
+                    camp.Clicks = campaign.Clicks;
+                    camp.LeadsGenerated = campaign.LeadsGenerated;
+                    camp.Conversions = campaign.Conversions;
+                    camp.ROI = campaign.ROI;
                     _context.Campaigns.Update(camp);
                     await _context.SaveChangesAsync();
                     return Ok(camp);

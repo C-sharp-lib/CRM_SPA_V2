@@ -1,5 +1,4 @@
-<section id="user-profile" *ngIf="user">
-  <div class="container">
+ <div class="container-fluid">
     <div class="row mt-11 mb-11">
       <div class="col-12 col-md-5">
 
@@ -34,8 +33,93 @@
         </div>
       </div>
       <div class="col-12 col-md-7">
-        <app-user-detail-form></app-user-detail-form>
+        <div class="row">
+          <div class="col-12">
+            <div class="card shadow-lg bg-gradient-dark">
+              <div class="card-header bg-gradient-dark">
+                <h3 class="text-gradient text-primary ubuntu-bold">Campaign User Tasks</h3>
+              </div>
+              <div class="card-body bg-gradient-dark p-3">
+                <table class="table table-hover table-striped table-borderless">
+                  <thead>
+                  <tr class="text-center">
+                    <th class="text-gradient text-primary ubuntu-bold">Task Username</th>
+                    <th class="text-gradient text-primary ubuntu-bold">Campaign Name</th>
+                    <th class="text-gradient text-primary ubuntu-bold">Task Title</th>
+                    <th class="text-gradient text-primary ubuntu-bold">Task Due Date</th>
+                    <th class="text-gradient text-primary ubuntu-bold">Task Priority</th>
+                    <th class="text-gradient text-primary ubuntu-bold">Task Status</th>
+                    <th class="text-gradient text-primary ubuntu-bold">Actions</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr class="text-center" *ngFor="let tasks of user.campaignUserTasks">
+                    <td class="text-white ubuntu text-sm">{{user.userName}}</td>
+                    <td class="text-white ubuntu text-sm">{{tasks.campaign?.title.slice(0,10)}}</td>
+                    <td class="text-white ubuntu text-sm">{{tasks.task?.title}}</td>
+                    <td class="text-white ubuntu text-sm">{{tasks.task?.dueDate|date:'MM/dd/YYYY'}}</td>
+                    <td class="text-white ubuntu text-sm">{{tasks.task?.priority}}</td>
+                    <td class="text-white ubuntu text-sm">{{tasks.task?.status}}</td>
+                    <td class="text-sm">
+                      <a [routerLink]="['/dashboard/campaign-user-tasks/view-campaign-user-task', tasks.campaignUserTaskId]" class="m-3 btn-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="View {{tasks.task.title}}" data-container="body" data-animation="true"><i class="fa-solid fa-list text-gradient text-info"></i></a>
+                      <a [routerLink]="['/dashboard/campaign-user-tasks/update-campaign-user-task', tasks.campaignUserTaskId]" class="m-3 btn-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit {{tasks.task.title}}" data-container="body" data-animation="true"><i class="fa-regular fa-pen-to-square text-gradient text-primary"></i></a>
+                      <a [routerLink]="['/dashboard/campaign-user-tasks/delete-campaign-user-task', tasks.campaignUserTaskId]" class="m-3 btn-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete {{tasks.task.title}}" data-container="body" data-animation="true"><i class="fa-regular fa-trash-can text-gradient text-danger"></i></a>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mt-3">
+          <div class="col-12">
+            <div class="card shadow-lg bg-gradient-dark">
+              <div class="card-header bg-gradient-dark">
+                <h3 class="text-gradient text-primary ubuntu-bold">Job User Tasks</h3>
+              </div>
+              <div class="card-body bg-gradient-dark p-3">
+                <div *ngIf="user.jobUserTasks.length > 0; else noContent">
+                <table class="table table-hover table-striped table-borderless">
+                  <thead>
+                  <tr class="text-center">
+                    <th class="text-gradient text-primary ubuntu-bold">Task Username</th>
+                    <th class="text-gradient text-primary ubuntu-bold">Job Title</th>
+                    <th class="text-gradient text-primary ubuntu-bold">Task Title</th>
+                    <th class="text-gradient text-primary ubuntu-bold">Job Start Date</th>
+                    <th class="text-gradient text-primary ubuntu-bold">Task Due Date</th>
+                    <th class="text-gradient text-primary ubuntu-bold">Task Priority</th>
+                    <th class="text-gradient text-primary ubuntu-bold">Task Status</th>
+                    <th class="text-gradient text-primary ubuntu-bold">Actions</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr class="text-center" *ngFor="let job of user.jobUserTasks">
+                    <td class="text-white ubuntu text-sm">{{user.userName}}</td>
+                    <td class="text-white ubuntu text-sm">{{job.job.jobTitle}}</td>
+                    <td class="text-white ubuntu text-sm">{{job.task.title}}</td>
+                    <td class="text-white ubuntu text-sm">{{job.job.startDate|date:'MM/dd/YYYY'}}</td>
+                    <td class="text-white ubuntu text-sm">{{job.task.dueDate|date:'MM/dd/YYYY'}}</td>
+                    <td class="text-white ubuntu text-sm">{{job.task.priority}}</td>
+                    <td class="text-white ubuntu text-sm">{{job.task.status}}</td>
+                    <td class="text-sm">
+                      <a [routerLink]="['/dashboard/job-user-tasks/view-job-user-task', job.jobUserTaskId]" class="m-3 btn-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="View {{job.task.title}}" data-container="body" data-animation="true"><i class="fa-solid fa-list text-gradient text-info"></i></a>
+                      <a [routerLink]="['/dashboard/job-user-tasks/update-job-user-task', job.jobUserTaskId]" class="m-3 btn-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Edit {{job.task.title}}" data-container="body" data-animation="true"><i class="fa-regular fa-pen-to-square text-gradient text-primary"></i></a>
+                      <a [routerLink]="['/dashboard/job-user-tasks/delete-job-user-task', job.jobUserTaskId]" class="m-3 btn-tooltip" data-bs-toggle="tooltip" data-bs-placement="top" title="Delete {{job.task.title}}" data-container="body" data-animation="true"><i class="fa-regular fa-trash-can text-gradient text-danger"></i></a>
+                    </td>
+                  </tr>
+                  </tbody>
+                </table>
+                </div>
+                <ng-template #noContent>
+                  <tr>
+                    <td class="text-white ubuntu text-sm">There is no content for Job Tasks right now.</td>
+                  </tr>
+                </ng-template>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</section>

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import {Job} from '../../../../models/job';
-import {HttpClient} from '@angular/common/http';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 import {JobService} from '../../../../services';
 import {JobStatus} from '../../../../models/job-status';
@@ -31,6 +30,9 @@ export class JobCreateComponent {
   onSubmit(): void {
     if(!this.jobForm.invalid) {
       const newJob: Job = {
+        customerJobs: [],
+        jobUserNotes: [],
+        jobUserTasks: [],
         jobTitle: this.jobForm.value.jobTitle,
         jobDescription: this.jobForm.value.jobDescription,
         jobStatus: this.jobForm.value.jobStatus,

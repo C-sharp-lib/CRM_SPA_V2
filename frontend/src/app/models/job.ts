@@ -2,19 +2,34 @@ import {JobStatus} from './job-status';
 import {JobPriority} from './job-priority';
 import {Customer} from './customer';
 import {User} from './user';
-import {Note} from './note';
+import {Notes} from './note';
+import {Tasks} from './tasks';
 
-interface CustomerJobs{
-  customerId: Customer;
-  jobId: Job;
+export interface CustomerJobs{
+  customerJobsId: number;
+  customerId: number;
+  jobId: number;
+  customer: Customer;
+  jobs: Job;
 }
 
-interface JobUserNotes {
-  jobId: Job;
-  userId: User;
-  noteId: Note;
+export interface JobUserNotes {
+  jobId: number;
+  userId: string;
+  noteId: number;
+  job: Job;
+  user: User;
+  notes: Notes;
 }
-
+export interface JobUserTasks {
+  jobUserTasksId: number;
+  userId: string;
+  taskId: number;
+  jobId: number;
+  user: User;
+  task: Tasks;
+  job: Job;
+}
 export interface Job {
   jobId: number;
   jobTitle: string;
@@ -25,7 +40,9 @@ export interface Job {
   priority: JobPriority;
   estimatedCost: number;
   actualCost: number;
-  customerJobs?: CustomerJobs;
-  jobUserNotes?: JobUserNotes;
+  customerJobs: CustomerJobs[];
+  jobUserNotes: JobUserNotes[];
+  jobUserTasks: JobUserTasks[];
 }
+
 
